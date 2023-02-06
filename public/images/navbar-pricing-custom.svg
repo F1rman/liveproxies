@@ -1,0 +1,9 @@
+<svg width="23" height="32" viewBox="0 0 23 32" xmlns="http://www.w3.org/2000/svg">
+    <g fill="none" fill-rule="evenodd">
+        <path d="M3.216 29H1.864C1.388 29 1 28.43 1 27.73V2.27c0-.7.388-1.27.864-1.27h3.26C5.6 1 6.438 3.725 6.438 3.725h14.698c.476 0 .864.57.864 1.27v22.736c0 .7-.388 1.269-.864 1.269h-1.425" stroke="#232020" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path stroke="#232020" stroke-width="2" stroke-linejoin="round" d="M22.471 14.525h-21"/>
+        <path stroke="#232020" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M15.472 9.525h-6"/>
+        <path d="M11.093 22.108a.823.823 0 0 1 .814 0l3.661 2.079a.86.86 0 0 1 .432.75v4.127a.86.86 0 0 1-.432.75l-3.66 2.078a.823.823 0 0 1-.815 0l-3.661-2.079a.86.86 0 0 1-.432-.75v-4.127a.86.86 0 0 1 .432-.75l3.66-2.078z" fill="#232020"/>
+        <path d="M11.62 25.116c.504 0 .96.206 1.291.543.325.33.527.786.527 1.29s-.202.96-.527 1.29a1.804 1.804 0 0 1-2.584 0 1.836 1.836 0 0 1-.526-1.29c0-.504.202-.96.526-1.29.33-.337.788-.543 1.292-.543z" stroke="#FFF" stroke-width="2"/>
+    </g>
+</svg>

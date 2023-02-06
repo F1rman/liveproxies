@@ -1,0 +1,19 @@
+<svg width="65" height="65" viewBox="0 0 65 65" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <filter x="-36.7%" y="-30%" width="173.3%" height="173.3%" filterUnits="objectBoundingBox" id="d499qv7vra">
+            <feOffset dy="3" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+            <feColorMatrix values="0 0 0 0 0.164705882 0 0 0 0 0.262745098 0 0 0 0 0.517647059 0 0 0 0.1 0" in="shadowBlurOuter1"/>
+        </filter>
+        <circle id="c6ono16eab" cx="22.5" cy="22.5" r="22.5"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g transform="translate(10 7)">
+            <use fill="#000" filter="url(#d499qv7vra)" xlink:href="#c6ono16eab"/>
+            <use fill="#FFF" xlink:href="#c6ono16eab"/>
+        </g>
+        <g fill="#78B1BB" fill-rule="nonzero">
+            <path d="M29.47 20.346c-1.072-.298-2.203-.417-3.394-.298-4.325.437-7.757 3.987-8.055 8.31a9.004 9.004 0 0 0 8.988 9.638c.853 0 1.686-.119 2.46-.337a.2.2 0 0 0 .02-.377 9.006 9.006 0 0 1-5.475-8.29 9.006 9.006 0 0 1 5.475-8.289c.178-.06.159-.318-.02-.357zM42.008 28.992c0 6.922-4.682 12.752-11.07 14.477-.2.06-.18.357.02.397.912.12 1.844.159 2.797.12 7.658-.378 13.848-6.585 14.225-14.24C48.416 21.12 41.552 14 33 14c-.694 0-1.369.04-2.023.139-.218.02-.238.337-.02.397 6.369 1.724 11.051 7.535 11.051 14.456z"/>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,70 @@
+<svg width="77" height="77" viewBox="0 0 77 77" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <linearGradient x1="33.952%" y1="51.734%" x2="61.784%" y2="103.573%" id="17b8ribafc">
+            <stop stop-color="#A2DFEB" offset="0%"/>
+            <stop stop-color="#A1DEEA" offset="8.621%"/>
+            <stop stop-color="#9ED9E6" offset="16.56%"/>
+            <stop stop-color="#98D3DF" offset="23.93%"/>
+            <stop stop-color="#91CAD7" offset="30.845%"/>
+            <stop stop-color="#89BFCC" offset="37.42%"/>
+            <stop stop-color="#7FB3C1" offset="43.767%"/>
+            <stop stop-color="#73A4B4" offset="50%"/>
+            <stop stop-color="#6795A5" offset="56.233%"/>
+            <stop stop-color="#598596" offset="62.58%"/>
+            <stop stop-color="#4A7487" offset="69.155%"/>
+            <stop stop-color="#3A6379" offset="76.07%"/>
+            <stop stop-color="#2A536C" offset="83.44%"/>
+            <stop stop-color="#1B4763" offset="91.379%"/>
+            <stop stop-color="#134260" offset="100%"/>
+        </linearGradient>
+        <linearGradient x1="96.409%" y1="53.498%" x2="57.474%" y2="57.534%" id="mbpfnfqg3d">
+            <stop stop-color="#1A5272" offset="0%"/>
+            <stop stop-color="#1B5373" offset="8.621%"/>
+            <stop stop-color="#1D5677" offset="16.56%"/>
+            <stop stop-color="#1F5A7B" offset="23.93%"/>
+            <stop stop-color="#225F82" offset="30.845%"/>
+            <stop stop-color="#266588" offset="37.42%"/>
+            <stop stop-color="#296B8F" offset="43.767%"/>
+            <stop stop-color="#2C7196" offset="50%"/>
+            <stop stop-color="#2F769D" offset="56.233%"/>
+            <stop stop-color="#327CA3" offset="62.58%"/>
+            <stop stop-color="#3480A8" offset="69.155%"/>
+            <stop stop-color="#3684AD" offset="76.07%"/>
+            <stop stop-color="#3887B0" offset="83.44%"/>
+            <stop stop-color="#3988B2" offset="91.379%"/>
+            <stop stop-color="#3989B3" offset="100%"/>
+        </linearGradient>
+        <linearGradient x1="100%" y1="45.428%" x2="62.123%" y2="50%" id="o5uw578kge">
+            <stop stop-color="#0B3955" offset="0%"/>
+            <stop stop-color="#0C3A57" offset="8.621%"/>
+            <stop stop-color="#0D3E5B" offset="16.56%"/>
+            <stop stop-color="#104262" offset="23.93%"/>
+            <stop stop-color="#124869" offset="30.845%"/>
+            <stop stop-color="#154E72" offset="37.42%"/>
+            <stop stop-color="#17547A" offset="43.767%"/>
+            <stop stop-color="#195A83" offset="50%"/>
+            <stop stop-color="#1B608A" offset="56.233%"/>
+            <stop stop-color="#1D6591" offset="62.58%"/>
+            <stop stop-color="#1F6998" offset="69.155%"/>
+            <stop stop-color="#206D9D" offset="76.07%"/>
+            <stop stop-color="#2170A1" offset="83.44%"/>
+            <stop stop-color="#2271A3" offset="91.379%"/>
+            <stop stop-color="#2272A4" offset="100%"/>
+        </linearGradient>
+        <filter x="-28.9%" y="-23.7%" width="157.9%" height="157.9%" filterUnits="objectBoundingBox" id="lqe3qgtmxa">
+            <feOffset dy="3" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+            <feColorMatrix values="0 0 0 0 0.164705882 0 0 0 0 0.262745098 0 0 0 0 0.517647059 0 0 0 0.1 0" in="shadowBlurOuter1"/>
+        </filter>
+        <circle id="u4cmk5w5xb" cx="28.5" cy="28.5" r="28.5"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g transform="translate(10 7)">
+            <use fill="#000" filter="url(#lqe3qgtmxa)" xlink:href="#u4cmk5w5xb"/>
+            <use fill="#FFF" xlink:href="#u4cmk5w5xb"/>
+        </g>
+        <path fill="url(#17b8ribafc)" d="m10.242 0 9.917 17.134 1.297-3.497 1.27 1.88-1.27 3.599L13.743 24 0 0z" transform="translate(19 25)"/>
+        <path fill="url(#mbpfnfqg3d)" d="m24.103 0 5.059 8.74 1.59-3.704 1.38 2.478-1.749 3.632-7.657 4.37-.085.243-2.115-3.806-.017.01L13.743 0z" transform="translate(19 25)"/>
+        <path fill="url(#o5uw578kge)" d="M38.335 0 40 2.876l-7.724 4.327-.144.311-1.806-3.25-.005.003L27.913 0z" transform="translate(19 25)"/>
+    </g>
+</svg>

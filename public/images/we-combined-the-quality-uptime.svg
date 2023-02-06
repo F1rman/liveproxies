@@ -1,0 +1,17 @@
+<svg width="53" height="47" viewBox="0 0 53 47" xmlns="http://www.w3.org/2000/svg">
+    <g transform="translate(1 1)" fill="none" fill-rule="evenodd">
+        <path d="M6.305 0C2.822 0 0 2.685 0 6s2.822 6 6.305 6h34.39C44.178 12 47 9.315 47 6s-2.822-6-6.305-6H6.305z" stroke="#232020" stroke-width="2"/>
+        <path d="M46.872 20.791C46.285 18.056 43.743 16 40.695 16H6.305C2.822 16 0 18.685 0 22s2.822 6 6.305 6h19.492M25.029 32H6.305C2.822 32 0 34.685 0 38s2.822 6 6.305 6h22.509" stroke="#232020" stroke-width="2" stroke-linecap="round"/>
+        <path d="M45.5 43.525c-5.261 3.037-11.988 1.234-15.025-4.026-3.037-5.26-1.234-11.986 4.025-15.024 5.26-3.037 11.987-1.235 15.025 4.026 3.037 5.26 1.235 11.987-4.026 15.024z" stroke="#232020" stroke-width="2" fill="#FFF" fill-rule="nonzero"/>
+        <path stroke="#232020" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M43 36h-4v-5"/>
+        <circle fill="#232020" cx="6.15" cy="6.15" r="1.15"/>
+        <circle fill="#232020" cx="12.15" cy="6.15" r="1.15"/>
+        <circle fill="#232020" cx="18.15" cy="6.15" r="1.15"/>
+        <circle fill="#232020" cx="6.15" cy="22.15" r="1.15"/>
+        <circle fill="#232020" cx="12.15" cy="22.15" r="1.15"/>
+        <circle fill="#232020" cx="18.15" cy="22.15" r="1.15"/>
+        <circle fill="#232020" cx="6.15" cy="38.15" r="1.15"/>
+        <circle fill="#232020" cx="12.15" cy="38.15" r="1.15"/>
+        <circle fill="#232020" cx="18.15" cy="38.15" r="1.15"/>
+    </g>
+</svg>

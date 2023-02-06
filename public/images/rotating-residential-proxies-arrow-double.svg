@@ -1,0 +1,5 @@
+<svg width="10" height="15" viewBox="0 0 10 15" xmlns="http://www.w3.org/2000/svg">
+    <g stroke="#232020" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="square">
+        <path d="m8 10-3 3-3-3M8 5 5 2 2 5"/>
+    </g>
+</svg>

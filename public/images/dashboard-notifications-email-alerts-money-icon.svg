@@ -1,0 +1,7 @@
+<svg width="19" height="14" viewBox="0 0 19 14" xmlns="http://www.w3.org/2000/svg">
+    <g fill-rule="nonzero" fill="none">
+        <path d="M14.647 14H1a1 1 0 0 1-1-1V4.985a1 1 0 0 1 1-1h13.647a1 1 0 0 1 1 1V13a1 1 0 0 1-1 1z" fill="#232020"/>
+        <path d="M3.506 4.417V2a1 1 0 0 1 1-1H17a1 1 0 0 1 1 1v8.432a1 1 0 0 1-1 1h-1.976 0" stroke="#232020" stroke-width="2" stroke-linecap="round"/>
+        <path d="M7.665 6.97c1.155 0 2.09.96 2.09 2.145s-.935 2.146-2.09 2.146c-1.154 0-2.09-.96-2.09-2.146 0-1.185.936-2.146 2.09-2.146z" stroke="#FFF"/>
+    </g>
+</svg>

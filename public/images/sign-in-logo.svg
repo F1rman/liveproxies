@@ -1,0 +1,25 @@
+<svg width="300" height="376" viewBox="0 0 300 376" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="jqh2pacecb">
+            <stop stop-color="#010D2F" stop-opacity=".049" offset="0%"/>
+            <stop stop-color="#094D88" stop-opacity=".022" offset="100%"/>
+        </linearGradient>
+        <linearGradient x1="42.351%" y1="93.591%" x2="57.823%" y2="20.015%" id="m6pbder04c">
+            <stop stop-color="#010E30" stop-opacity=".026" offset="0%"/>
+            <stop stop-color="#0A4B85" stop-opacity=".092" offset="100%"/>
+        </linearGradient>
+        <filter x="-16.7%" y="-12.7%" width="133.3%" height="125.3%" filterUnits="objectBoundingBox" id="hj23wsa5na">
+            <feOffset dy="10" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+            <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0" in="shadowBlurOuter1" result="shadowMatrixOuter1"/>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+    </defs>
+    <g filter="url(#hj23wsa5na)" transform="translate(30 30)" stroke="#FFF" stroke-width="2" fill="none" fill-rule="evenodd" stroke-opacity=".06">
+        <path d="M238.802 316H97.924l13.54-76.681h64.091c42.408 0 70.725 34.331 63.247 76.681" fill-opacity=".6" fill="url(#jqh2pacecb)"/>
+        <path d="M143.232 0C94.667 0 48.357 39.315 39.793 87.812L.048 312.908c-.301 1.707.84 3.092 2.55 3.092h84.838L143.232 0z" fill-opacity=".5" fill="url(#m6pbder04c)"/>
+    </g>
+</svg>

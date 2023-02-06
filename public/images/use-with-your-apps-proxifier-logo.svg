@@ -1,0 +1,27 @@
+<svg width="47" height="47" viewBox="0 0 47 47" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <linearGradient x1="26.936%" y1="49.871%" x2="72.902%" y2="49.871%" id="ay1c5rja0c">
+            <stop stop-color="#1B559E" offset="0%"/>
+            <stop stop-color="#3F7EC3" offset="100%"/>
+        </linearGradient>
+        <linearGradient x1="28.701%" y1="49.992%" x2="72.96%" y2="49.992%" id="t2973t5vzd">
+            <stop stop-color="#60A3E5" offset="0%"/>
+            <stop stop-color="#3F7EC3" offset="100%"/>
+        </linearGradient>
+        <filter x="-61.1%" y="-50%" width="222.2%" height="222.2%" filterUnits="objectBoundingBox" id="xulhz7bl4a">
+            <feOffset dy="3" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+            <feColorMatrix values="0 0 0 0 0.164705882 0 0 0 0 0.262745098 0 0 0 0 0.517647059 0 0 0 0.1 0" in="shadowBlurOuter1"/>
+        </filter>
+        <circle id="biwkisgpgb" cx="13.5" cy="13.5" r="13.5"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g transform="translate(10 7)">
+            <use fill="#000" filter="url(#xulhz7bl4a)" xlink:href="#biwkisgpgb"/>
+            <use fill="#FFF" xlink:href="#biwkisgpgb"/>
+        </g>
+        <path d="M28.159 21.653h-1.464c-.439 0-.841-.209-.841-.626 0 0-.256-4.934-.256-7.923V13H29v8.027c0 .452-.402.626-.841.626z" fill="#60A3E5"/>
+        <path d="M8.854 8.027c0 1.494-1.28 2.676-2.854 2.676-1.573 0-2.854-1.32-2.854-2.71H0c0 2.78 2.67 5.698 6 5.698 3.293 0 5.963-2.537 6-5.664v-.07L8.854 7.75v.278z" fill="url(#ay1c5rja0c)" transform="translate(17 13)"/>
+        <path d="M6 2.328c-3.33 0-6 2.537-6 5.664v7.993h3.293s0 .034 0 0c0-2.989-.183-7.958-.183-7.958l.036-.035c0-1.39 1.28-2.675 2.854-2.675 1.573 0 2.854 1.285 2.854 2.675H12c-.037-3.127-2.707-5.664-6-5.664z" fill="url(#t2973t5vzd)" transform="translate(17 13)"/>
+    </g>
+</svg>
