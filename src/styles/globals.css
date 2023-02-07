@@ -9044,29 +9044,29 @@ rotat_resid_prox_pric_page_wrapper .live_proxies_plan_table_main_con .live_proxi
   margin:50px 0 0 0;
 }
 
-.dashboard_page_wrapper #HOME {
-  display: block;
-}
+  .dashboard_page_wrapper #HOME {
+    display: block;
+  }
 
-.dashboard_page_wrapper #CHIFFRAGE {
-  display: none;
-}
+  .dashboard_page_wrapper #CHIFFRAGE {
+    display: none;
+  }
 
-.dashboard_page_wrapper #PLANNING {
-  display: none;
-}
+  .dashboard_page_wrapper #PLANNING {
+    display: none;
+  }
 
-.dashboard_page_wrapper #INDICATEURS {
-  display: none;
-}
+  .dashboard_page_wrapper #INDICATEURS {
+    display: none;
+  }
 
-.dashboard_page_wrapper #FACTURATION {
-  display: none;
-}
+  .dashboard_page_wrapper #FACTURATION {
+    display: none;
+  }
 
-.dashboard_page_wrapper #DATABASE {
-  display: none;
-}
+  .dashboard_page_wrapper #DATABASE {
+    display: none;
+  }
  
 
 .dashboard_page_wrapper header {

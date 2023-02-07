@@ -16,18 +16,18 @@ return (
             <div className="footer_sub_con1 col-lg-2 col-md-2 col-sm-4 col-xs-6">    
                <h4 className="footer_marixon_name">Overview</h4> 
                <ul>
-                 <li><Link href="/dashboard.html">Dashboard</Link></li>
-                 <li><Link href="/proxy-tester.html">Proxy Tester</Link></li>
+                 <li><Link href="/dashboard">Dashboard</Link></li>
+                 <li><Link href="/proxy-tester">Proxy Tester</Link></li>
                  <li><Link href="/https://liveservers.io" target="_blank">Live Servers</Link></li>
                </ul>  
            </div> 
            <div className="footer_sub_con2 col-lg-2 col-md-2 col-sm-4 col-xs-6">    
                <h4 className="footer_marixon_name">Pricing</h4> 
                <ul>
-                 <li><Link href="/rotating-residential-proxies-pricing.html">Rotating Residential Proxies</Link></li>
-                 <li><Link href="/static-residential-proxies-pricing.html">Static Residential Proxies</Link></li>
-                 <li><Link href="/rotating-mobile-proxies-pricing.html">Rotating Mobile Proxies</Link></li>
-                 <li><Link href="/custom-pricing.html">All in One Custom Solution</Link></li>
+                 <li><Link href="/rotating-residential-proxies-pricing">Rotating Residential Proxies</Link></li>
+                 <li><Link href="/static-residential-proxies-pricing">Static Residential Proxies</Link></li>
+                 <li><Link href="/rotating-mobile-proxies-pricing">Rotating Mobile Proxies</Link></li>
+                 <li><Link href="/custom-pricing">All in One Custom Solution</Link></li>
                </ul>  
            </div> 
            <div className="footer_sub_con3 col-lg-2 col-md-2 col-sm-4 col-xs-6">    
@@ -48,7 +48,7 @@ return (
                <h4>Company</h4>
                <ul>
                  <li><Link href="/#!">About</Link></li>
-                 <li><Link href="/contact-us.html">Contact</Link></li>
+                 <li><Link href="/contact-us">Contact</Link></li>
                </ul>
            </div> 
            <div className="container footer_copyright_con text-center">
