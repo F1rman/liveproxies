@@ -64,7 +64,7 @@ const [show,setShow] = useState(false);
                   id="password_eye"
                 ></span>
                 <a
-                  href="/reset-password.html"
+                  href="/reset-password"
                   className="login_forgot_pass_text_con"
                 >
                   Forgot your password?
@@ -83,7 +83,7 @@ const [show,setShow] = useState(false);
                 </Link>
                 <br />
                 <span>
-                  Don’t have an account yet? <a href="/sign-up.html">Sign Up</a>
+                  Don’t have an account yet? <a href="/sign-up">Sign Up</a>
                 </span>
               </form>
             </div>

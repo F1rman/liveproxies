@@ -1,8 +1,17 @@
 import Link from "next/link";
+import { useEffect } from "react";
+import $ from "jquery";
 
 export default function Header() {
-return (
-      <header>
+  useEffect(()=>{
+    $('ul.navbar-nav li.dropdown').hover(function() {
+      $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
+    }, function() {
+      $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
+    });          
+  },[])
+  return (
+    <header>
       <div className="main_menubar">
         <div className="container main_inner_menubar">
           <div className="col-lg-2 col-md-2 col-sm-3 col-xs-12 logo_con">
@@ -171,7 +180,11 @@ return (
                 </div>
                 <div className="panel-default xs_collapse_explore">
                   <div className="care_options">
-                    <a href={'#'} data-toggle="collapse" data-target="#collapseExplore1">
+                    <a
+                      href={"#"}
+                      data-toggle="collapse"
+                      data-target="#collapseExplore1"
+                    >
                       <h6 className="care_options_text">
                         Tools{" "}
                         <img
@@ -194,7 +207,11 @@ return (
                 </div>
                 <div className="panel-default xs_collapse_explore">
                   <div className="care_options">
-                    <a href={'#'} data-toggle="collapse" data-target="#collapseExplore2">
+                    <a
+                      href={"#"}
+                      data-toggle="collapse"
+                      data-target="#collapseExplore2"
+                    >
                       <h6 className="care_options_text">
                         Pricing{" "}
                         <img
@@ -247,7 +264,6 @@ return (
           </div>
         </div>
       </div>
-    </header>)
-
-
+    </header>
+  );
 }

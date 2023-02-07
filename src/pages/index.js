@@ -1,5 +1,6 @@
 import Footer from "@/components/footer";
 import Header from "@/components/header";
+import Questions from "@/components/questions";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
@@ -1173,102 +1174,8 @@ export default function Home() {
    </div>
  </section>	   
 		   
- <section>
-   <div class="live_proxies_faqs_main_con">     
-     <div class="container live_proxies_faqs_con">
-      <h2>Frequently asked <span>questions</span></h2>
-	  <h6>Please visit our <Link href="/https://helpcenter.liveproxies.io/hc/en-us" target="_blank">Help Center</Link> if you have questions that are not listed below</h6>
-       <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-         <div class="panel panel-default">
-           <div class="panel-heading" role="tab" id="headingTwo">
-             <h4 class="panel-title">
-               <Link class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">What are the PRIVATE Live Proxies?
-               </Link>
-             </h4>
-           </div>
-           <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-             <div class="panel-body">Technically it&apos;s possible, but you won&apos;t find this option on your dashboard. To match your custom solution requirements, you must open a ticket on our Discord server or email us.</div>
-           </div>
-         </div> 
-           <div class="panel panel-default">
-             <div class="panel-heading" role="tab" id="headingFour">
-               <h4 class="panel-title">
-                 <Link class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseThree">How can I join the Live Proxies Discord server?
-                 </Link>
-               </h4>
-             </div>
-             <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
-		        <div class="panel-body"><span>Technically it&apos;s possible, but you won&apos;t find this option on your dashboard. To match your custom solution requirements, you must open a ticket on our Discord server or email us.</span>
-                </div>
-             </div>
-           </div>
-           <div class="panel panel-default">
-             <div class="panel-heading" role="tab" id="headingFive">
-               <h4 class="panel-title">
-                 <Link class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseThree">Do you guys offer no data-limited plans?</Link>
-               </h4>
-             </div>
-             <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
-              <div class="panel-body">Technically it&apos;s possible, but you won&apos;t find this option on your dashboard. To match your custom solution requirements, you must open a ticket on our Discord server or email us.</div>
-             </div>
-          </div>
-         <div class="panel panel-default">
-           <div class="panel-heading" role="tab" id="headingThree">
-             <h4 class="panel-title">
-               <Link class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">Do you ever plan on making ISP or DC proxies?
-               </Link>
-             </h4>
-           </div>
-           <div id="collapseSeven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-             <div class="panel-body">Technically it&apos;s possible, but you won&apos;t find this option on your dashboard. To match your custom solution requirements, you must open a ticket on our Discord server or email us.</div>
-             </div>
-           </div>
-           <div class="panel panel-default">
-             <div class="panel-heading" role="tab" id="headingEight">
-               <h4 class="panel-title">
-                 <Link class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseEight" aria-expanded="false" aria-controls="collapseThree">Are those residential proxies only?
-                 </Link>
-               </h4>
-             </div>
-             <div id="collapseEight" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEight">
-		         <div class="panel-body"><span>Technically it&apos;s possible, but you won&apos;t find this option on your dashboard. To match your custom solution requirements, you must open a ticket on our Discord server or email us.</span>
-                 </div>
-             </div>
-           </div>
-           <div class="panel panel-default">
-             <div class="panel-heading" role="tab" id="headingNine">
-               <h4 class="panel-title">
-                 <Link class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseNine" aria-expanded="false" aria-controls="collapseThree">Can I filter the proxies by state, city, and ISP carrier?</Link>
-               </h4>
-             </div>
-             <div id="collapseNine" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingNine">
-		         <div class="panel-body">Technically it&apos;s possible, but you won&apos;t find this option on your dashboard. To match your custom solution requirements, you must open a ticket on our Discord server or email us.</div>
-             </div>
-           </div>
-           <div class="panel panel-default">
-             <div class="panel-heading" role="tab" id="headingTen">
-               <h4 class="panel-title">
-                 <Link class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTen" aria-expanded="false" aria-controls="collapseThree">What are the best use cases for Live Proxies?</Link>
-               </h4>
-             </div>
-             <div id="collapseTen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTen">
-                 <div class="panel-body">Technically it&apos;s possible, but you won&apos;t find this option on your dashboard. To match your custom solution requirements, you must open a ticket on our Discord server or email us.</div>
-             </div>
-           </div>
-           <div class="panel panel-default">
-             <div class="panel-heading" role="tab" id="headingEleven">
-               <h4 class="panel-title">
-                 <Link class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseEleven" aria-expanded="false" aria-controls="collapseThree">What are the websites Live Proxies works best?</Link>
-               </h4>
-             </div>
-             <div id="collapseEleven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEleven">
-              <div class="panel-body">Technically it&apos;s possible, but you won&apos;t find this option on your dashboard. To match your custom solution requirements, you must open a ticket on our Discord server or email us.</div>
-             </div>
-           </div>
-        </div>
-      </div>
-	</div>
- </section>  
+ <Questions />
+
       <section>
         <div class="get_your_live_today_main_con text-center">
           <div class="container get_your_live_today_con">

@@ -1,7 +1,9 @@
 import Head from "next/head";
 import Link from "next/link";
+import { useState } from "react";
 
 export default function SignUp() {
+  const [success, setSuccess] = useState(false);
   return (
     <>
       <Head>
@@ -11,85 +13,118 @@ export default function SignUp() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div class="sign_up_page_wrapper sign_in_page_wrapper ">
-        <div class="sign_in_main_con">
-          <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12 sign_in_sub_con1">
+      <div
+        className={
+          !success
+            ? "sign_up_page_wrapper sign_in_page_wrapper "
+            : "success_message_page_wrapper reset_password_page_wrapper sign_in_page_wrapper"
+        }
+      >
+        <div className="sign_in_main_con">
+          <div className="col-lg-3 col-md-12 col-sm-12 col-xs-12 sign_in_sub_con1">
             <div>
-              <span class="sign_in_logo_text_con">
-                <span class="sign_in_logo_text_inner_con1">
+              <span className="sign_in_logo_text_con">
+                <span className="sign_in_logo_text_inner_con1">
                   <img src="/images/sign-in-check-icon.svg" />
                   <h5>Access proxies</h5>
                 </span>
-                <span class="sign_in_logo_text_inner_con2">
+                <span className="sign_in_logo_text_inner_con2">
                   <img src="/images/sign-in-check-icon.svg" />
                   <h5>Analyze usage stats</h5>
                 </span>
-                <span class="sign_in_logo_text_inner_con3">
+                <span className="sign_in_logo_text_inner_con3">
                   <img src="/images/sign-in-check-icon.svg" />
                   <h5>Set reminders</h5>
                 </span>
               </span>
             </div>
           </div>
-          <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12 sign_in_sub_con2">
-            <div class="sign_in_reg_form text-center">
-              <form action="">
-                <h2>Create an account</h2>
-                <input
-                  type="text"
-                  placeholder="Enter your name"
-                  class="reg-form-control"
-                  required
-                />
-                <input
-                  type="email"
-                  placeholder="Enter your email address"
-                  class="reg-form-control"
-                  required
-                />
-                <input
-                  id="password-field"
-                  type="password"
-                  class="reg-form-control"
-                  name="password"
-                  placeholder="Create a password"
-                  minlength="4"
-                  required
-                />
-                <Link href="/#!" class="login_acct_btn">
-                  <button type="submit">Sign Up</button>
+          <div className="col-lg-9 col-md-12 col-sm-12 col-xs-12 sign_in_sub_con2">
+            {success ? (
+              <div className="sign_in_reg_form text-center">
+                <form action="">
+                  <img src="/images/success-message-thumb-up.svg" />
+                  <h2>Thanks for signing up!</h2>
+                  <h4>
+                    We’ve sent an email to <a href="#!">someone@mail.com</a> to
+                    verify your email address and activate your account.
+                  </h4>
+                  <h5>
+                    <a href="#!">Click here</a> if you did not receive an email
+                    or check your spam folder.
+                  </h5>
+                  <br />
+                  <Link href="/" className="login_acct_btn">
+                    <button type="button">Go to Live Proxies</button>
+                  </Link>
+                </form>
+              </div>
+            ) : (
+              <div className="sign_in_reg_form text-center">
+                <form action="">
+                  <h2>Create an account</h2>
+                  <input
+                    type="text"
+                    placeholder="Enter your name"
+                    className="reg-form-control"
+                    required
+                  />
+                  <input
+                    type="email"
+                    placeholder="Enter your email address"
+                    className="reg-form-control"
+                    required
+                  />
+                  <input
+                    id="password-field"
+                    type="password"
+                    className="reg-form-control"
+                    name="password"
+                    placeholder="Create a password"
+                    minLength="4"
+                    required
+                  />
+                  <a
+                    href="#!"
+                    onClick={() => {
+                      setSuccess(true);
+                    }}
+                    className="login_acct_btn"
+                  >
+                    <button type="submit">Sign Up</button>
+                  </a>
+                  <h3>OR</h3>
+                  <a
+                    href="/reset-pass-instruction"
+                    className="login_discord_btn"
+                  >
+                    <button type="button">Sign Up with Discord</button>
+                  </a>
+                  <br />
+                  <a href="/success-message" className="login_google_btn">
+                    <button type="button">Sign Up with Google</button>
+                  </a>
+                  <br />
+                  <span>
+                    Already have an account? <a href="/sign-in">Log In</a>
+                  </span>
+                </form>
+                <h4>
+                  By signing up you agree to the{" "}
+                  <a href="/contact-us">Terms of Service</a> and{" "}
+                  <a href="/custom-pricing">Privacy Policy</a>
+                </h4>
+                <Link href="/#!">
+                  <h5>
+                    Excellent&nbsp;&nbsp;
+                    <img src="/images/sign-up-rating.svg" />
+                    &nbsp;&nbsp;<p>26</p>
+                    <span> reviews on</span>&nbsp;&nbsp;
+                    <img src="/images/sign-up-tp-logo.svg" />
+                  </h5>
                 </Link>
-                <h3>OR</h3>
-                <a
-                  href="/reset-pass-instruction.html"
-                  class="login_discord_btn"
-                >
-                  <button type="button">Sign Up with Discord</button>
-                </a>
-                <br />
-                <a href="/success-message.html" class="login_google_btn">
-                  <button type="button">Sign Up with Google</button>
-                </a>
-                <br />
-                <span>
-                  Already have an account? <a href="/sign-in.html">Log In</a>
-                </span>
-              </form>
-              <h4>
-                By signing up you agree to the{" "}
-                <a href="/contact-us.html">Terms of Service</a> and{" "}
-                <a href="/custom-pricing.html">Privacy Policy</a>
-              </h4>
-              <Link href="/#!">
-                <h5>
-                  Excellent&nbsp;&nbsp;
-                  <img src="/images/sign-up-rating.svg" />
-                  &nbsp;&nbsp;<p>26</p>
-                  <span> reviews on</span>&nbsp;&nbsp;
-                  <img src="/images/sign-up-tp-logo.svg" />
-                </h5>
-              </Link>
-            </div>
+              </div>
+            )}
           </div>
         </div>
       </div>
