@@ -4,8 +4,6 @@ import Slider from "react-slick";
 import $ from "jquery";
 export default function TopUseCases() {
     useEffect(()=>{
-       
-        
     $('.nav-item ').each((i,e)=>{
         $(e).off()
         $(e).click(()=>{

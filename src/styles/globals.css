@@ -2069,82 +2069,19 @@ padding: 0;
   padding:70px 0 70px 0;
   background-image: linear-gradient(to bottom, #010d2f, #103b6f);
 } 
-@media (max-width:991px){
-.honest_price_no_surprises_main_con{
-  padding:80px 0 80px 0;
-} 
-} 
-@media (max-width:699px){
-.honest_price_no_surprises_main_con{
-  padding:100px 0 80px 0;
-} 
-}
-@media (max-width:499px){
-.honest_price_no_surprises_main_con{
-  padding:110px 0 80px 0;
-} 
-}
-@media (max-width:399px){
-.honest_price_no_surprises_main_con{
-  padding:120px 0 80px 0;
-} 
-}
-@media (max-width:339px){
-.honest_price_no_surprises_main_con{
-  padding:130px 0 80px 0;
-} 
-}
-@media (max-width:299px){
-.honest_price_no_surprises_main_con{
-  padding:140px 0 80px 0;
-} 
-}
 
-.honest_price_no_surprises_main_con .top_use_cases_main_con{
-  margin:120px auto 100px auto;
-} 
 
-.honest_price_no_surprises_main_con .honest_price_no_surprises_main_text_con{
-  min-height:530px; 
+.honest_price_no_surprises_main_con  .wrapper{
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
 }
-@media (max-width:991px){
-.honest_price_no_surprises_main_con .honest_price_no_surprises_main_text_con{
-  min-height:auto;
-  min-height:300px;
-  margin-bottom:50px
+.honest_price_no_surprises_main_con  .wrapper .col1{
+display: flex;
+flex-flow: column;
+justify-content: center;
 }
-}
-
-.honest_price_no_surprises_main_con .honest_price_no_surprises_main_text_inner_con{
-  position:absolute;
-  top:40%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%); 
-}
-@media (max-width:991px){
-.honest_price_no_surprises_main_con .honest_price_no_surprises_main_text_inner_con{
-  position:absolute;
-  width:100%;
-  top:30%;
-  text-align: center;
-}
-}
- 
-.honest_price_no_surprises_main_con .honest_price_no_surprises_main_text_con img{
-  margin:0 0 20px 0;
-}
- 
-.honest_price_no_surprises_main_con .honest_price_no_surprises_main_text_con a:nth-of-type(1)::after{
-  width:0;
-  height:0;
-  border:0;
-}
-
-.honest_price_no_surprises_main_con .honest_price_no_surprises_main_text_con h2{ 
+.honest_price_no_surprises_main_con .col1 h2{ 
   font-family: GothamPro;
   font-size: 28px;
   font-weight: normal;
@@ -2153,19 +2090,14 @@ padding: 0;
   line-height: normal;
   letter-spacing: normal;
   color: #ffffff;
-  margin:0 0 20px 0;
+  margin:20px 0 20px 0;
 } 
-@media (max-width:991px){
-.honest_price_no_surprises_main_con .honest_price_no_surprises_main_text_con h2{ 
-  text-align:center
-}
-}
-	
-.honest_price_no_surprises_main_con .honest_price_no_surprises_main_text_con h2 span{ 
+
+.honest_price_no_surprises_main_con .col1 h2 span{ 
   font-weight:bold;
 } 
 
-.honest_price_no_surprises_main_con .honest_price_no_surprises_main_text_con h4{
+.honest_price_no_surprises_main_con .col1 h4{
   width:373px;
   font-family: GothamPro;
   font-size: 16px;
@@ -2177,20 +2109,10 @@ padding: 0;
   color: #ffffff;
   margin:0 0 40px 0;
 }
-@media (min-width:1200px){
-.honest_price_no_surprises_main_con .honest_price_no_surprises_main_text_con h4{ 
-  width: 573px;
-}
-}
-@media (max-width:991px){
-.honest_price_no_surprises_main_con .honest_price_no_surprises_main_text_con h4{ 
-  width:auto;
-  text-align: center;
-  margin:0 0 20px 0;
-}
-}
 
-.honest_price_no_surprises_main_con .honest_price_no_surprises_main_text_con a{
+
+
+.honest_price_no_surprises_main_con .col1 a{
   font-family: GothamPro;
   font-size: 16px;
   font-weight: 500;
@@ -2199,162 +2121,49 @@ padding: 0;
   line-height: normal;
   letter-spacing: normal;
   color:#ffffff;
+  position: relative;
 }
-@media (max-width:499px){
-.honest_price_no_surprises_main_con .honest_price_no_surprises_main_text_con a{
-  font-size: 14px; 
-}
-} 
 
-.honest_price_no_surprises_main_con .honest_price_no_surprises_main_text_con a::after{
+
+.honest_price_no_surprises_main_con .col1 a.underline::after{
   position:absolute;
   content:'';
-  display:inline-block;
   width:163px;
   height:1px;
   border: solid 1px #ffffff;
   margin:20px 0 0 -162px;
 }
-@media (max-width:499px){
-.honest_price_no_surprises_main_con .honest_price_no_surprises_main_text_con a::after{
-  width:143px; 
-  margin:20px 0 0 -142px;
-}
-}
-
-.honest_price_no_surprises_main_con .honest_price_no_surprises_main_img_con{ 
-}
-@media (max-width:1199px){
-.honest_price_no_surprises_main_con .honest_price_no_surprises_main_img_con{ 
-  margin:-60px 0 0 0; 
-}
-}
-@media (min-width:992px) and (max-width:1199px){
-.honest_price_no_surprises_main_con .honest_price_no_surprises_main_img_con{ 
-  margin:0px 0 0 0; 
-}
-}
-@media (max-width:767px){
-.honest_price_no_surprises_main_con .honest_price_no_surprises_main_img_con{ 
-  padding:0 0 0 0; 
-}
-}
-
-.honest_price_no_surprises_main_con .sliderContainer{
-  position: relative;
-  width:412px;
-  height:530px;
-  padding:0; 
-  -webkit-border-radius:10px;
-  -moz-border-radius:10px;
-  -ms-border-radius:10px;
-  -o-border-radius:10px;
-  border-radius:10px; 
-  margin:0 0 0 50px;
+.honest_price_no_surprises_main_con .col2 .card{
+  width: 100%;
+  height: 100%;
+  margin: 0 0 0 135px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px 0 rgb(42 67 132 / 10%);
+  background-color: #fff;
+  max-width: 412px;
   overflow: hidden;
+  display: flex;
+  flex-flow: column;
 }
-@media (min-width:1200px){
-.honest_price_no_surprises_main_con .sliderContainer{
-  margin:0 0 0 150px;
-}
-}
-@media (max-width:1199px){
-.honest_price_no_surprises_main_con .sliderContainer{
-  margin:0 0 0 0px;
-}
-}
-@media (max-width:991px){
-.honest_price_no_surprises_main_con .sliderContainer{
-  margin:auto;
-}
-}
-@media (max-width:499px){
-.honest_price_no_surprises_main_con .sliderContainer{
-  width:300px;
-  height:645px;
-  margin:20px auto 0 auto;
-}
-} 
-@media (max-width:329px){
-.honest_price_no_surprises_main_con .sliderContainer{
-  width:270px;
-}
-}  
-
-.honest_price_no_surprises_main_con .slider{
-  width:100%;   
-  margin:-1px 0 0 0;
+.honest_price_no_surprises_main_con .col2 .card .cardHeader{
+  background: #1f6bd3;
+  height: 190px;
+  padding: 30px 36px 21px 30px;
 }
 
-.honest_price_no_surprises_main_con .slick-slide{
-  display: inline-block
-}
-
-.honest_price_no_surprises_main_con .slick-slide{
-  width:100%;
-  height:340px;
-}
-
-.honest_price_no_surprises_main_con .slide1{
-  background: #ffffff;
-}
-
-.honest_price_no_surprises_main_con .slide2{
-  background:#ffffff;
-}
-
-.honest_price_no_surprises_main_con .slide3{
-  background: #ffffff;
-}
-
-.honest_price_no_surprises_main_con .slide1::before,.honest_price_no_surprises_main_con .slide2::before,.honest_price_no_surprises_main_con .slide3::before{
-  position:absolute;
-  display:block;
-  content: '';
-  width:100%;
-  height: 1px;
-  top:70px;
-  border: solid 1px #f1f1f5;
-}
-
-.honest_price_no_surprises_main_con .progress_bar_main_con{
-  position: relative;
-  width:100%;
-  height:190px;
-  -webkit-border-radius:10px 10px 0 0;
-  -moz-border-radius:10px 10px 0 0;
-  -ms-border-radius:10px 10px 0 0;
-  -o-border-radius:10px 10px 0 0;
-  border-radius:10px 10px 0 0;
-  background-color:#1f6bd3;
-  overflow: hidden
-}
-@media (max-width:499px){
-.honest_price_no_surprises_main_con .progress_bar_main_con{
-  height:320px;
-}
-}
-
-.honest_price_no_surprises_main_con .progress_bar_main_con h1{
-  font-family: GothamPro;
+.honest_price_no_surprises_main_con .col2 .card .cardHeader h2{
   font-size: 24px;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
+  font-family: GothamPro;
   color: #fff;
-  margin:30px 0 10px 30px;
+  margin: 0;
+  margin-bottom: 10px;
 }
-@media (max-width:767px){
-.honest_price_no_surprises_main_con .progress_bar_main_con h1{
-  margin:30px 15px 10px 15px;
-  text-align: center
-}
-}
-
-.honest_price_no_surprises_main_con .progress_bar_main_con h2{
-  width: 301px; 
+.honest_price_no_surprises_main_con .col2 .card .cardHeader p{
   font-family: GothamPro;
   font-size: 14px;
   font-weight: normal;
@@ -2363,53 +2172,28 @@ padding: 0;
   line-height: 1.29;
   letter-spacing: normal;
   color: #fff;
-  margin:0 0 130px 30px;
+  margin-bottom: 30px;
 }
-@media (max-width:767px){
-.honest_price_no_surprises_main_con .progress_bar_main_con h2{
-  width:auto;
-  text-align: center;
-  margin:15px 15px 10px 15px;
-}
+.honest_price_no_surprises_main_con .col2 .card .cardHeader .buttons_group{
+  display: flex;
+  justify-content: space-between;
 }
 
-.honest_price_no_surprises_main_con .progressBarContainer{
-  position:absolute;
-  width:340px;
-  bottom:21px;
-  left:-15px;
-  right:0;
-  margin: auto
-}
-
-.honest_price_no_surprises_main_con .progressBarContainer div{
-  display: block;
-  width: 30%;
-  padding: 0;
+.honest_price_no_surprises_main_con .col2 .card .cardHeader .button{
+  width: 100%;
+  margin-right: 5px;
+  height: 41px;
+  padding: 8px 15px;
   cursor: pointer;
-  margin-right: 5%;
-  /* float: left; */
 }
-@media (max-width:499px){
-.honest_price_no_surprises_main_con .progressBarContainer div{
-  width:100%;
-  text-align: center;
-  margin:auto;
-  left:auto;
-  right:auto;
-  float:none;
-  margin-left:105px;
-  margin-bottom:10px
-}
-}
-@media (max-width:329px){
-.honest_price_no_surprises_main_con .progressBarContainer div {
-  margin-left:90px;
-}
+.honest_price_no_surprises_main_con .col2 .card .cardHeader .button:hover,
+  .honest_price_no_surprises_main_con .col2 .card .cardHeader .button.active{
+  background-color: #ffffff15;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 10%);
 }
 
-.honest_price_no_surprises_main_con .progressBarContainer div h3,.honest_price_no_surprises_main_con .progressBarContainer div h4{
-  position: absolute;
+.honest_price_no_surprises_main_con .col2 .card .cardHeader .button h3{
   font-family: GothamPro;
   font-size: 12px;
   font-weight: 500;
@@ -2418,187 +2202,35 @@ padding: 0;
   line-height: normal;
   letter-spacing: normal;
   color: #fff;
-  margin:10px 0 0 15px;
-  -webkit-text-transform: uppercase;
-  -moz-text-transform: uppercase;
-  -ms-text-transform: uppercase;
-  -o-text-transform: uppercase;
-  text-transform: uppercase;
+  margin: 0;
 }
-
-.honest_price_no_surprises_main_con .progressBarContainer div h4{
+.honest_price_no_surprises_main_con .col2 .card .cardHeader .button h4{
   font-family: GothamPro;
   font-size: 10px;
   font-weight: normal;
-  margin:25px 0 0 15px;
-}
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #fff;
+  margin: 0;
 
-.honest_price_no_surprises_main_con .progressBarContainer div:nth-of-type(3) h3,.honest_price_no_surprises_main_con .progressBarContainer div:nth-of-type(3) h4{
-  margin-left:28px;	
+  margin-top: 5px;
 }
-
-.honest_price_no_surprises_main_con .progressBarContainer div:last-child {
-  margin-right: 0;
-}
-
-.honest_price_no_surprises_main_con .progressBarContainer div span.progressBar{
-  display: block;
-  width: 114px;
-  height: 41px;
-  -webkit-border-radius:6px; 
-  -moz-border-radius:6px; 
-  -ms-border-radius:6px; 
-  -o-border-radius:6px; 
-  border-radius:6px; 
-  -webkit-transition: .3s ease-in-out;
-  -moz-transition: .3s ease-in-out;
-  -ms-transition: .3s ease-in-out;
-  -o-transition: .3s ease-in-out;
-  transition: .3s ease-in-out;
-  overflow: hidden;
-}
-
-	
-.honest_price_no_surprises_main_con .progressBarContainer div:hover span.progressBar{
-  -webkit-box-shadow:0 1px 3px 0 rgba(0, 0, 0, 0.1);
-  -moz-box-shadow:0 1px 3px 0 rgba(0, 0, 0, 0.1);
-  -ms-box-shadow:0 1px 3px 0 rgba(0, 0, 0, 0.1);
-  -o-box-shadow:0 1px 3px 0 rgba(0, 0, 0, 0.1);
-  box-shadow:0 1px 3px 0 rgba(0, 0, 0, 0.1);
-  background-color:rgb(255, 255, 255, 0.15);  
-}
-
-.honest_price_no_surprises_main_con .progressBarContainer div span.progressBar .inProgress {
-  width: 0%;
-  height: 41px;
-  margin: 0 53px 0 0; 
-  background-color:rgb(255, 255, 255, 0.3);  
-}
-
-.honest_price_no_surprises_main_con .progressBarContainer div span.progressBar .inProgress .active{
-  display: block;
-  width: 114px;
-  height: 41px;
-  -webkit-border-radius:6px;  
-  -moz-border-radius:6px;  
-  -ms-border-radius:6px;  
-  -o-border-radius:6px;  
-  border-radius:6px; 
-}
-
-.honest_price_no_surprises_main_con .progressBarContainer div span.progressBar:only-child{
-  -webkit-box-shadow:0 1px 3px 0 rgba(0, 0, 0, 0.1);
-  -moz-box-shadow:0 1px 3px 0 rgba(0, 0, 0, 0.1);
-  -ms-box-shadow:0 1px 3px 0 rgba(0, 0, 0, 0.1);
-  -o-box-shadow:0 1px 3px 0 rgba(0, 0, 0, 0.1);
-  box-shadow:0 1px 3px 0 rgba(0, 0, 0, 0.1);
-}
-
-.honest_price_no_surprises_main_con .yellow-text span{ 
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  -ms-border-radius: 6px;
-  -o-border-radius: 6px;
+.honest_price_no_surprises_main_con .col2 .card .cardBody .buttons_wrapper{
+  height: 39px;
+  margin: 15px 30px;
+  padding: 4px;
   border-radius: 6px;
-  -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
-  -ms-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
-  -o-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
-  background-color: rgb(255, 255, 255, 0.15);
+  position: relative;
+  background-color: #f1f1f5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.honest_price_no_surprises_main_con .slide3 #metered-tab{ 
-  margin-left:96px!important; 
-}
-@media (max-width:767px){
-.honest_price_no_surprises_main_con .slide3 #metered-tab{ 
-  margin-left:210px!important; 
-}
-}
-@media (max-width:499px){
-.honest_price_no_surprises_main_con .slide3 #metered-tab{ 
-  margin-left:125px!important; 
-}
-}
-
-.honest_price_no_surprises_main_con .metered_mobile_rotat_nav-tabs
-.top_use_cases_slider{ 
-  margin-left:56px!important; 
-}
-
-.honest_price_no_surprises_main_con .what_we_offer_meter_unmeter_con #tile-1 .metered_unmetered_nav-tabs {
-  position:relative;
-  width:354px;
-  height:39px; 
-  background-color:#f1f1f5;
-  -webkit-border-radius:6px;
-  -moz-border-radius:6px;
-  -ms-border-radius:6px;
-  -o-border-radius:6px;
-  border-radius:6px;
-  -webkit-box-shadow:none;
-  -moz-box-shadow:none;
-  -ms-box-shadow:none;
-  -o-box-shadow:none;
-  box-shadow:none; 
-  margin:-105px 30px 0 30px;
-  padding:0 0 0 0; 
-} 
-@media (max-width:499px){
-.honest_price_no_surprises_main_con .what_we_offer_meter_unmeter_con #tile-1 .metered_unmetered_nav-tabs {
-  width:245px;
-} 
-}
-@media (max-width:329px){
-.honest_price_no_surprises_main_con .what_we_offer_meter_unmeter_con #tile-1 .metered_unmetered_nav-tabs {
-  margin:-105px 30px 0 12px;
-} 
-}
-
-.honest_price_no_surprises_main_con .what_we_offer_meter_unmeter_con .tile {
-  width:100%;
-  margin:0 auto;
-}
-
-.honest_price_no_surprises_main_con .what_we_offer_meter_unmeter_con #tile-1 .metered_unmetered_nav-tabs li a:hover{
-  background-color:transparent;
-  color:none;  
-} 
-
-.honest_price_no_surprises_main_con .what_we_offer_meter_unmeter_con #tile-1 .metered_unmetered_nav-tabs.active {
-  background-color:transparent;
-  border:0; 
-} 
- 
-.honest_price_no_surprises_main_con .what_we_offer_meter_unmeter_con #tile-1 .metered_unmetered_nav-tabs li{
-  width:240px; 
-  padding:0;
-  top:13px;
-  z-index: 1;
-}
-@media (max-width:767px){
-.honest_price_no_surprises_main_con .what_we_offer_meter_unmeter_con #tile-1 .metered_unmetered_nav-tabs li{
-  margin:0 0 0 -60px;
-}
-}
-
-.honest_price_no_surprises_main_con .what_we_offer_meter_unmeter_con #tile-1 .metered_unmetered_nav-tabs li:nth-of-type(2){
-  padding:0;
-}
-@media (max-width:767px){
-.honest_price_no_surprises_main_con .what_we_offer_meter_unmeter_con #tile-1 .metered_unmetered_nav-tabs li:nth-of-type(2){
-  margin:-4px 0 0 160px;
-}
-}
-@media (max-width:499px){
-.honest_price_no_surprises_main_con .what_we_offer_meter_unmeter_con #tile-1 .metered_unmetered_nav-tabs li:nth-of-type(2){
-  margin:-4px 0 0 60px;
-}
-}
-
-.honest_price_no_surprises_main_con .what_we_offer_meter_unmeter_con #tile-1 .metered_unmetered_nav-tabs li a {  
-  height:0;
+.honest_price_no_surprises_main_con .col2 .card .cardBody .buttons_wrapper .button{
+  width: 100%;
   font-family: GothamPro;
   font-size: 12px;
   font-weight: 500;
@@ -2607,159 +2239,91 @@ padding: 0;
   line-height: normal;
   letter-spacing: normal;
   text-align: center;
-  color: #232020;
-  border:0;
-  padding:0;
-  -webkit-transition: .3s ease-in-out;
-  -moz-transition: .3s ease-in-out;
-  -ms-transition: .3s ease-in-out;
-  -o-transition: .3s ease-in-out;
-  transition: .3s ease-in-out;
-  cursor:pointer;
-}
- 
-@media (min-width:768px){	
-.honest_price_no_surprises_main_con .what_we_offer_meter_unmeter_con #tile-1 .metered_unmetered_nav-tabs li a {  
-  width:168px;
-  height:33px;
-  text-align: center;
-  background-color:transparent;
-  padding:10px 30px 12px 30px;
-  margin-top:-9px;
-  margin-left:6px
-}
-	
-.honest_price_no_surprises_main_con .what_we_offer_meter_unmeter_con #tile-1 .metered_unmetered_nav-tabs li:nth-of-type(2) a{  
-  width:168px;
-  height:32px;
-  text-align: center;
-  background-color:transparent;
-  padding:10px 30px 12px 30px;
-  margin-top:-9px;
-  margin-left:7px
-}
-}
+  color: #4e4a4a;
+  cursor: pointer;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
 
-.honest_price_no_surprises_main_con .what_we_offer_meter_unmeter_con #tile-1 .top_use_cases_slider{
-  display:inline-block; 
+}
+.honest_price_no_surprises_main_con .col2 .card .cardBody .buttons_wrapper .button.active{
+  color: #1f6bd3;
+}
+.honest_price_no_surprises_main_con .col2 .card .cardBody .buttons_wrapper .buttons_slide{
   position: absolute;
-  width:166px!important;
-  height:30px;
-  -webkit-border-radius:4px;
-  -moz-border-radius:4px;
-  -ms-border-radius:4px;
-  -o-border-radius:4px;
-  border-radius:4px;
-  -webkit-box-shadow:0 4px 10px 0 rgba(137, 137, 155, 0.25);
-  -moz-box-shadow:0 4px 10px 0 rgba(137, 137, 155, 0.25);
-  -ms-box-shadow:0 4px 10px 0 rgba(137, 137, 155, 0.25);
-  -o-box-shadow:0 4px 10px 0 rgba(137, 137, 155, 0.25);
-  box-shadow:0 4px 10px 0 rgba(137, 137, 155, 0.25);
-  background-color:#fff;
-  top:4px;
-  bottom: 0;
-  margin:0 0 0 2px; 
+  width: 50%;
+  height: calc(100% - 10px);
+  left: 5px;
+  border-radius: 4px;
+  box-shadow: 0 4px 10px 0 rgb(137 137 155 / 25%);
+  background-color: #fff;
+  top: 5px;
+  z-index: 1;
+  transition: all .3s ease;
 }
-@media (max-width:767px){
-.honest_price_no_surprises_main_con .what_we_offer_meter_unmeter_con #tile-1 .top_use_cases_slider{
-  display:none;
-}
-} 
+.honest_price_no_surprises_main_con .col2 .card .cardBody .buttons_wrapper .buttons_slide.active{
+left: calc(50% - 5px);
 
-.honest_price_no_surprises_main_con .what_we_offer_meter_unmeter_con #tile-1 .metered_mobile_rotat_nav-tabs .top_use_cases_slider{ 
-  width:346px!important; 
-  margin:0 0 0 37px!important; 
 }
- 
-.honest_price_no_surprises_main_con .what_we_offer_meter_unmeter_con .top_use_content_con{
-  width:412px;
-  margin:0 0 0 0
+.honest_price_no_surprises_main_con .col2 .card .cardBody .buttons_wrapper .buttons_slide.full{
+width: calc(100% - 10px);
+
 }
-@media (max-width:499px){
-.honest_price_no_surprises_main_con .what_we_offer_meter_unmeter_con .top_use_content_con{
-  width:100%;
-}
+.honest_price_no_surprises_main_con .col2 .card .cardBody hr{
+  
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border: 0;
+  border-top: 1px solid #f1f1f5;
 }
 
-.honest_price_no_surprises_main_con .what_we_offer_meter_unmeter_con .top_use_content_con .top_use_content_img_con{
-  position: relative;
-  padding:0 0 0 22px;
+.honest_price_no_surprises_main_con .col2 .card .cardBody .plans_wrapper{
+  display: flex;
+  flex-flow: column;
+  padding: 30px;
+  padding-top: 15px;
+}
+.honest_price_no_surprises_main_con .col2 .card .cardBody .item{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.honest_price_no_surprises_main_con .col2 .card .cardBody .item:last-child{
+margin-bottom: 0;
+}
+.honest_price_no_surprises_main_con .col2 .card .cardBody .item 
+  .image_wrapper{
+  display: flex;
+  height: 20px;
+  
+}
+.honest_price_no_surprises_main_con .col2 .card .cardBody .item 
+  .state_wrapper{
+    margin-left: 15px;
+    justify-content: center;
+}
+.honest_price_no_surprises_main_con .col2 .card .cardBody .item 
+  .item_inside{
+    display: flex;
 }
 
-.honest_price_no_surprises_main_con .what_we_offer_meter_unmeter_con .top_use_content_con .top_use_content_img_con div{
-  height:343px;
-  background-image: url(/images/top-use-cases-main-img.png);
-  background-repeat: no-repeat;
-  background-position:center;
-  -webkit-background-size:contain;
-  -moz-background-size:contain;
-  -ms-background-size:contain;
-  -o-background-size:contain;
-  background-size:contain; 
-} 
-
-.honest_price_no_surprises_main_con .what_we_offer_meter_unmeter_con .top_use_content_con .top_use_content_text_con{
-  margin:0 0 40px 0;
-  padding:42px 0 0 57px;
-  text-align:left; 
-}
-
-.honest_price_no_surprises_main_con .what_we_offer_meter_unmeter_con .top_use_content_con .top_use_content_text_con h2{
-  font-family: GothamPro;
-  font-size: 20px;
+.honest_price_no_surprises_main_con .col2 .card .cardBody .item 
+  .item_inside h5{
+  font-size: 10px;
   font-weight: 500;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
-  color: #232020;
-  text-align: left;
-  margin:0 0 20px 0;
-  padding:0
-} 
-
-.honest_price_no_surprises_main_con .what_we_offer_meter_unmeter_con .top_use_content_con .top_use_content_text_con h4{
-  width: 546px;
-  font-family: GothamPro;
-  font-size: 16px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.38;
-  letter-spacing: normal;
-  color: #232020;
-  margin:0 0 40px 0;
+  text-align: right;
+  color: #9d9b9b;
+  margin: 0;
+  text-transform: uppercase;
 }
 
-.honest_price_no_surprises_main_con .what_we_offer_meter_unmeter_con .top_use_content_con .top_use_content_text_con div{
-}
-
-.honest_price_no_surprises_main_con .what_we_offer_meter_unmeter_con .top_use_content_con .top_use_content_text_con div li{
-  display:inline-block;
-  list-style:none;
-  margin:0 0 0 -4px;
-}
-
-.honest_price_no_surprises_main_con .what_we_offer_meter_unmeter_con .top_use_content_con{
-  position:relative;
-  margin:44px 0 0 0;
-}
-@media (max-width:991px){
-.honest_price_no_surprises_main_con .what_we_offer_meter_unmeter_con .top_use_content_con{
-  padding:0 16px 0 16px;
-}
-}
-
-.honest_price_no_surprises_main_con .what_we_offer_meter_unmeter_con .top_use_content_con .what_we_offer_meter_unmeter_flag_con{
-  text-align: left;
-  padding:0 0 0 45px;
-}
-.honest_price_no_surprises_main_con .what_we_offer_meter_unmeter_con .top_use_content_con .what_we_offer_meter_unmeter_flag_con img{
-  display:inline-block;
-  margin:0 10px 0 -30px;
-}
-.honest_price_no_surprises_main_con .what_we_offer_meter_unmeter_con .top_use_content_con .what_we_offer_meter_unmeter_flag_con h2{
-  display:inline-block;
+.honest_price_no_surprises_main_con .col2 .card .cardBody .item h2{
   font-family: GothamPro;
   font-size: 13px;
   font-weight: 500;
@@ -2768,72 +2332,9 @@ padding: 0;
   line-height: normal;
   letter-spacing: normal;
   color: #232020;
-  margin:0 0 0 0;
-  padding:0;
+  margin: 0;
 }
-@media (min-width:500px) and (max-width:767px){
-.honest_price_no_surprises_main_con .what_we_offer_meter_unmeter_con .top_use_content_con .what_we_offer_meter_unmeter_flag_con h2{
-  position:absolute;
-  width:140px;
-  margin:8px 0 0 0;	
-  text-align: left
-}
-}
-@media (max-width:499px){
-.honest_price_no_surprises_main_con .what_we_offer_meter_unmeter_con .top_use_content_con .what_we_offer_meter_unmeter_flag_con h2{
-  display:none;
-}
-}
-
-.honest_price_no_surprises_main_con .what_we_offer_meter_unmeter_con .top_use_content_con .what_we_offer_meter_unmeter_price_con{
-  text-align: right;
-  padding:0 11px 0 0;
-}
-
-.honest_price_no_surprises_main_con .what_we_offer_meter_unmeter_con .top_use_content_con .what_we_offer_meter_unmeter_price_con h3{
-  display:inline-block;
-  font-family: GothamPro;
-  font-size: 12px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  color: #232020;
-  margin:0 0 0 0;
-  padding:0;
-}
-
-.honest_price_no_surprises_main_con .what_we_offer_meter_unmeter_con .top_use_content_con .what_we_offer_meter_unmeter_price_con h4{
-  display:inline-block;
-  font-family: GothamPro;
-  font-size: 16px;
-  font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  color: #1f6bd3;
-  margin:0 0 0 3px;
-  padding:0;
-}
-
-.honest_price_no_surprises_main_con .what_we_offer_meter_unmeter_con .top_use_content_con .what_we_offer_meter_unmeter_price_con h5{
-  font-family: GothamPro;
-  font-size: 12px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  color: #9d9b9b;
-  margin:0 0 0 0;
-  padding:0;
-}
-
-.honest_price_no_surprises_main_con .what_we_offer_meter_unmeter_con .top_use_content_con h6{
-  position: absolute;
-  width: 159px;
+.honest_price_no_surprises_main_con .col2 .card .cardBody .item h6{
   font-family: GothamPro;
   font-size: 10px;
   font-weight: normal;
@@ -2842,21 +2343,54 @@ padding: 0;
   line-height: normal;
   letter-spacing: normal;
   color: #232020;
-  margin:0 0 0 12px;
-  padding:0;
-}
-@media (max-width:768px){
-.honest_price_no_surprises_main_con .what_we_offer_meter_unmeter_con .top_use_content_con h6{
-  display:none;
-  margin:0 0 0 8px;
-}
 }
 
-.honest_price_no_surprises_main_con .what_we_offer_meter_unmeter_con .top_use_content_con span{
-  display:inline-block;
-  margin:0 0 56px 0;
+.honest_price_no_surprises_main_con .col2 .card .cardBody .item h4{
+  font-family: GothamPro;
+  font-size: 16px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #1f6bd3;
+  margin: 0;
+  margin-bottom: 6px;
+}
+.honest_price_no_surprises_main_con .col2 .card .cardBody .item h3{
+  font-family: GothamPro;
+  font-size: 12px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: right;
+  color: #232020;
+  margin: 0;
+  margin-right: 5px;
+  height: 11px;
+  margin-top: 3px;
+}
+.honest_price_no_surprises_main_con .col2 .card .cardBody .item .state_wrapper{
+  display: flex;
+  flex-flow: column;
 }
 
+.honest_price_no_surprises_main_con .col2 .card .cardBody .item .state_wrapper h6{
+
+  font-family: GothamPro;
+  font-size: 10px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #232020;
+  margin: 0;
+  margin-top: 6px;
+}
 /*===================END OF HONEST PRICE, NO SURPRISES SECTION===================*/
  
 
