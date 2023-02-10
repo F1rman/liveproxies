@@ -173,6 +173,7 @@ export default function Header() {
                 openMobileMenu(!mobileMenu)
               }}></a>
             </div>
+            {mobileMenu&&
             <nav className="xsnavlist">
               <div className="mobile_view_list_con">
               <div className="logo_wrapper">
@@ -282,7 +283,7 @@ export default function Header() {
                   </li>
                 </div>
               </div>
-            </nav>
+            </nav>}
           </div>
         </div>
       </div>

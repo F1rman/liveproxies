@@ -620,7 +620,7 @@ padding: 0;
   top: 0;
 } 
   
-.proj-menu-expanded a {
+.proj-menu-expanded .mobile_view_list_con a {
   -webkit-text-decoration: none;
   -moz-text-decoration: none;
   -ms-text-decoration: none;
