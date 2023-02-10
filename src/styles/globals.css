@@ -1220,22 +1220,14 @@ padding: 0;
 }
  
 .top_use_cases_main_con #tile-1 .top_use_cases_slider{
-  display:inline-block;
-  height:6px;
-  margin-left:-33px;
+  left: 20px;
+  width: 109.988px;
+  height: 6px;
   background-color: #1f6bd3;
   position: absolute;
-  -webkit-border-radius: 50px;
-  -moz-border-radius: 50px;
-  -ms-border-radius: 50px;
-  -o-border-radius: 50px;
   border-radius: 50px;
   border-radius: 50px;
-  bottom:-3px;
-  -webkit-transition: all 0.3s cubic-bezier(0.39, 0.58, 0.57, 1);
-  -moz-transition: all 0.3s cubic-bezier(0.39, 0.58, 0.57, 1);
-  -ms-transition: all 0.3s cubic-bezier(0.39, 0.58, 0.57, 1);
-  -o-transition: all 0.3s cubic-bezier(0.39, 0.58, 0.57, 1);
+  bottom: -3px;
   transition: all 0.3s cubic-bezier(0.39, 0.58, 0.57, 1);
 }
 
@@ -9021,6 +9013,7 @@ rotat_resid_prox_pric_page_wrapper .live_proxies_plan_table_main_con .live_proxi
 }
 
 .dashboard_gene_main_con{
+  display: flex;
   margin:50px 0 0 0;
 }
 
@@ -9121,7 +9114,9 @@ rotat_resid_prox_pric_page_wrapper .live_proxies_plan_table_main_con .live_proxi
 }
   
 .dashboard_page_wrapper .sidebar { 
-  height:100%;
+  display: flex;
+  flex-flow: column;
+  height:auto;
   -webkit-appearance: 0;
   -moz-appearance: 0;
   -ms-appearance: 0;
@@ -9152,8 +9147,6 @@ rotat_resid_prox_pric_page_wrapper .live_proxies_plan_table_main_con .live_proxi
 @media (min-width:1200px){  
 .dashboard_page_wrapper .sidebar {
   padding:50px 0 25px 20px;
-  position: absolute;
-  display:table;
 }
 }
  
@@ -9356,6 +9349,10 @@ rotat_resid_prox_pric_page_wrapper .live_proxies_plan_table_main_con .live_proxi
 .dashboard_page_wrapper .sidebar .nav-links {
   margin: 50px 0 0 0;
   padding:0 0 0 0;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  height: 100%;
 }
 
 .dashboard_page_wrapper .sidebar .nav-links li { 
@@ -9871,48 +9868,9 @@ dashboard_page_wrapper .sidebar .nav-links li .active{
 }
 }
  
-
-dashboard_page_wrapper .dashboard_social_icons_con{
-  margin:370px 0 0 0;
-}
-@media (min-width:1400px){ 
 .dashboard_page_wrapper .dashboard_social_icons_con{
-  margin:508px 0 0 0;
+  margin-top: 20px;
 }
-}
-@media (min-width:1600px){ 
-.dashboard_page_wrapper .dashboard_social_icons_con{
-  margin:463px 0 0 0;
-}
-}
-@media (min-width:1900px){ 
-.dashboard_page_wrapper .dashboard_social_icons_con{
-  margin:543px 0 0 0;
-}
-}
-
-@media (min-width:1200px) and (max-width:1439px){ 
-.dashboard_page_wrapper .dashboard_social_icons_con{
-  margin:496px 0 0 0;	
-}
-}
-
-@media (max-width:1199px){ 
-.dashboard_page_wrapper .dashboard_social_icons_con{
-  margin:370px 0 0 0;	
-}
-}
-@media (max-width:767px){ 
-.dashboard_page_wrapper .dashboard_social_icons_con{
-  margin:200px 0 0 0;	
-}
-}
-@media (max-width:399px){ 
-.dashboard_page_wrapper .dashboard_social_icons_con{
-  margin:100px 0 0 0;	
-}
-}
-
 .dashboard_page_wrapper .dashboard_social_icons_con a{
   display:inline-block;
   width: 24px;

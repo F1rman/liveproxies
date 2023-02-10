@@ -1,8 +1,24 @@
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Slider from "react-slick";
-
+import $ from "jquery";
 export default function TopUseCases() {
+    useEffect(()=>{
+       
+        
+    $('.nav-item ').each((i,e)=>{
+        $(e).off()
+        $(e).click(()=>{
+            console.log($(e).clientWidht)
+            $('.top_use_cases_slider').css({
+                left: $(e).position().left  + 20,
+                width: $(e).width()
+            })
+        })
+    },[])
+	  
+    
+    })
     const [tab,setTab] = useState(0);
   var settings = {
     autoplay: true,
