@@ -1,6 +1,12 @@
 import Footer from "@/components/footer";
 import Header from "@/components/header";
 import Questions from "@/components/questions";
+import SimpleManagementDashboard from "@/modules/home/ simple_management_dashboard";
+import GetSolutions from "@/modules/home/get_solution";
+import LiveToday from "@/modules/home/live_today";
+import Plans from "@/modules/home/plans";
+import UtilizeFavouriteApp from "@/modules/home/utilize_favorite_app";
+import WhyLiveProxies from "@/modules/home/why_live_proxies";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
@@ -69,1126 +75,619 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section> 
-    <div class="top_use_cases_main_con top_use_cases_first_main_con container text-center">
-	  <h2>Top use <span>cases</span></h2>
-	    <h3>Scrape data anonymously and access content in any geo-location</h3>
-		  <div class="tile" id="tile-1">
-			 <ul class="nav nav-tabs text-center nav-justified" role="tablist">				 				 
-				<li class="nav-item">
-				  <Link class="nav-link top_use_cases_slider_selector_base case_trends_bigger_chart_stats_btn_selectors active" id="ecommerce-tab" data-toggle="tab" href="#ecommerce">
-					eCommerce
-				  </Link>
-				</li>
-				<li class="nav-item">
-				  <Link class="nav-link top_use_cases_slider_selector_base case_trends_bigger_chart_stats_btn_selectors" id="smm-tab" data-toggle="tab" href="#smm">
-					SMM
-				  </Link>
-				</li>
-				<li class="nav-item">
-				  <Link class="nav-link top_use_cases_slider_selector_base case_trends_bigger_chart_stats_btn_selectors" id="market_research-tab" data-toggle="tab" href="#market_research">
-					Market Research
-				  </Link>
-				</li>
-				<li class="nav-item top_use_cases_nft_icon">
-					<Link class="nav-link top_use_cases_slider_selector_base case_trends_bigger_chart_stats_btn_selectors" id="esports-tab" data-toggle="tab" href="#nft">
-					  NFT
-				   </Link>
-			    </li>
-				<li class="nav-item">
-					<Link class="nav-link top_use_cases_slider_selector_base case_trends_bigger_chart_stats_btn_selectors" id="esports-tab" data-toggle="tab" href="#esports">
-					  Gaming
-				   </Link>
-			    </li>
-				<li class="nav-item">
-				  <Link class="nav-link top_use_cases_slider_selector_base case_trends_bigger_chart_stats_btn_selectors" id="seoserp-tab" data-toggle="tab" href="#seoserp">
-					 SEO/SERP
-				  </Link>
-				</li>
-				<li class="nav-item">
-				   <Link class="nav-link top_use_cases_slider_selector_base case_trends_bigger_chart_stats_btn_selectors" id="adtech-tab" data-toggle="tab" href="#addtech">
-					  AdTech
-				   </Link>
-				 </li>
-				<div class="top_use_cases_slider"></div>
-			</ul>	  
-			<div class="tab-content text-center">
- 			  <div class="tab-pane active" id="ecommerce">
-		        <div class="container top_use_content_con">
-		            <div class="top_use_content_img_con col-lg-4 col-md-4 col-sm-4 col-xs-12">
-					  <div></div>
-					</div>  
-                   <div class="ecommerce_inner_slider">
-	                <div class="slide">
-	                  <img src="/images/top-use-cases-e-maps-img-clothes-and-sneakers.svg"/>
-	                </div>
-	                <div class="slide">
-	                  <img src="/images/top-use-cases-e-maps-img-computer.svg"/>
-	                </div>
-	                <div class="slide">
-	                  <img src="/images/top-use-cases-e-maps-img-basket-ball-cards.svg"/>
-	                </div>
-                   </div>					  
- 		           <div class="top_use_content_text_con col-lg-8 col-md-8 col-sm-8 col-xs-12">
-				     <h2>Outshine the competitors with web data</h2>
-				     <h4>Optimize your pricing strategy and manage your inventory efficiently by acquiring valuable insights on your competition, products, and markets. Automate tasks and streamline operations to save time and minimize resources.</h4> 
-			       </div>
-		        </div>
-			  </div>
-		     <div class="tab-pane fade" id="smm">
-				<div class="container top_use_content_con">
-		          <div class="top_use_content_img_con col-lg-4 col-md-4 col-sm-4 col-xs-12"><div></div></div> 
-		           <div class="top_use_content_text_con col-lg-8 col-md-8 col-sm-8 col-xs-12">
-				     <h2>The highest quality media proxies for all your needs</h2>
-				     <h4>Unlock the full potential of your social media strategy by staying on top of trends and knowing what your customers and audiences want. Enhance your data collection and social listening capabilities to stay ahead of the competition and reach new markets.</h4> 
-				      <div>
-			            <li><Link href="/#!"></Link></li>
-			            <li><Link href="/#!"></Link></li>
-			            <li><Link href="/#!"></Link></li>
-			            <li><Link href="/#!"></Link></li>
-				      </div>
-			       </div>
-		        </div>
-			 </div>
-		     <div class="tab-pane fade" id="market_research">
-				<div class="container top_use_content_con">
-		          <div class="top_use_content_img_con col-lg-4 col-md-4 col-sm-4 col-xs-12"><div></div></div> 
-		           <div class="top_use_content_text_con col-lg-8 col-md-8 col-sm-8 col-xs-12">
-				     <h2>Increase and speed up your research</h2>
-				     <h4>Unlock global market insights, bypass IP restrictions, and predict trends by swiftly gathering data with Live Proxies. With a comprehensive market research, you can know your customers and target audience better helping you stay ahead of the competition.</h4> 
-			       </div>
-		        </div>
-			 </div>
-		     <div class="tab-pane fade" id="nft">
-				<div class="container top_use_content_con">
-		          <div class="top_use_content_img_con col-lg-3 col-md-4 col-sm-4 col-xs-12"><div></div></div> 
-		           <div class="top_use_content_text_con col-lg-9 col-md-8 col-sm-8 col-xs-12">
-				     <h2>Increase your chance of buying the NFT you want</h2>
-				     <h4>Get past strict proxy restrictions and automate your NFT tasks from creating multiple accounts to going for limited releases. Furthermore, effortlessly scrape data to collect information on NFT prices, sales, and trends, as well as monitor NFTs.</h4> 
-			       </div>
-		        </div>
-			 </div>
-		     <div class="tab-pane fade" id="esports">
-				<div class="container top_use_content_con">
-		          <div class="top_use_content_img_con col-lg-4 col-md-4 col-sm-4 col-xs-12"><div></div></div> 
-		           <div class="top_use_content_text_con col-lg-8 col-md-8 col-sm-8 col-xs-12">
-				     <h2>Create multiple accounts & unlock games</h2>
-				     <h4>Enhance your gaming experience by bypassing geographical restrictions and IP blocks while on an anonymous connection. Advance in your game by completing all game levels and using your software with our proxies to keep your account protected.</h4> 
-			       </div>
-		        </div>
-			 </div>
-		     <div class="tab-pane fade" id="seoserp">
-				<div class="container top_use_content_con">
-		          <div class="top_use_content_img_con col-lg-4 col-md-4 col-sm-4 col-xs-12"><div></div></div> 
-		           <div class="top_use_content_text_con col-lg-8 col-md-8 col-sm-8 col-xs-12">
-				     <h2>Easy handle of everyday search optimization</h2>
-				     <h4>Scrape SERP and build backlinks to conduct keyword research, gather rankings data, and analyze competition and consumer trends. Additionally, avoid bans and search keywords from different geographical locations to help reach the right audience.</h4> 
-			       </div>
-		        </div>
-			 </div>
-		     <div class="tab-pane fade" id="addtech">
-				<div class="container top_use_content_con">
-		          <div class="top_use_content_img_con col-lg-4 col-md-4 col-sm-4 col-xs-12"><div></div></div> 
-		           <div class="top_use_content_text_con col-lg-8 col-md-8 col-sm-8 col-xs-12">
-				     <h2>Maximize every ads dollar for AdTech</h2>
-				     <h4>Verify your ads meet your expectations and are clear of fraudulent or harmful activity without getting detected to help protect your brand image. Maximize your ad campaigns by easily testing and monitoring them with no issues.</h4> 
-			       </div>
-		        </div>
-			 </div>
-		   </div>
-		</div>
-     </div>    
-   </section> 
- 	   
-   <section>  
-     <div class="honest_price_no_surprises_main_con">	
-        <div class="container"> 
-           <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 honest_price_no_surprises_main_text_con">
-             <div class="honest_price_no_surprises_main_text_inner_con">   
-               <Link href="/#!"><img src="/images/honest-price-what-we-offer-trust-pilot-icon.svg"/></Link>
-			   <h2><span>Trusted Service</span> with full transparency</h2>    
-               <h4>Our provision has proven itself to thousands of satisfied users, and your account will inform you with all necessary details about your proxies at no additional cost.</h4> 
-               <Link href="/sign-up.html">Create your account</Link>  
-             </div>   
-           </div>  
-        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 honest_price_no_surprises_main_img_con">
-        <div class="sliderContainer">
-          <div class="progress_bar_main_con">
-	         <h1>What we offer</h1>
-	         <h2>With a variety of options, select the plan that best suits your needs</h2>
-           <div class="progressBarContainer">
-           <div>
-             <h3>Residential</h3>
-             <h4>Rotating</h4>
-             <span data-slick-index="0" class="progressBar"></span>
-           </div>
-           <div>
-             <h3>Residential</h3>
-             <h4>Static</h4>
-             <span data-slick-index="1" class="progressBar"></span>
-           </div>
-           <div>
-             <h3>Mobile</h3>
-             <h4>Rotating</h4>
-             <span data-slick-index="2" class="progressBar"></span>
-           </div>
-         </div>
-       </div>
-     <div class="slider single-item">
-       <div class="slide1">
-         <div class="what_we_offer_meter_unmeter_con top_use_cases_main_con container text-center">
-		    <div class="tile" id="tile-1">
-			  <ul class="nav metered_resid_rotate_nav-tabs metered_unmetered_nav-tabs text-center nav-justified" role="tablist">
-				<li class="nav-item">
-				  <Link class="nav-link case_trends_bigger_chart_stats_btn_selectors active" id="metered-tab" data-toggle="tab" href="#metered">
-					  Metered
-				   </Link>
-				</li>
-				<li class="nav-item">
-				  <Link class="nav-link case_trends_bigger_chart_stats_btn_selectors" id="unmetered-tab" data-toggle="tab" href="#unmetered">
-                    Unmetered
-				  </Link>
-				</li>
-				<div class="top_use_cases_slider"></div>
-			 </ul>
-			<div class="tab-content text-center">
-			  <div class="tab-pane active" id="metered">
-		        <div class="container top_use_content_con">
-				  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-3 what_we_offer_meter_unmeter_flag_con">
-				      <img src="/images/honest-price-what-we-offer-us-icon.svg"/>
-					  <h2>United States</h2>	 
-					  <h6>State proxies offered separately</h6>	 
-				  </div>
-				  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-9 what_we_offer_meter_unmeter_price_con">
-					  <h3>Starts from</h3>	 
-					  <h4>$70.00</h4>	 
-					  <h5>per plan</h5>	 
-				  </div>	
-					<span></span>
-				  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-3 what_we_offer_meter_unmeter_flag_con">
-				      <img src="/images/honest-price-what-we-offer-ca-icon.svg"/>
-					  <h2>Canada</h2>	 
-				  </div>
-				  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-9 what_we_offer_meter_unmeter_price_con">
-					  <h3>Starts from</h3>	 
-					  <h4>$70.00</h4>	 
-					  <h5>per plan</h5>	 
-				  </div>
-					<span></span>
-				  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-3 what_we_offer_meter_unmeter_flag_con">
-				      <img src="/images/honest-price-what-we-offer-gb-icon.svg"/>
-					  <h2>United Kingdom</h2>	 
-				  </div>
-				  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-9 what_we_offer_meter_unmeter_price_con">
-					  <h3>Starts from</h3>	 
-					  <h4>$70.00</h4>	 
-					  <h5>per plan</h5>	 
-				  </div>
-					<span></span>
-				  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-3 what_we_offer_meter_unmeter_flag_con">
-				      <img src="/images/honest-price-what-we-offer-ww-icon.svg"/>
-					  <h2>Random Location</h2>	 
-				  </div>
-				  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-9 what_we_offer_meter_unmeter_price_con">
-					  <h3>Starts from</h3>	 
-					  <h4>$70.00</h4>	 
-					  <h5>per plan</h5>	 
-				  </div>
-				</div>
-			   </div>
-		     <div class="tab-pane fade" id="unmetered">
-				<div class="container top_use_content_con">
-				   <div class="col-lg-6 col-md-6 col-sm-6 col-xs-3 what_we_offer_meter_unmeter_flag_con">
-				       <img src="/images/honest-price-what-we-offer-us-icon.svg"/>
-					   <h2>United States</h2>
-					   <h6>State proxies offered separately</h6>
-				   </div>
-				   <div class="col-lg-6 col-md-6 col-sm-6 col-xs-9 what_we_offer_meter_unmeter_price_con">
-					   <h3>Starts from</h3>	 
-					   <h4>$120.00</h4>	 
-					   <h5>per plan</h5>	 
-				   </div>	
-					 <span></span>
-				   <div class="col-lg-6 col-md-6 col-sm-6 col-xs-3 what_we_offer_meter_unmeter_flag_con">
-				       <img src="/images/honest-price-what-we-offer-ca-icon.svg"/>
-					   <h2>Canada</h2>	 
-				   </div>
-				   <div class="col-lg-6 col-md-6 col-sm-6 col-xs-9 what_we_offer_meter_unmeter_price_con">
-					   <h3>Starts from</h3>	 
-					   <h4>$120.00</h4>	 
-					   <h5>per plan</h5>	 
-				   </div>
-					 <span></span>
-				   <div class="col-lg-6 col-md-6 col-sm-6 col-xs-3 what_we_offer_meter_unmeter_flag_con">
-				       <img src="/images/honest-price-what-we-offer-gb-icon.svg"/>
-					   <h2>United Kingdom</h2>	 
-				   </div>
-				   <div class="col-lg-6 col-md-6 col-sm-6 col-xs-9 what_we_offer_meter_unmeter_price_con">
-					   <h3>Starts from</h3>	 
-					   <h4>$120.00</h4>	 
-					   <h5>per plan</h5>	 
-				   </div>
-					 <span></span>
-				   <div class="col-lg-6 col-md-6 col-sm-6 col-xs-3 what_we_offer_meter_unmeter_flag_con">
-				       <img src="/images/honest-price-what-we-offer-ww-icon.svg"/>
-					   <h2>Random Location</h2>	 
-				   </div>
-				   <div class="col-lg-6 col-md-6 col-sm-6 col-xs-9 what_we_offer_meter_unmeter_price_con">
-					   <h3>Starts from</h3>	 
-					   <h4>$120.00</h4>	 
-					   <h5>per plan</h5>	 
-				   </div>
-				</div>
-			  </div>
-		    </div>
-		  </div>
-        </div> 
-	  </div>
-     <div class="slide2"> 
-       <div class="what_we_offer_meter_unmeter_con top_use_cases_main_con container text-center">
-		  <div class="tile" id="tile-1">
-			 <ul class="nav metered_resid_static_nav-tabs metered_unmetered_nav-tabs text-center nav-justified" role="tablist">
-				<li class="nav-item">
-				  <Link class="nav-link active" id="metered-tab" data-toggle="tab" href="#metered_resid_static">
-					  Metered
-				   </Link>
-				</li>
-				<li class="nav-item">
-				  <Link class="nav-link" id="unmetered-tab" data-toggle="tab" href="#unmetered_resid_static">
-                    Unmetered
-				  </Link>
-				</li>
-				<div class="top_use_cases_slider"></div>
-			</ul>
-			<div class="tab-content text-center">
-			  <div class="tab-pane active" id="metered_resid_static">
-		        <div class="container top_use_content_con">
-				  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-3 what_we_offer_meter_unmeter_flag_con">
-				      <img src="/images/honest-price-what-we-offer-us-icon.svg"/>
-					  <h2>United States</h2>
-					  <h6>State proxies offered separately</h6>
-				  </div>
-				  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-9 what_we_offer_meter_unmeter_price_con">
-					  <h3>Starts from</h3>	 
-					  <h4>$35.00</h4>	 
-					  <h5>per plan</h5>	 
-				  </div>	
-					<span></span>
-				  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-3 what_we_offer_meter_unmeter_flag_con">
-				      <img src="/images/honest-price-what-we-offer-ca-icon.svg"/>
-					  <h2>Canada</h2>	 
-				  </div>
-				  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-9 what_we_offer_meter_unmeter_price_con">
-					  <h3>Starts from</h3>	 
-					  <h4>$35.00</h4>	 
-					  <h5>per plan</h5>	 
-				  </div>
-					<span></span>
-				  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-3 what_we_offer_meter_unmeter_flag_con">
-				      <img src="/images/honest-price-what-we-offer-gb-icon.svg"/>
-					  <h2>United Kingdom</h2>	 
-				  </div>
-				  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-9 what_we_offer_meter_unmeter_price_con">
-					  <h3>Starts from</h3>	 
-					  <h4>$35.00</h4>	 
-					  <h5>per plan</h5>	 
-				  </div>
-					<span></span>
-				  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-3 what_we_offer_meter_unmeter_flag_con">
-				      <img src="/images/honest-price-what-we-offer-ww-icon.svg"/>
-					  <h2>Random Location</h2>	 
-				  </div>
-				  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-9 what_we_offer_meter_unmeter_price_con">
-					  <h3>Starts from</h3>	 
-					  <h4>$35.00</h4>	 
-					  <h5>per plan</h5>	 
-				  </div>
-				</div>
-			   </div>
-		       <div class="tab-pane fade" id="unmetered_resid_static">
-				 <div class="container top_use_content_con">
-				     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-3 what_we_offer_meter_unmeter_flag_con">
-				         <img src="/images/honest-price-what-we-offer-us-icon.svg"/>
-					     <h2>United States</h2>
-						 <h6>State proxies offered separately</h6>
-				     </div>
-				     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-9 what_we_offer_meter_unmeter_price_con">
-					     <h3>Starts from</h3>	 
-					     <h4>$97.00</h4>	 
-					     <h5>per plan</h5>	 
-				     </div>	
-					   <span></span>
-				     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-3 what_we_offer_meter_unmeter_flag_con">
-				         <img src="/images/honest-price-what-we-offer-ca-icon.svg"/>
-					     <h2>Canada</h2>	 
-				     </div>
-				     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-9 what_we_offer_meter_unmeter_price_con">
-					     <h3>Starts from</h3>	 
-					     <h4>$97.00</h4>	 
-					     <h5>per plan</h5>	 
-				     </div>
-					   <span></span>
-				     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-3 what_we_offer_meter_unmeter_flag_con">
-				         <img src="/images/honest-price-what-we-offer-gb-icon.svg"/>
-					     <h2>United Kingdom</h2>	 
-				     </div>
-				     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-9 what_we_offer_meter_unmeter_price_con">
-					     <h3>Starts from</h3>	 
-					     <h4>$97.00</h4>	 
-					     <h5>per plan</h5>	 
-				     </div>
-					   <span></span>
-				     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-3 what_we_offer_meter_unmeter_flag_con">
-				         <img src="/images/honest-price-what-we-offer-ww-icon.svg"/>
-					     <h2>Random Location</h2>	 
-				     </div>
-				     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-9 what_we_offer_meter_unmeter_price_con">
-					     <h3>Starts from</h3>	 
-					     <h4>$97.00</h4>	 
-					     <h5>per plan</h5>	 
-				     </div>
-				  </div>
-			    </div>
-		      </div>
-		   </div>
-         </div> 
-	   </div>
-     <div class="slide3"> 
-       <div class="what_we_offer_meter_unmeter_con top_use_cases_main_con container text-center">
-		  <div class="tile" id="tile-1">
-			 <ul class="nav metered_mobile_rotat_nav-tabs metered_unmetered_nav-tabs text-center nav-justified" role="tablist">
-				<li class="nav-item">
-				  <Link class="nav-link active" id="metered-tab" data-toggle="tab" href="#metered_mobile_rotat">
-					  Metered
-				   </Link>
-				</li>
-				<div class="top_use_cases_slider"></div>
-			 </ul>
-			<div class="tab-content text-center">
-			  <div class="tab-pane active" id="metered_mobile_rotat">
-		        <div class="container top_use_content_con">
-				  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-3 what_we_offer_meter_unmeter_flag_con">
-				      <img src="/images/honest-price-what-we-offer-us-icon.svg"/>
-					  <h2>United States</h2>
-					  <h6>State proxies offered separately</h6>
-				  </div>
-				  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-9 what_we_offer_meter_unmeter_price_con">
-					  <h3>Starts from</h3>	 
-					  <h4>$62.00</h4>	 
-					  <h5>per plan</h5>	 
-				  </div>	
-					<span></span>
-				  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-3 what_we_offer_meter_unmeter_flag_con">
-				      <img src="/images/honest-price-what-we-offer-ca-icon.svg"/>
-					  <h2>Canada</h2>	 
-				  </div>
-				  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-9 what_we_offer_meter_unmeter_price_con">
-					  <h3>Starts from</h3>	 
-					  <h4>$62.00</h4>	 
-					  <h5>per plan</h5>	 
-				  </div>
-					<span></span>
-				  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-3 what_we_offer_meter_unmeter_flag_con">
-				      <img src="/images/honest-price-what-we-offer-gb-icon.svg"/>
-					  <h2>United Kingdom</h2>	 
-				  </div>
-				  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-9 what_we_offer_meter_unmeter_price_con">
-					  <h3>Starts from</h3>	 
-					  <h4>$62.00</h4>	 
-					  <h5>per plan</h5>	 
-				  </div>
-					<span></span>
-				  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-3 what_we_offer_meter_unmeter_flag_con">
-				      <img src="/images/honest-price-what-we-offer-ww-icon.svg"/>
-					  <h2>Random Location</h2>	 
-				  </div>
-				  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-9 what_we_offer_meter_unmeter_price_con">
-					  <h3>Starts from</h3>	 
-					  <h4>$62.00</h4>	 
-					  <h5>per plan</h5>	 
-				  </div>
-				 </div>
-			    </div>
-		       </div>
-		      </div>
-             </div> 
-	       </div>
-          </div>
-        </div>
-	  </div>	
-    </div>
-  </div>
- </section>   
-
- <section>
-   <div class="container why_live_proxies_con text-center">
-	  <h2><span>Why</span> Live Proxies</h2>
-         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 why_live_proxies_sub_con1">
-           <img src="/images/why-live-proxies-transparency.svg"/>
-		<h3>Transparency</h3>
-           <h4>We’re not afraid to address concerns and we believe it’s necessary to keep you informed.</h4>
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 why_live_proxies_sub_con2">
-          <img src="/images/why-live-proxies-private.svg"/>
-	      <h3>Private Proxies</h3>
-          <h4>Instead of one large pool shared by everyone, your IPs are unique and only shared with you.</h4>
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 why_live_proxies_sub_con3">
-          <img src="/images/why-live-proxies-reliability.svg"/>
-	      <h3>Reliability</h3>
-          <h4>Long-term clients value our maintained proxy quality and prompt concern resolution.</h4>
-        </div> 
-         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 why_live_proxies_sub_con1">
-           <img src="/images/why-live-proxies-24-7-support.svg"/>
-		<h3>Excellent Customer Support</h3>
-           <h4>We offer 24/7 support with quick response <br/>times, and committed to client <br/>satisfaction.</h4>
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 why_live_proxies_sub_con2">
-          <img src="/images/why-live-proxies-quality-i-ps.svg"/>
-	      <h3>Highest Quality IPs</h3>
-          <h4>We provide stable, top-tier IPs from real peers, that are unblocked on every site.</h4>
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 why_live_proxies_sub_con3">
-          <img src="/images/why-live-proxies-custom-solution.svg"/>
-	      <h3>Custom Solutions</h3>
-          <h4>Tailored plans can be made <br/>available for enterprise requirements <br/>and large scale necessities.</h4>
-        </div> 
-     </div>
-  </section>  
-	   
-  <section>   
-	<div class="live_proxies_plan_table_main_con">
-       <div class="live_proxies_plan_table_con_scroll container"> 
-         <div class="live_proxies_plan_table_con"> 
-		   <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 live_proxies_plan_table_sub_con1"> 
-			   <div>
-				 <h3>Region
-				   <span class="tooltip-container">
-			        <img src="/images/all-plans-info-icon.svg"/>
-			        <span class="tooltip">Region, The most flexible and cleanest proxy pools on the internet.</span>
-				   </span>
-				 </h3> 
-			   </div> 
-			   <div>
-				  <h3>Bandwidth Meter</h3>
-			   </div> 
-			   <div>
-				  <h3>Instant Delivery</h3>
-			   </div> 
-			   <div>
-				 <h3>City/State IPs
-				   <span class="tooltip-container">
-			        <img src="/images/all-plans-info-icon.svg"/>
-			        <span class="tooltip">City/State IPs, The most flexible and cleanest proxy pools on the internet.</span>
-				   </span>
-				 </h3> 
-			   </div>	 
-			   <div>
-				  <h3>Network Connection</h3>
-			   </div> 	   
-			   <div>
-				  <h3>Sticky & Rotation Sessions</h3>
-			   </div> 
-			   <div>
-				 <h3>Bandwidth Rollover
-				   <span class="tooltip-container">
-			        <img src="/images/all-plans-info-icon.svg"/>
-			        <span class="tooltip">Bandwidth Rollover, The most flexible and cleanest proxy pools on the internet.</span>
-				   </span>
-				 </h3> 
-			   </div> 
-			   <div>
-				 <h3>IP Authorization
-				   <span class="tooltip-container">
-			        <img src="/images/all-plans-info-icon.svg"/>
-			        <span class="tooltip">IP Authorization, The most flexible and cleanest proxy pools on the internet.</span>
-				   </span>
-				 </h3> 
-			   </div> 	   
-			   <div>
-				  <h3>Dashboard Access</h3>
-			   </div>      
-			   <div>
-				  <h3>API Access</h3>
-			   </div>      
-			   <div>
-				  <h3>24/7 Support</h3>
-			   </div> 	     
-			   <div>
-				  <h3>Dedicated Account Manager</h3>
-			   </div> 
-		   </div> 
-	   <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 live_proxies_plan_table_sub_con2">
-         <div class="box"> 
-           <input type="radio" class="tab-toggle" name="tab-toggle-rotating" id="tab1" checked/>
-            <input type="radio" class="tab-toggle" name="tab-toggle-rotating" id="tab2"/>
-             <ul class="tab-list">
-               <li class="tab-item">
-		           <label class="tab-trigger" for="tab1"><h4>Metered</h4></label>
-               </li>
-               <li class="tab-item">
-                 <label class="tab-trigger" for="tab2"><h4>Unmetered</h4></label>
-               </li>
-             </ul> 
-           <div class="tab-container"> 
-            <div class="tab-content"> 
-		     <div class="live_proxies_plan_table_sub_con4 text-center">
-			   <div>
-				  <h1>RESIDENTIAL PROXIES<br/><span>ROTATING</span></h1>
-			   </div> 
-			   <div>
-				  <h2></h2>
-			   </div> 
-			   <div>
-				  <h4>Starts from</h4>
-				  <h5>$70<span>/Plan</span></h5>
-			   </div> 
-			   <div>
-				  <h3>US, CA, UK, RL</h3>
-			   </div>     
-			   <div>
-				  <h3>Metered</h3>
-			   </div> 		   
-			   <div>
-				  <h3><img src="/images/all-plans-checked-icon.svg"/></h3>
-			   </div> 	     
-			   <div>
-				  <span></span>
-			   </div> 	     
-			   <div>
-				  <h3>HTTP/S</h3>
-			   </div> 	     
-			   <div>
-				  <h3><img src="/images/all-plans-checked-icon.svg"/></h3>
-			   </div> 	     
-			   <div>
-				  <h3><img src="/images/all-plans-checked-icon.svg"/></h3>
-			   </div> 	     
-			   <div>
-				  <h3>Optional</h3>
-			   </div> 	     
-			   <div>
-				  <h3><img src="/images/all-plans-checked-icon.svg"/></h3>
-			   </div> 	     
-			   <div>
-				  <span></span>
-			   </div> 	     
-			   <div>
-				  <h3><img src="/images/all-plans-checked-icon.svg"/></h3>
-			   </div> 		   		     
-			   <div>
-				  <span></span>
-			   </div> 		   		     
-			   <div>
-				   <button type="button"><Link href="/sign-up.html">Get Started</Link></button>
-			   </div> 
-		   </div> 
-	    </div> 
-        <div class="tab-content">
-		   <div class="live_proxies_plan_table_sub_con4 text-center"> 
-			   <div>
-				  <h1>RESIDENTIAL PROXIES<br/><span>ROTATING</span></h1>
-			   </div> 
-			   <div>
-				  <h2></h2>
-			   </div> 
-			   <div>
-				  <h4>Starts from</h4>
-				  <h5>$106<span>/Plan</span></h5>
-			   </div> 
-			   <div>
-				  <h3>US, RL</h3>
-			   </div>      
-			   <div>
-				  <h3>Unmetered</h3>
-			   </div> 		   
-			   <div>
-				  <h3><img src="/images/all-plans-checked-icon.svg"/></h3>
-			   </div> 	     
-			   <div>
-				  <span></span>
-			   </div> 	     
-			   <div>
-				  <h3>HTTP/S</h3>
-			   </div> 		     
-			   <div>
-				  <h3><img src="/images/all-plans-checked-icon.svg"/></h3>
-			   </div> 	     
-			   <div>
-				  <h3><img src="/images/all-plans-checked-icon.svg"/></h3>
-			   </div> 		     
-			   <div>
-				  <h3>Required</h3>
-			   </div> 		     
-			   <div>
-				  <h3><img src="/images/all-plans-checked-icon.svg"/></h3>
-			   </div>  		     
-			   <div>
-				  <span></span>
-			   </div> 		     
-			   <div>
-				  <h3><img src="/images/all-plans-checked-icon.svg"/></h3>
-			   </div> 			   		     
-			   <div>
-				  <span></span>
-			   </div> 			   		     
-			   <div>
-				   <button type="button"><Link href="/sign-up.html">Get Started</Link></button>
-			   </div>   
-		     </div> 
-	        </div>  	
-          </div> 
-        </div>
-	  </div> 
-	<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 live_proxies_plan_table_sub_con3">
-      <div class="box">   
-        <input type="radio" class="tab-toggle" name="tab-toggle-static" id="tab3" checked/> 
-         <input type="radio" class="tab-toggle" name="tab-toggle-static" id="tab4" /> 
-           <ul class="tab-list">
-             <li class="tab-item">
-		       <label class="tab-trigger" for="tab3"><h4>Metered</h4></label>
-             </li>
-             <li class="tab-item">
-               <label class="tab-trigger" for="tab4"><h4>Unmetered</h4></label>
-             </li>
-           </ul> 
-       <div class="tab-container"> 
-         <div class="tab-content"> 
-		   <div class="live_proxies_plan_table_sub_con4 text-center"> 
-			   <div>
-				  <h1>RESIDENTIAL PROXIES<br/><span>STATIC</span></h1>
-			   </div> 
-			   <div>
-				  <h2></h2>
-			   </div> 
-			   <div>
-				  <h4>Starts from</h4>
-				  <h5>$82<span>/Plan</span></h5>
-			   </div> 
-			   <div>
-				  <h3>US, CA, UK, RL</h3>
-			   </div>   
-			   <div>
-				  <h3>Metered</h3>
-			   </div>		   
-			   <div>
-				  <h3><img src="/images/all-plans-checked-icon.svg"/></h3>
-			   </div>    
-			   <div>
-				  <span></span>
-			   </div>		     
-			   <div>
-				  <h3>HTTP/S</h3>
-			   </div>	      
-			   <div>
-				  <h3><img src="/images/all-plans-checked-icon.svg"/></h3>
-			   </div> 	     
-			   <div>
-				  <h3><img src="/images/all-plans-checked-icon.svg"/></h3>
-			   </div> 	     
-			   <div>
-				  <h3>Optional</h3>
-			   </div> 	     
-			   <div>
-				  <h3><img src="/images/all-plans-checked-icon.svg"/></h3>
-			   </div> 		     
-			   <div>
-				  <span></span>
-			   </div> 	     
-			   <div>
-				  <h3><img src="/images/all-plans-checked-icon.svg"/></h3>
-			   </div> 			   		     
-			   <div>
-				  <span></span>
-			   </div> 			   		     
-			   <div>
-				   <button type="button"><Link href="/sign-up.html">Get Started</Link></button>
-			   </div>   
-		    </div> 
-	      </div> 
-        <div class="tab-content">
-		   <div class="live_proxies_plan_table_sub_con4 text-center">
-			   <div>
-				  <h1>RESIDENTIAL PROXIES<br/><span>STATIC</span></h1>
-			   </div> 
-			   <div>
-				  <h2></h2>
-			   </div> 
-			   <div>
-				  <h4>Starts from</h4>
-				  <h5>$55<span>/Plan</span></h5>
-			   </div> 
-			   <div>
-				  <h3>US</h3>
-			   </div>      
-			   <div>
-				  <h3>Unmetered</h3>
-			   </div> 			   
-			   <div>
-				  <h3><img src="/images/all-plans-checked-icon.svg"/></h3>
-			   </div> 		     
-			   <div>
-				  <span></span>
-			   </div> 		     
-			   <div>
-				  <h3>HTTP/S</h3>
-			   </div> 		     
-			   <div>
-				  <h3><img src="/images/all-plans-checked-icon.svg"/></h3>
-			   </div> 	     
-			   <div>
-				  <span></span>
-			   </div> 		     
-			   <div>
-				  <h3>Required</h3>
-			   </div> 		     
-			   <div>
-				  <h3><img src="/images/all-plans-checked-icon.svg"/></h3>
-			   </div> 		     
-			   <div>
-				  <span></span>
-			   </div> 		     
-			   <div>
-				  <h3><img src="/images/all-plans-checked-icon.svg"/></h3>
-			   </div>  			   		     
-			   <div>
-				  <span></span>
-			   </div> 			   		     
-			   <div>
-				   <button type="button"><Link href="/#!">Get Started</Link></button>
-			   </div>  
-		     </div> 
-	       </div>  
-         </div> 
-       </div>  
-	 </div> 
-     <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 live_proxies_plan_table_sub_con4 text-center"> 
-		<div>
-		  <h1>MOBILE PROXIES<br/><span>ROTATING</span></h1>
-		</div>     
-		<div>
-		  <h2>Metered</h2>
-		</div>  
-		<div>
-		<h4>Starts from</h4>
-		  <h5>$90<span>/Plan</span></h5>
-		</div>     
-		<div>
-		  <h3>US, CA, UK, RL</h3>
-		</div>    		     
-		<div>
-		  <h3>Metered</h3>
-		</div> 	   			   
-		<div>
-		  <h3><img src="/images/all-plans-checked-icon.svg"/></h3>
-		</div>    		     
-		<div>
-		  <span></span>
-		</div> 	   		     
-		<div>
-		  <h3>HTTP/S</h3>
-		</div>		 	   		     
-		<div>
-		  <h3><img src="/images/all-plans-checked-icon.svg"/></h3>
-		</div> 	   		     
-		<div>
-		  <h3><img src="/images/all-plans-checked-icon.svg"/></h3>
-		</div> 	   		     
-		<div>
-		  <h3>Optional</h3>
-		</div> 	   		     
-		<div>
-		  <h3><img src="/images/all-plans-checked-icon.svg"/></h3>
-		</div> 	   		     
-		<div>
-		  <span></span>
-		</div> 	   		     
-		<div>
-		  <h3><img src="/images/all-plans-checked-icon.svg"/></h3>
-		</div> 	   			   		     
-		<div>
-		  <span></span>
-		</div> 	   			   		     
-		<div>
-		  <button type="button"><Link href="/#!">Get Started</Link></button>
-		</div>    
-	 </div>
-	 <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 live_proxies_plan_table_sub_con5 text-center">
-		<div>
-		  <h1>ALL IN ONE<br/><span>CUSTOM SOLUTION</span></h1>
-		</div> 
-		<div>
-		  <h2>Custom</h2>
-		</div> 
-		<div>
-		  <h4>Starts from</h4>
-		  <h5>$5K<span>/Month</span></h5>
-		</div> 
-		<div>
-		  <h3>US, CA, UK, RL</h3>
-		</div>      
-		<div>
-		  <h3>Optional</h3>
-		</div> 			   
-		<div>
-		  <h3><img src="/images/all-plans-checked-icon.svg"/></h3>
-		</div> 		     
-		<div>
-		  <h3><img src="/images/all-plans-checked-icon.svg"/></h3>
-		</div> 		     
-		<div>
-		  <h3>HTTP/S</h3>
-		</div> 		     
-		<div>
-		  <h3><img src="/images/all-plans-checked-icon.svg"/></h3>
-		</div> 		     
-		<div>
-		  <span></span>
-		</div> 		     
-		<div>
-		  <h3>Optional</h3>
-		</div> 		     
-		<div>
-		  <h3><img src="/images/all-plans-checked-icon.svg"/></h3>
-		</div>  		     
-		<div>
-		  <h3><img src="/images/all-plans-checked-icon.svg"/></h3>
-		</div>  		     
-		<div>
-	      <h3><img src="/images/all-plans-checked-icon.svg"/></h3>
-	    </div> 			   		     
-		<div>
-		  <h3><img src="/images/all-plans-checked-icon.svg"/></h3>
-		</div> 			   		     
-		<div>
-		  <button type="button"><Link href="/contact-us.html">Contact Us</Link></button>
-		</div> 
-	  </div>
-	 </div>
-    </div>
-   </div>
- </section>	    
-	      
- <section>
-    <div class="we_combined_the_main_con text-center">
-	  <div class="container we_combined_the_con">  
-		<h2>Get the results you need with a <span>solution</span> you can trust</h2> 
-        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 we_combined_the_sub_con1">
-          <img src="/images/we-combined-the-quality-dedicated-i-ps.svg"/>
-          <h4>Dedicated IPs</h4>
-          <h5>100% Private</h5> 
-        </div>
-        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 we_combined_the_sub_con2">
-          <img src="/images/we-combined-the-quality-uptime.svg"/>
-          <h4>High Uptime</h4>
-          <h5>Proven Experience</h5> 
-        </div>
-        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 we_combined_the_sub_con3">
-          <img src="/images/we-combined-the-quality-unlimited.svg"/>
-          <h4>No Concurrency Limit</h4>
-          <h5>Unlimited Threads</h5> 
-        </div>  
-        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 we_combined_the_sub_con4">
-          <img src="/images/we-combined-the-quality-happy.svg"/>
-          <h4>10,000+</h4>
-          <h5>Happy Users</h5> 
-        </div>
-	  </div>	
-     <div class="gallery">
-	   <span>
-	     <img src="/images/we-combined-the-quality-target-logo.svg"/>
-       </span>
-	   <span>
-	     <img src="/images/we-combined-the-quality-ebay-logo.svg"/>
-       </span>
-	   <span>
-	     <img src="/images/we-combined-the-quality-snkrs-mobile-logo.svg"/>
-       </span>
-	   <span>
-	     <img src="/images/we-combined-the-quality-ticket-master-logo.svg"/>
-       </span>
-	   <span>
-	     <img src="/images/we-combined-the-quality-amazon-logo.svg"/>
-       </span>
-	   <span>
-	     <img src="/images/we-combined-the-quality-foot-locker-logo.svg"/>
-       </span>
-	   <span>
-	     <img src="/images/we-combined-the-quality-supreme-logo.svg"/>
-       </span>
-	   <span>
-	     <img src="/images/we-combined-the-quality-facebook-logo.svg"/>
-       </span>
-     </div>	
-     <div class="galleryleft">
-	   <span>
-	     <img src="/images/we-combined-the-quality-live-nation-logo.svg"/>
-       </span>
-	   <span>
-	     <img src="/images/we-combined-the-quality-twitch-logo.svg"/>
-       </span>
-	   <span>
-	     <img src="/images/we-combined-the-quality-linkedin-logo.svg"/>
-       </span>
-	   <span>
-	     <img src="/images/we-combined-the-quality-walmart-logo.svg"/>
-       </span>
-	   <span>
-	     <img src="/images/we-combined-the-quality-youtube-logo.svg"/>
-       </span>
-	   <span>
-	     <img src="/images/we-combined-the-quality-google-logo.svg"/>
-       </span>
-	   <span>
-	     <img src="/images/we-combined-the-quality-shopify-logo.svg"/>
-       </span>
-	   <span>
-	     <img src="/images/we-combined-the-quality-craigslist-logo.svg"/>
-       </span>
-     </div>	 
-	</div> 
-  </section>
-	   
-  <section>
-	<div class="simple_manage_dash_main_con text-center">
-	  <div class="container simple_manage_dash_con">
-        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 simple_manage_dash_sub_con1">
-          <h2>Simple management <span>dashboard</span></h2>
-          <h3>Get access to your private proxies and view your proxy analytics with ease.</h3>
-	      <Link href="http://hifech.com.ng/dashboard/">Enter dashboard<img src="/images/simple-management-dashbaord-arrow-up-right.svg"/></Link> 
-        </div>
-	    
-        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 simple_manage_dash_sub_con2">
-		   <div></div>
-		</div>
-	  </div>
-	</div>
- </section>
-	   
- <section>
-  <div class="container use_with_your_fav_apps_rotmenucontainer">
-   <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 use_with_your_fav_apps_rotmenucontainer_sub_con1"> 
-	  <div class="use_with_your_fav_apps_rotmenucontainer_sub_inner_con1">
-    <div class="use_with_your_fav_apps_allrotate">
-      <div class="use_with_your_fav_apps_new_service11 use_with_your_fav_apps_service1 use_with_your_fav_apps_service">
-        <div class="use_with_your_fav_apps_counterrotate">
-          <img src="/images/use-with-your-apps-vite-logo.png"/>
-        </div>
-      </div>
-      <div class="use_with_your_fav_apps_service1 use_with_your_fav_apps_service1 use_with_your_fav_apps_service">
-        <div class="use_with_your_fav_apps_counterrotate">
-          <img src="/images/use-with-your-apps-maxresdefault-logo.png"/>
-        </div>
-      </div>
-      <div class="use_with_your_fav_apps_new_service12 use_with_your_fav_apps_service1 use_with_your_fav_apps_service">
-        <div class="use_with_your_fav_apps_counterrotate">
-          <img src="/images/use-with-your-apps-fly-cli-logo.png"/>
-        </div>
-      </div>
-      <div class="use_with_your_fav_apps_service2 use_with_your_fav_apps_service">
-        <div class="use_with_your_fav_apps_counterrotate">
-          <img src="/images/use-with-your-apps-selenium-logo.svg"/>
-        </div>
-      </div>		
-      <div class="use_with_your_fav_apps_new_service23 use_with_your_fav_apps_service2 use_with_your_fav_apps_service">
-        <div class="use_with_your_fav_apps_counterrotate">
-          <img src="/images/use-with-your-apps-valoraio-logo.png"/>
-        </div>
-      </div>		
-      <div class="use_with_your_fav_apps_service4 use_with_your_fav_apps_service">
-        <div class="use_with_your_fav_apps_counterrotate">
-          <img src="/images/use-with-your-apps-wrath-bots-logo.svg"/>
-        </div>
-      </div>
-      <div class="use_with_your_fav_apps_service5 use_with_your_fav_apps_service">
-        <div class="use_with_your_fav_apps_counterrotate">
-          <img src="/images/use-with-your-apps-puppeteer-logo.png"/>
-        </div>
-      </div>  
-    </div>		
-    <div class="use_with_your_fav_apps_first_inner_allrotate">
-      <div class="use_with_your_fav_apps_first_inner_service2 use_with_your_fav_apps_first_inner_service">
-        <div class="use_with_your_fav_apps_first_inner_counterrotate">
-          <img src="/images/use-with-your-apps-proxifier-logo.svg"/>
-        </div>
-      </div>
-      <div class="use_with_your_fav_apps_first_inner_service5 use_with_your_fav_apps_first_inner_service">
-        <div class="use_with_your_fav_apps_first_inner_counterrotate">
-          <img src="/images/use-with-your-apps-phantombuster-logo.png"/>
-        </div>
-      </div>  
-    </div>
-    <div class="use_with_your_fav_apps_second_inner_allrotate">
-      <div class="use_with_your_fav_apps_second_inner_service1 use_with_your_fav_apps_second_inner_service">
-        <div class="use_with_your_fav_apps_second_inner_counterrotate">
-          <img src="/images/use-with-your-apps-hayha-logo.svg"/>
-        </div>
-      </div>
-      <div class="use_with_your_fav_apps_second_inner_service2 use_with_your_fav_apps_second_inner_service">
-        <div class="use_with_your_fav_apps_second_inner_counterrotate">
-          <img src="/images/use-with-your-apps-insomniac-games-logo.svg"/>
-        </div>
-      </div>
-      <div class="use_with_your_fav_apps_second_inner_service5 use_with_your_fav_apps_second_inner_service">
-        <div class="use_with_your_fav_apps_second_inner_counterrotate">
-          <img src="/images/use-with-your-apps-aycd-logo.svg"/>
-        </div>
-      </div>
-    </div>		
-    <div class="use_with_your_fav_apps_third_inner_allrotate">  
-      <div class="use_with_your_fav_apps_third_inner_service1 use_with_your_fav_apps_third_inner_service">
-        <div class="use_with_your_fav_apps_third_inner_counterrotate">
-          <img src="/images/use-with-your-apps-1210-logo.png"/>
-        </div>
-      </div>
-      <div class="use_with_your_fav_apps_third_inner_service2 use_with_your_fav_apps_third_inner_service">
-        <div class="use_with_your_fav_apps_third_inner_counterrotate">
-          <img src="/images/use-with-your-apps-ads-power-logo.png"/>
-        </div>
-      </div>
-      <div class="use_with_your_fav_apps_third_inner_service4 use_with_your_fav_apps_third_inner_service">
-        <div class="use_with_your_fav_apps_third_inner_counterrotate">
-          <img src="/images/use-with-your-apps-multi-login-logo.svg"/>
-        </div>
-      </div>
-      <div class="use_with_your_fav_apps_third_inner_service5 use_with_your_fav_apps_third_inner_service">
-        <div class="use_with_your_fav_apps_third_inner_counterrotate">
-          <img src="/images/use-with-your-apps-ampify-logo.svg"/>
-        </div>
-      </div>
-    </div>		
-    <div class="use_with_your_fav_apps_fourth_inner_allrotate">  
-       <div class="use_with_your_fav_apps_fourth_inner_service1 use_with_your_fav_apps_fourth_inner_service">
-         <div class="use_with_your_fav_apps_fourth_inner_counterrotate">
-           <img src="/images/use-with-your-apps-logo.svg"/>
-         </div>
-       </div>
-     </div>
-	</div>
-   </div>
-   <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 use_with_your_fav_apps_rotmenucontainer_sub_con2">
-      <h2>Utilize your <span>favorite apps, bots</span> with Live</h2>
-      <h3>LiveProxies makes it easier to integrate your favorite applications seamless without a hassle. You can now enjoy apps with the best networking proxy.</h3>
-	  <Link href="/sign-up.html">Get started<img src="/images/simple-management-dashbaord-arrow-up-right.svg"/></Link>
-    </div>  
-   </div>
- </section>	   
-		   
- <Questions />
-
       <section>
-        <div class="get_your_live_today_main_con text-center">
-          <div class="container get_your_live_today_con">
-            <h2>
-              Get your <span>Live today</span>
-            </h2>
-            <h3>You simply won’t find a better solution.</h3>
-            <Link href="/sign-up.html">
-              Create your account
-            </Link>
+        <div class="top_use_cases_main_con top_use_cases_first_main_con container text-center">
+          <h2>
+            Top use <span>cases</span>
+          </h2>
+          <h3>
+            Scrape data anonymously and access content in any geo-location
+          </h3>
+          <div class="tile" id="tile-1">
+            <ul class="nav nav-tabs text-center nav-justified" role="tablist">
+              <li class="nav-item">
+                <Link
+                  class="nav-link top_use_cases_slider_selector_base case_trends_bigger_chart_stats_btn_selectors active"
+                  id="ecommerce-tab"
+                  data-toggle="tab"
+                  href="#ecommerce"
+                >
+                  eCommerce
+                </Link>
+              </li>
+              <li class="nav-item">
+                <Link
+                  class="nav-link top_use_cases_slider_selector_base case_trends_bigger_chart_stats_btn_selectors"
+                  id="smm-tab"
+                  data-toggle="tab"
+                  href="#smm"
+                >
+                  SMM
+                </Link>
+              </li>
+              <li class="nav-item">
+                <Link
+                  class="nav-link top_use_cases_slider_selector_base case_trends_bigger_chart_stats_btn_selectors"
+                  id="market_research-tab"
+                  data-toggle="tab"
+                  href="#market_research"
+                >
+                  Market Research
+                </Link>
+              </li>
+              <li class="nav-item top_use_cases_nft_icon">
+                <Link
+                  class="nav-link top_use_cases_slider_selector_base case_trends_bigger_chart_stats_btn_selectors"
+                  id="esports-tab"
+                  data-toggle="tab"
+                  href="#nft"
+                >
+                  NFT
+                </Link>
+              </li>
+              <li class="nav-item">
+                <Link
+                  class="nav-link top_use_cases_slider_selector_base case_trends_bigger_chart_stats_btn_selectors"
+                  id="esports-tab"
+                  data-toggle="tab"
+                  href="#esports"
+                >
+                  Gaming
+                </Link>
+              </li>
+              <li class="nav-item">
+                <Link
+                  class="nav-link top_use_cases_slider_selector_base case_trends_bigger_chart_stats_btn_selectors"
+                  id="seoserp-tab"
+                  data-toggle="tab"
+                  href="#seoserp"
+                >
+                  SEO/SERP
+                </Link>
+              </li>
+              <li class="nav-item">
+                <Link
+                  class="nav-link top_use_cases_slider_selector_base case_trends_bigger_chart_stats_btn_selectors"
+                  id="adtech-tab"
+                  data-toggle="tab"
+                  href="#addtech"
+                >
+                  AdTech
+                </Link>
+              </li>
+              <div class="top_use_cases_slider"></div>
+            </ul>
+            <div class="tab-content text-center">
+              <div class="tab-pane active" id="ecommerce">
+                <div class="container top_use_content_con">
+                  <div class="top_use_content_img_con col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <div></div>
+                  </div>
+                  <div class="ecommerce_inner_slider">
+                    <div class="slide">
+                      <img src="/images/top-use-cases-e-maps-img-clothes-and-sneakers.svg" />
+                    </div>
+                    <div class="slide">
+                      <img src="/images/top-use-cases-e-maps-img-computer.svg" />
+                    </div>
+                    <div class="slide">
+                      <img src="/images/top-use-cases-e-maps-img-basket-ball-cards.svg" />
+                    </div>
+                  </div>
+                  <div class="top_use_content_text_con col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                    <h2>Outshine the competitors with web data</h2>
+                    <h4>
+                      Optimize your pricing strategy and manage your inventory
+                      efficiently by acquiring valuable insights on your
+                      competition, products, and markets. Automate tasks and
+                      streamline operations to save time and minimize resources.
+                    </h4>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="smm">
+                <div class="container top_use_content_con">
+                  <div class="top_use_content_img_con col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <div></div>
+                  </div>
+                  <div class="top_use_content_text_con col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                    <h2>
+                      The highest quality media proxies for all your needs
+                    </h2>
+                    <h4>
+                      Unlock the full potential of your social media strategy by
+                      staying on top of trends and knowing what your customers
+                      and audiences want. Enhance your data collection and
+                      social listening capabilities to stay ahead of the
+                      competition and reach new markets.
+                    </h4>
+                    <div>
+                      <li>
+                        <Link href="/#!"></Link>
+                      </li>
+                      <li>
+                        <Link href="/#!"></Link>
+                      </li>
+                      <li>
+                        <Link href="/#!"></Link>
+                      </li>
+                      <li>
+                        <Link href="/#!"></Link>
+                      </li>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="market_research">
+                <div class="container top_use_content_con">
+                  <div class="top_use_content_img_con col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <div></div>
+                  </div>
+                  <div class="top_use_content_text_con col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                    <h2>Increase and speed up your research</h2>
+                    <h4>
+                      Unlock global market insights, bypass IP restrictions, and
+                      predict trends by swiftly gathering data with Live
+                      Proxies. With a comprehensive market research, you can
+                      know your customers and target audience better helping you
+                      stay ahead of the competition.
+                    </h4>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="nft">
+                <div class="container top_use_content_con">
+                  <div class="top_use_content_img_con col-lg-3 col-md-4 col-sm-4 col-xs-12">
+                    <div></div>
+                  </div>
+                  <div class="top_use_content_text_con col-lg-9 col-md-8 col-sm-8 col-xs-12">
+                    <h2>Increase your chance of buying the NFT you want</h2>
+                    <h4>
+                      Get past strict proxy restrictions and automate your NFT
+                      tasks from creating multiple accounts to going for limited
+                      releases. Furthermore, effortlessly scrape data to collect
+                      information on NFT prices, sales, and trends, as well as
+                      monitor NFTs.
+                    </h4>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="esports">
+                <div class="container top_use_content_con">
+                  <div class="top_use_content_img_con col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <div></div>
+                  </div>
+                  <div class="top_use_content_text_con col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                    <h2>Create multiple accounts & unlock games</h2>
+                    <h4>
+                      Enhance your gaming experience by bypassing geographical
+                      restrictions and IP blocks while on an anonymous
+                      connection. Advance in your game by completing all game
+                      levels and using your software with our proxies to keep
+                      your account protected.
+                    </h4>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="seoserp">
+                <div class="container top_use_content_con">
+                  <div class="top_use_content_img_con col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <div></div>
+                  </div>
+                  <div class="top_use_content_text_con col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                    <h2>Easy handle of everyday search optimization</h2>
+                    <h4>
+                      Scrape SERP and build backlinks to conduct keyword
+                      research, gather rankings data, and analyze competition
+                      and consumer trends. Additionally, avoid bans and search
+                      keywords from different geographical locations to help
+                      reach the right audience.
+                    </h4>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="addtech">
+                <div class="container top_use_content_con">
+                  <div class="top_use_content_img_con col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <div></div>
+                  </div>
+                  <div class="top_use_content_text_con col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                    <h2>Maximize every ads dollar for AdTech</h2>
+                    <h4>
+                      Verify your ads meet your expectations and are clear of
+                      fraudulent or harmful activity without getting detected to
+                      help protect your brand image. Maximize your ad campaigns
+                      by easily testing and monitoring them with no issues.
+                    </h4>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
+
+      <section>
+        <div class="honest_price_no_surprises_main_con">
+          <div class="container">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 honest_price_no_surprises_main_text_con">
+              <div class="honest_price_no_surprises_main_text_inner_con">
+                <Link href="/#!">
+                  <img src="/images/honest-price-what-we-offer-trust-pilot-icon.svg" />
+                </Link>
+                <h2>
+                  <span>Trusted Service</span> with full transparency
+                </h2>
+                <h4>
+                  Our provision has proven itself to thousands of satisfied
+                  users, and your account will inform you with all necessary
+                  details about your proxies at no additional cost.
+                </h4>
+                <Link href="/sign-up.html">Create your account</Link>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 honest_price_no_surprises_main_img_con">
+              <div class="sliderContainer">
+                <div class="progress_bar_main_con">
+                  <h1>What we offer</h1>
+                  <h2>
+                    With a variety of options, select the plan that best suits
+                    your needs
+                  </h2>
+                  <div class="progressBarContainer">
+                    <div>
+                      <h3>Residential</h3>
+                      <h4>Rotating</h4>
+                      <span data-slick-index="0" class="progressBar"></span>
+                    </div>
+                    <div>
+                      <h3>Residential</h3>
+                      <h4>Static</h4>
+                      <span data-slick-index="1" class="progressBar"></span>
+                    </div>
+                    <div>
+                      <h3>Mobile</h3>
+                      <h4>Rotating</h4>
+                      <span data-slick-index="2" class="progressBar"></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="slider single-item">
+                  <div class="slide1">
+                    <div class="what_we_offer_meter_unmeter_con top_use_cases_main_con container text-center">
+                      <div class="tile" id="tile-1">
+                        <ul
+                          class="nav metered_resid_rotate_nav-tabs metered_unmetered_nav-tabs text-center nav-justified"
+                          role="tablist"
+                        >
+                          <li class="nav-item">
+                            <Link
+                              class="nav-link case_trends_bigger_chart_stats_btn_selectors active"
+                              id="metered-tab"
+                              data-toggle="tab"
+                              href="#metered"
+                            >
+                              Metered
+                            </Link>
+                          </li>
+                          <li class="nav-item">
+                            <Link
+                              class="nav-link case_trends_bigger_chart_stats_btn_selectors"
+                              id="unmetered-tab"
+                              data-toggle="tab"
+                              href="#unmetered"
+                            >
+                              Unmetered
+                            </Link>
+                          </li>
+                          <div class="top_use_cases_slider"></div>
+                        </ul>
+                        <div class="tab-content text-center">
+                          <div class="tab-pane active" id="metered">
+                            <div class="container top_use_content_con">
+                              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-3 what_we_offer_meter_unmeter_flag_con">
+                                <img src="/images/honest-price-what-we-offer-us-icon.svg" />
+                                <h2>United States</h2>
+                                <h6>State proxies offered separately</h6>
+                              </div>
+                              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-9 what_we_offer_meter_unmeter_price_con">
+                                <h3>Starts from</h3>
+                                <h4>$70.00</h4>
+                                <h5>per plan</h5>
+                              </div>
+                              <span></span>
+                              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-3 what_we_offer_meter_unmeter_flag_con">
+                                <img src="/images/honest-price-what-we-offer-ca-icon.svg" />
+                                <h2>Canada</h2>
+                              </div>
+                              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-9 what_we_offer_meter_unmeter_price_con">
+                                <h3>Starts from</h3>
+                                <h4>$70.00</h4>
+                                <h5>per plan</h5>
+                              </div>
+                              <span></span>
+                              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-3 what_we_offer_meter_unmeter_flag_con">
+                                <img src="/images/honest-price-what-we-offer-gb-icon.svg" />
+                                <h2>United Kingdom</h2>
+                              </div>
+                              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-9 what_we_offer_meter_unmeter_price_con">
+                                <h3>Starts from</h3>
+                                <h4>$70.00</h4>
+                                <h5>per plan</h5>
+                              </div>
+                              <span></span>
+                              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-3 what_we_offer_meter_unmeter_flag_con">
+                                <img src="/images/honest-price-what-we-offer-ww-icon.svg" />
+                                <h2>Random Location</h2>
+                              </div>
+                              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-9 what_we_offer_meter_unmeter_price_con">
+                                <h3>Starts from</h3>
+                                <h4>$70.00</h4>
+                                <h5>per plan</h5>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="tab-pane fade" id="unmetered">
+                            <div class="container top_use_content_con">
+                              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-3 what_we_offer_meter_unmeter_flag_con">
+                                <img src="/images/honest-price-what-we-offer-us-icon.svg" />
+                                <h2>United States</h2>
+                                <h6>State proxies offered separately</h6>
+                              </div>
+                              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-9 what_we_offer_meter_unmeter_price_con">
+                                <h3>Starts from</h3>
+                                <h4>$120.00</h4>
+                                <h5>per plan</h5>
+                              </div>
+                              <span></span>
+                              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-3 what_we_offer_meter_unmeter_flag_con">
+                                <img src="/images/honest-price-what-we-offer-ca-icon.svg" />
+                                <h2>Canada</h2>
+                              </div>
+                              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-9 what_we_offer_meter_unmeter_price_con">
+                                <h3>Starts from</h3>
+                                <h4>$120.00</h4>
+                                <h5>per plan</h5>
+                              </div>
+                              <span></span>
+                              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-3 what_we_offer_meter_unmeter_flag_con">
+                                <img src="/images/honest-price-what-we-offer-gb-icon.svg" />
+                                <h2>United Kingdom</h2>
+                              </div>
+                              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-9 what_we_offer_meter_unmeter_price_con">
+                                <h3>Starts from</h3>
+                                <h4>$120.00</h4>
+                                <h5>per plan</h5>
+                              </div>
+                              <span></span>
+                              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-3 what_we_offer_meter_unmeter_flag_con">
+                                <img src="/images/honest-price-what-we-offer-ww-icon.svg" />
+                                <h2>Random Location</h2>
+                              </div>
+                              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-9 what_we_offer_meter_unmeter_price_con">
+                                <h3>Starts from</h3>
+                                <h4>$120.00</h4>
+                                <h5>per plan</h5>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slide2">
+                    <div class="what_we_offer_meter_unmeter_con top_use_cases_main_con container text-center">
+                      <div class="tile" id="tile-1">
+                        <ul
+                          class="nav metered_resid_static_nav-tabs metered_unmetered_nav-tabs text-center nav-justified"
+                          role="tablist"
+                        >
+                          <li class="nav-item">
+                            <Link
+                              class="nav-link active"
+                              id="metered-tab"
+                              data-toggle="tab"
+                              href="#metered_resid_static"
+                            >
+                              Metered
+                            </Link>
+                          </li>
+                          <li class="nav-item">
+                            <Link
+                              class="nav-link"
+                              id="unmetered-tab"
+                              data-toggle="tab"
+                              href="#unmetered_resid_static"
+                            >
+                              Unmetered
+                            </Link>
+                          </li>
+                          <div class="top_use_cases_slider"></div>
+                        </ul>
+                        <div class="tab-content text-center">
+                          <div
+                            class="tab-pane active"
+                            id="metered_resid_static"
+                          >
+                            <div class="container top_use_content_con">
+                              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-3 what_we_offer_meter_unmeter_flag_con">
+                                <img src="/images/honest-price-what-we-offer-us-icon.svg" />
+                                <h2>United States</h2>
+                                <h6>State proxies offered separately</h6>
+                              </div>
+                              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-9 what_we_offer_meter_unmeter_price_con">
+                                <h3>Starts from</h3>
+                                <h4>$35.00</h4>
+                                <h5>per plan</h5>
+                              </div>
+                              <span></span>
+                              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-3 what_we_offer_meter_unmeter_flag_con">
+                                <img src="/images/honest-price-what-we-offer-ca-icon.svg" />
+                                <h2>Canada</h2>
+                              </div>
+                              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-9 what_we_offer_meter_unmeter_price_con">
+                                <h3>Starts from</h3>
+                                <h4>$35.00</h4>
+                                <h5>per plan</h5>
+                              </div>
+                              <span></span>
+                              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-3 what_we_offer_meter_unmeter_flag_con">
+                                <img src="/images/honest-price-what-we-offer-gb-icon.svg" />
+                                <h2>United Kingdom</h2>
+                              </div>
+                              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-9 what_we_offer_meter_unmeter_price_con">
+                                <h3>Starts from</h3>
+                                <h4>$35.00</h4>
+                                <h5>per plan</h5>
+                              </div>
+                              <span></span>
+                              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-3 what_we_offer_meter_unmeter_flag_con">
+                                <img src="/images/honest-price-what-we-offer-ww-icon.svg" />
+                                <h2>Random Location</h2>
+                              </div>
+                              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-9 what_we_offer_meter_unmeter_price_con">
+                                <h3>Starts from</h3>
+                                <h4>$35.00</h4>
+                                <h5>per plan</h5>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="tab-pane fade"
+                            id="unmetered_resid_static"
+                          >
+                            <div class="container top_use_content_con">
+                              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-3 what_we_offer_meter_unmeter_flag_con">
+                                <img src="/images/honest-price-what-we-offer-us-icon.svg" />
+                                <h2>United States</h2>
+                                <h6>State proxies offered separately</h6>
+                              </div>
+                              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-9 what_we_offer_meter_unmeter_price_con">
+                                <h3>Starts from</h3>
+                                <h4>$97.00</h4>
+                                <h5>per plan</h5>
+                              </div>
+                              <span></span>
+                              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-3 what_we_offer_meter_unmeter_flag_con">
+                                <img src="/images/honest-price-what-we-offer-ca-icon.svg" />
+                                <h2>Canada</h2>
+                              </div>
+                              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-9 what_we_offer_meter_unmeter_price_con">
+                                <h3>Starts from</h3>
+                                <h4>$97.00</h4>
+                                <h5>per plan</h5>
+                              </div>
+                              <span></span>
+                              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-3 what_we_offer_meter_unmeter_flag_con">
+                                <img src="/images/honest-price-what-we-offer-gb-icon.svg" />
+                                <h2>United Kingdom</h2>
+                              </div>
+                              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-9 what_we_offer_meter_unmeter_price_con">
+                                <h3>Starts from</h3>
+                                <h4>$97.00</h4>
+                                <h5>per plan</h5>
+                              </div>
+                              <span></span>
+                              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-3 what_we_offer_meter_unmeter_flag_con">
+                                <img src="/images/honest-price-what-we-offer-ww-icon.svg" />
+                                <h2>Random Location</h2>
+                              </div>
+                              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-9 what_we_offer_meter_unmeter_price_con">
+                                <h3>Starts from</h3>
+                                <h4>$97.00</h4>
+                                <h5>per plan</h5>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slide3">
+                    <div class="what_we_offer_meter_unmeter_con top_use_cases_main_con container text-center">
+                      <div class="tile" id="tile-1">
+                        <ul
+                          class="nav metered_mobile_rotat_nav-tabs metered_unmetered_nav-tabs text-center nav-justified"
+                          role="tablist"
+                        >
+                          <li class="nav-item">
+                            <Link
+                              class="nav-link active"
+                              id="metered-tab"
+                              data-toggle="tab"
+                              href="#metered_mobile_rotat"
+                            >
+                              Metered
+                            </Link>
+                          </li>
+                          <div class="top_use_cases_slider"></div>
+                        </ul>
+                        <div class="tab-content text-center">
+                          <div
+                            class="tab-pane active"
+                            id="metered_mobile_rotat"
+                          >
+                            <div class="container top_use_content_con">
+                              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-3 what_we_offer_meter_unmeter_flag_con">
+                                <img src="/images/honest-price-what-we-offer-us-icon.svg" />
+                                <h2>United States</h2>
+                                <h6>State proxies offered separately</h6>
+                              </div>
+                              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-9 what_we_offer_meter_unmeter_price_con">
+                                <h3>Starts from</h3>
+                                <h4>$62.00</h4>
+                                <h5>per plan</h5>
+                              </div>
+                              <span></span>
+                              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-3 what_we_offer_meter_unmeter_flag_con">
+                                <img src="/images/honest-price-what-we-offer-ca-icon.svg" />
+                                <h2>Canada</h2>
+                              </div>
+                              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-9 what_we_offer_meter_unmeter_price_con">
+                                <h3>Starts from</h3>
+                                <h4>$62.00</h4>
+                                <h5>per plan</h5>
+                              </div>
+                              <span></span>
+                              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-3 what_we_offer_meter_unmeter_flag_con">
+                                <img src="/images/honest-price-what-we-offer-gb-icon.svg" />
+                                <h2>United Kingdom</h2>
+                              </div>
+                              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-9 what_we_offer_meter_unmeter_price_con">
+                                <h3>Starts from</h3>
+                                <h4>$62.00</h4>
+                                <h5>per plan</h5>
+                              </div>
+                              <span></span>
+                              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-3 what_we_offer_meter_unmeter_flag_con">
+                                <img src="/images/honest-price-what-we-offer-ww-icon.svg" />
+                                <h2>Random Location</h2>
+                              </div>
+                              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-9 what_we_offer_meter_unmeter_price_con">
+                                <h3>Starts from</h3>
+                                <h4>$62.00</h4>
+                                <h5>per plan</h5>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <WhyLiveProxies />
+	  <Plans />
+      <GetSolutions />
+      <SimpleManagementDashboard />
+      <UtilizeFavouriteApp />
+      <Questions />
+      <LiveToday />
       <Footer />
     </>
   );

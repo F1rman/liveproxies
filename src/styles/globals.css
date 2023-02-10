@@ -2386,7 +2386,7 @@ padding: 0;
   padding: 0;
   cursor: pointer;
   margin-right: 5%;
-  float: left;
+  /* float: left; */
 }
 @media (max-width:499px){
 .honest_price_no_surprises_main_con .progressBarContainer div{
@@ -3835,10 +3835,15 @@ padding: 0;
   margin:0 0 25px 0; 
 }
 
-.we_combined_the_main_con .gallery span, .we_combined_the_main_con .galleryleft span{ 
+.we_combined_the_main_con .gallery ,
+ .we_combined_the_main_con .galleryleft {
+height: 80px;
+ }
+.we_combined_the_main_con .gallery .slick-slide,
+ .we_combined_the_main_con .galleryleft .slick-slide{ 
   position:relative;
   display:inline-table;
-  width: 160px!important;
+  width: 160px !important;
   height: 70px;
   margin-left:25px;
   -webkit-border-radius: 6px;
@@ -3854,7 +3859,8 @@ padding: 0;
   background-color: #fff;
 }
 
-.we_combined_the_main_con .gallery img, .galleryleft img{
+.we_combined_the_main_con .gallery img,
+ .we_combined_the_main_con .galleryleft img{
   position: absolute;
   margin: auto;
   top:0;
@@ -3862,10 +3868,17 @@ padding: 0;
   left:0;
   right:0;
 }
-
-.we_combined_the_main_con .galleryleft span{
-  float:right
+.we_combined_the_main_con .slick-list{
+    position: relative;
+    display: block;
+    overflow: visible;
+    margin: 0;
+    padding: 0;
 }
+
+/* .we_combined_the_main_con .galleryleft  .slick-slide {
+  float:right;
+} */
 
 /*===================END OF WE COMBINED THE QUALITY SECTION===================*/
 
