@@ -1,8 +1,14 @@
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function SideBar(props) {
+  const [not, setNot] = useState(true);
+  useEffect(() => {
+    if (props.tab == 2) {
+      setNot(false);
+    }
+  }, [props.tab]);
   return (
     <div className="sidebar col-lg-2 col-md-3 col-sm-3 col-xs-3">
       <Link href="/" className="logo"></Link>
@@ -14,10 +20,19 @@ export default function SideBar(props) {
             onClick={() => {
               props.setTab(0);
             }}
-            className={props.tab==0 ?"active show_live_servers_con":" show_live_servers_con"}
+            className={
+              props.tab == 0
+                ? "active show_live_servers_con"
+                : " show_live_servers_con"
+            }
           >
             <div className="dashboard_sidebar_icons_con1">
-              <Image alt="dashboard-overview-icon.svg" width={17} height={19} src="/images/dashboard-overview-icon.svg" />
+              <Image
+                alt="dashboard-overview-icon.svg"
+                width={17}
+                height={19}
+                src="/images/dashboard-overview-icon.svg"
+              />
             </div>
             <span className="links_name">Overview</span>
           </div>
@@ -27,11 +42,19 @@ export default function SideBar(props) {
             onClick={() => {
               props.setTab(1);
             }}
-            className={props.tab==1 ?"active hide_live_servers_con":" hide_live_servers_con"}
-
+            className={
+              props.tab == 1
+                ? "active hide_live_servers_con"
+                : " hide_live_servers_con"
+            }
           >
             <div className="dashboard_sidebar_icons_con2">
-              <Image alt="dashboard-order-history-icon.svg" width={18} height={20} src="/images/dashboard-order-history-icon.svg" />
+              <Image
+                alt="dashboard-order-history-icon.svg"
+                width={18}
+                height={20}
+                src="/images/dashboard-order-history-icon.svg"
+              />
             </div>
             <span className="links_name">Order History</span>
           </div>
@@ -41,12 +64,23 @@ export default function SideBar(props) {
             onClick={() => {
               props.setTab(2);
             }}
-            className={props.tab==2 ?"active hide_live_servers_con":" hide_live_servers_con"}
+            className={
+              props.tab == 2
+                ? "active hide_live_servers_con"
+                : " hide_live_servers_con"
+            }
           >
             <div className="dashboard_sidebar_icons_con3">
-              <Image alt="dashboard-notifications-icon.svg" width={18} height={20} src="/images/dashboard-notifications-icon.svg" />
+              <Image
+                alt="dashboard-notifications-icon.svg"
+                width={18}
+                height={20}
+                src="/images/dashboard-notifications-icon.svg"
+              />
             </div>
-            <span className="dashboard_sidebar_notifica_number_con">3</span>
+            {not && (
+              <span className="dashboard_sidebar_notifica_number_con">3</span>
+            )}
             <span className="links_name">Notifications</span>
           </div>
         </li>
@@ -58,10 +92,19 @@ export default function SideBar(props) {
             onClick={() => {
               props.setTab(3);
             }}
-            className={props.tab==3 ?"active hide_live_servers_con":" hide_live_servers_con"}
+            className={
+              props.tab == 3
+                ? "active hide_live_servers_con"
+                : " hide_live_servers_con"
+            }
           >
             <div className="dashboard_sidebar_icons_con4">
-              <Image alt="dashboard-usage-analytics-icon.svg" width={24} height={17} src="/images/dashboard-usage-analytics-icon.svg" />
+              <Image
+                alt="dashboard-usage-analytics-icon.svg"
+                width={24}
+                height={17}
+                src="/images/dashboard-usage-analytics-icon.svg"
+              />
             </div>
             <span className="links_name">Usage Analytics</span>
           </div>
@@ -71,20 +114,32 @@ export default function SideBar(props) {
             onClick={() => {
               props.setTab(4);
             }}
-            className={props.tab==4 ?"active hide_live_servers_con":" hide_live_servers_con"}
+            className={
+              props.tab == 4
+                ? "active hide_live_servers_con"
+                : " hide_live_servers_con"
+            }
           >
             <div className="dashboard_sidebar_icons_con5">
-              <Image alt="dashboard-ip-authorization-icon.svg" width={18} height={20} src="/images/dashboard-ip-authorization-icon.svg" />
+              <Image
+                alt="dashboard-ip-authorization-icon.svg"
+                width={18}
+                height={20}
+                src="/images/dashboard-ip-authorization-icon.svg"
+              />
             </div>
             <span className="links_name">IP Authorization</span>
           </div>
         </li>
         <li>
-          <div
-            className={"dashboard_support_con"}
-          >
+          <div className={"dashboard_support_con"}>
             <div className="dashboard_sidebar_icons_con6">
-              <Image alt="dashboard-support-icon.svg" width={18} height={18} src="/images/dashboard-support-icon.svg" />
+              <Image
+                alt="dashboard-support-icon.svg"
+                width={18}
+                height={18}
+                src="/images/dashboard-support-icon.svg"
+              />
             </div>
             <Link
               href="https://helpcenter.liveproxies.io/hc/en-us"
@@ -97,11 +152,16 @@ export default function SideBar(props) {
         <li>
           <div className="dashboard_logout_con">
             <div className="dashboard_sidebar_icons_con7">
-              <Image alt="" width={16} height={17} src="/images/dashboard-logout-icon.svg" />
+              <Image
+                alt=""
+                width={16}
+                height={17}
+                src="/images/dashboard-logout-icon.svg"
+              />
             </div>
-            <a href="/sign-in">
+            <Link href="/sign-in">
               <span className="links_name">Log Out</span>
-            </a>
+            </Link>
           </div>
         </li>
         <div className="dashboard_live_servers_con">

@@ -8148,7 +8148,7 @@ rotat_resid_prox_pric_page_wrapper .live_proxies_plan_table_main_con .live_proxi
 }
 
 .rotating_section .rotatings_wrapper .rotating_card .title.green {
-  color: #206ed8;
+  color: #14b0b4;
 }
 
 .rotating_section .rotatings_wrapper .rotating_card .subtitle { 
@@ -9049,19 +9049,19 @@ rotat_resid_prox_pric_page_wrapper .live_proxies_plan_table_main_con .live_proxi
   }
 
   .dashboard_page_wrapper #CHIFFRAGE {
-    display: none;
+    display: block;
   }
 
   .dashboard_page_wrapper #PLANNING {
-    display: none;
+    display: block;
   }
 
   .dashboard_page_wrapper #INDICATEURS {
-    display: none;
+    display: block;
   }
 
   .dashboard_page_wrapper #FACTURATION {
-    display: none;
+    display: block;
   }
 
   .dashboard_page_wrapper #DATABASE {
@@ -9592,7 +9592,7 @@ dashboard_page_wrapper .sidebar .nav-links li .active{
   opacity:1;
 }
 
-.dashboard_page_wrapper .sidebar .nav-links li .active span:before{
+.dashboard_page_wrapper .sidebar .nav-links li .active span.links_name:before{
   position: absolute;
   content: "";
   margin:-9px 0 0 0;
@@ -9604,7 +9604,7 @@ dashboard_page_wrapper .sidebar .nav-links li .active{
   visibility: visible;
 }
 @media (max-width:767px){
-.dashboard_page_wrapper .sidebar .nav-links li .active span:before{
+.dashboard_page_wrapper .sidebar .nav-links li .active span.links_name:before{
   right:-5px;
 }
 }

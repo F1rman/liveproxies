@@ -63,12 +63,12 @@ const [show,setShow] = useState(false);
                   className={!show?"password_eye_icon":'password_eye_icon password_canceled_eye_icon'}
                   id="password_eye"
                 ></span>
-                <a
+                <Link
                   href="/reset-password"
                   className="login_forgot_pass_text_con"
                 >
                   Forgot your password?
-                </a>
+                </Link>
                 <br />
                 <Link href="/#!" className="login_acct_btn">
                   <button type="submit">Log In</button>
@@ -83,7 +83,7 @@ const [show,setShow] = useState(false);
                 </Link>
                 <br />
                 <span>
-                  Don’t have an account yet? <a href="/sign-up">Sign Up</a>
+                  Don’t have an account yet? <Link href="/sign-up">Sign Up</Link>
                 </span>
               </form>
             </div>

@@ -33,10 +33,10 @@ export default function ContactUs() {
                 are dedicated to providing the best service and support to help
                 you achieve your goals.
               </h5>
-              <a href="/contact-sales-all-in-one">
+              <Link href="/contact-sales-all-in-one">
                 Contact sales{" "}
                 <img src="/images/contact-us-blue-arrow-up-right.svg" />
-              </a>
+              </Link>
             </div>
           </div>
         </section>

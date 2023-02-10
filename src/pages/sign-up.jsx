@@ -106,13 +106,13 @@ export default function SignUp() {
                   </a>
                   <br />
                   <span>
-                    Already have an account? <a href="/sign-in">Log In</a>
+                    Already have an account? <Link href="/sign-in">Log In</Link>
                   </span>
                 </form>
                 <h4>
                   By signing up you agree to the{" "}
-                  <a href="/contact-us">Terms of Service</a> and{" "}
-                  <a href="/custom-pricing">Privacy Policy</a>
+                  <Link href="/contact-us">Terms of Service</Link> and{" "}
+                  <Link href="/custom-pricing">Privacy Policy</Link>
                 </h4>
                 <Link href="/#!">
                   <h5>

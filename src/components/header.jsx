@@ -1,8 +1,9 @@
 import Link from "next/link";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import $ from "jquery";
 
 export default function Header() {
+  const [mobileMenu,openMobileMenu] = useState(false)
   useEffect(()=>{
     $('ul.navbar-nav li.dropdown').hover(function() {
       $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
@@ -154,9 +155,11 @@ export default function Header() {
           </div>
         </div>
         <div className="visible-xs mobile_menu">
-          <div className="proj-menu-collapsed">
+          <div className={mobileMenu ? "proj-menu-collapsed proj-menu-expanded":"proj-menu-collapsed "}>
             <div className="proj-bar">
-              <a className="proj-menu-toggle"></a>
+              <a className="proj-menu-toggle" onClick={()=>{
+                openMobileMenu(!mobileMenu)
+              }}></a>
             </div>
             <nav className="xsnavlist">
               <div className="mobile_view_list_con">

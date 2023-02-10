@@ -67,7 +67,7 @@ export default function ResetPassword() {
                   </a>
                   <br />
                   <h5>
-                    <a href="/sign-in">Log In</a>{" "}
+                    <Link href="/sign-in">Log In</Link>{" "}
                   </h5>
                 </form>
               </div>
