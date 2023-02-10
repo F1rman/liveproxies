@@ -2,22 +2,45 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import Slider from "react-slick";
 import $ from "jquery";
+import Image from "next/image";
 export default function TopUseCases() {
-    useEffect(()=>{
-    $('.nav-item ').each((i,e)=>{
-        $(e).off()
-        $(e).click(()=>{
-            console.log($(e).clientWidht)
-            $('.top_use_cases_slider').css({
-                left: $(e).position().left  + 20,
-                width: $(e).width()
-            })
-        })
-    },[])
-	  
+  const navBar = [
+    { imgA: "top-use-cases-e-commerce-active-icon",
+    img: "top-use-cases-e-commerce-icon", title: "eCommerce" },
+    { img: "top-use-cases-smm-icon", 
+    imgA: "top-use-cases-smm-active-icon",title: "SMM" },
+    {
+      imgA: "top-use-cases-market-research-active-icon",
+      img: "top-use-cases-market-research-icon",
+      title: "Market Research",
+    },
+    { imgA: "top-use-cases-nft-active-icon", img: "top-use-cases-nft-icon", title: "NFT" },
+    { img: "top-use-cases-esports-icon",imgA: "top-use-cases-esports-active-icon", title: "Gaming" },
+    { img: "top-use-cases-seoserp-icon",imgA: "top-use-cases-seoserp-active-icon", title: "SEO/SERP" },
+    { img: "top-use-cases-adtech-icon",imgA: "top-use-cases-adtech-active-icon", title: "AdTech" },
+  ];
+  useEffect(() => {
     
+    addSlideTopNavigation()
+    $(window).resize(function(){
+      addSlideTopNavigation()
     })
-    const [tab,setTab] = useState(0);
+   
+   
+    }, []);
+    function addSlideTopNavigation(){
+      $(".topNavigation li ").each((i, e) => {
+        $(e).off();
+        $(e).click(() => {
+          console.log($(e).clientWidht);
+          $(".topNavigation .line").css({
+            left: $(e).position().left ,
+            width: $(e).width(),
+          });
+        });
+    })
+    }
+  const [tab, setTab] = useState(0);
   var settings = {
     autoplay: true,
     autoplaySpeed: 3000,
@@ -35,14 +58,49 @@ export default function TopUseCases() {
           Top use <span>cases</span>
         </h2>
         <h3>Scrape data anonymously and access content in any geo-location</h3>
+
         <div className="tile" id="tile-1">
-          <ul className="nav nav-tabs text-center nav-justified" role="tablist">
-            <li className={tab==0?"nav-item active":'nav-item'}>
+          <ul className="topNavigation">
+          <div className="line"></div>
+            {navBar.map((e, i) => {
+              return (
+                <li
+                  onClick={() => {
+                    setTab(i);
+                  }}
+                  className={tab == i ? "active" : ""}
+                  key={e.title}
+                >
+                  <Image
+                    src={"/images/" + e.img + ".svg"}
+                    alt={e.title}
+                    width={30}
+                    height={20}
+                  />
+                  <div className="hover">
+                  <Image
+                    src={"/images/" + e.imgA + ".svg"}
+                    alt={e.title}
+                    width={30}
+                    height={20}
+                  />
+                  </div>
+                  {e.title}
+                </li>
+              );
+            })}
+          </ul>
+          {/* <ul className="nav nav-tabs text-center nav-justified" role="tablist">
+            <li className={tab == 0 ? "nav-item active" : "nav-item"}>
               <a
-              onClick={()=>{
-                setTab(0)
-              }}
-                className={tab == 0? "nav-link top_use_cases_slider_selector_base case_trends_bigger_chart_stats_btn_selectors active":"nav-link top_use_cases_slider_selector_base case_trends_bigger_chart_stats_btn_selectors "}
+                onClick={() => {
+                  setTab(0);
+                }}
+                className={
+                  tab == 0
+                    ? "nav-link top_use_cases_slider_selector_base case_trends_bigger_chart_stats_btn_selectors active"
+                    : "nav-link top_use_cases_slider_selector_base case_trends_bigger_chart_stats_btn_selectors "
+                }
                 id="ecommerce-tab"
                 data-toggle="tab"
                 href="javascript:void(0)"
@@ -50,12 +108,16 @@ export default function TopUseCases() {
                 eCommerce
               </a>
             </li>
-            <li className={tab==1?"nav-item active":'nav-item'}>
+            <li className={tab == 1 ? "nav-item active" : "nav-item"}>
               <a
-                onClick={()=>{
-                setTab(1)
-              }}
-                className={tab == 1? "nav-link top_use_cases_slider_selector_base case_trends_bigger_chart_stats_btn_selectors active":"nav-link top_use_cases_slider_selector_base case_trends_bigger_chart_stats_btn_selectors "}
+                onClick={() => {
+                  setTab(1);
+                }}
+                className={
+                  tab == 1
+                    ? "nav-link top_use_cases_slider_selector_base case_trends_bigger_chart_stats_btn_selectors active"
+                    : "nav-link top_use_cases_slider_selector_base case_trends_bigger_chart_stats_btn_selectors "
+                }
                 id="smm-tab"
                 data-toggle="tab"
                 href="javascript:void(0)"
@@ -63,12 +125,16 @@ export default function TopUseCases() {
                 SMM
               </a>
             </li>
-            <li className={tab==2?"nav-item active":'nav-item'}>
+            <li className={tab == 2 ? "nav-item active" : "nav-item"}>
               <a
-               onClick={()=>{
-                setTab(2)
-              }}
-                className={tab == 2? "nav-link top_use_cases_slider_selector_base case_trends_bigger_chart_stats_btn_selectors active":"nav-link top_use_cases_slider_selector_base case_trends_bigger_chart_stats_btn_selectors "}
+                onClick={() => {
+                  setTab(2);
+                }}
+                className={
+                  tab == 2
+                    ? "nav-link top_use_cases_slider_selector_base case_trends_bigger_chart_stats_btn_selectors active"
+                    : "nav-link top_use_cases_slider_selector_base case_trends_bigger_chart_stats_btn_selectors "
+                }
                 id="market_research-tab"
                 data-toggle="tab"
                 href="javascript:void(0)"
@@ -76,12 +142,22 @@ export default function TopUseCases() {
                 Market Research
               </a>
             </li>
-            <li className={tab==3?"nav-item top_use_cases_nft_icon active":'nav-item top_use_cases_nft_icon'}>
+            <li
+              className={
+                tab == 3
+                  ? "nav-item top_use_cases_nft_icon active"
+                  : "nav-item top_use_cases_nft_icon"
+              }
+            >
               <a
-               onClick={()=>{
-                setTab(3)
-              }}
-                className={tab == 3? "nav-link top_use_cases_slider_selector_base case_trends_bigger_chart_stats_btn_selectors active":"nav-link top_use_cases_slider_selector_base case_trends_bigger_chart_stats_btn_selectors "}
+                onClick={() => {
+                  setTab(3);
+                }}
+                className={
+                  tab == 3
+                    ? "nav-link top_use_cases_slider_selector_base case_trends_bigger_chart_stats_btn_selectors active"
+                    : "nav-link top_use_cases_slider_selector_base case_trends_bigger_chart_stats_btn_selectors "
+                }
                 id="esports-tab"
                 data-toggle="tab"
                 href="javascript:void(0)"
@@ -89,12 +165,16 @@ export default function TopUseCases() {
                 NFT
               </a>
             </li>
-            <li className={tab==4?"nav-item active":'nav-item'}>
+            <li className={tab == 4 ? "nav-item active" : "nav-item"}>
               <a
-               onClick={()=>{
-                setTab(4)
-              }}
-                className={tab == 4? "nav-link top_use_cases_slider_selector_base case_trends_bigger_chart_stats_btn_selectors active":"nav-link top_use_cases_slider_selector_base case_trends_bigger_chart_stats_btn_selectors "}
+                onClick={() => {
+                  setTab(4);
+                }}
+                className={
+                  tab == 4
+                    ? "nav-link top_use_cases_slider_selector_base case_trends_bigger_chart_stats_btn_selectors active"
+                    : "nav-link top_use_cases_slider_selector_base case_trends_bigger_chart_stats_btn_selectors "
+                }
                 id="esports-tab"
                 data-toggle="tab"
                 href="javascript:void(0)"
@@ -102,12 +182,16 @@ export default function TopUseCases() {
                 Gaming
               </a>
             </li>
-            <li className={tab==5?"nav-item active":'nav-item'}>
+            <li className={tab == 5 ? "nav-item active" : "nav-item"}>
               <a
-               onClick={()=>{
-                setTab(5)
-              }}
-                className={tab == 5? "nav-link top_use_cases_slider_selector_base case_trends_bigger_chart_stats_btn_selectors active":"nav-link top_use_cases_slider_selector_base case_trends_bigger_chart_stats_btn_selectors "}
+                onClick={() => {
+                  setTab(5);
+                }}
+                className={
+                  tab == 5
+                    ? "nav-link top_use_cases_slider_selector_base case_trends_bigger_chart_stats_btn_selectors active"
+                    : "nav-link top_use_cases_slider_selector_base case_trends_bigger_chart_stats_btn_selectors "
+                }
                 id="seoserp-tab"
                 data-toggle="tab"
                 href="javascript:void(0)"
@@ -115,12 +199,16 @@ export default function TopUseCases() {
                 SEO/SERP
               </a>
             </li>
-            <li className={tab==6?"nav-item active":'nav-item'}>
+            <li className={tab == 6 ? "nav-item active" : "nav-item"}>
               <a
-               onClick={()=>{
-                setTab(6)
-              }}
-                className={tab == 6? "nav-link top_use_cases_slider_selector_base case_trends_bigger_chart_stats_btn_selectors active":"nav-link top_use_cases_slider_selector_base case_trends_bigger_chart_stats_btn_selectors "}
+                onClick={() => {
+                  setTab(6);
+                }}
+                className={
+                  tab == 6
+                    ? "nav-link top_use_cases_slider_selector_base case_trends_bigger_chart_stats_btn_selectors active"
+                    : "nav-link top_use_cases_slider_selector_base case_trends_bigger_chart_stats_btn_selectors "
+                }
                 id="adtech-tab"
                 data-toggle="tab"
                 href="javascript:void(0)"
@@ -129,10 +217,14 @@ export default function TopUseCases() {
               </a>
             </li>
             <div className="top_use_cases_slider"></div>
-          </ul>
+          </ul> */}
           <div className="tab-content text-center">
-
-            <div className={tab == 0? "tab-pane active fade in" : 'tab-pane fade in'} id="ecommerce">
+            <div
+              className={
+                tab == 0 ? "tab-pane active fade in" : "tab-pane fade in"
+              }
+              id="ecommerce"
+            >
               <div className="container top_use_content_con">
                 <div className="top_use_content_img_con col-lg-4 col-md-4 col-sm-4 col-xs-12">
                   <div></div>
@@ -159,7 +251,10 @@ export default function TopUseCases() {
                 </div>
               </div>
             </div>
-            <div className={tab == 1? "tab-pane active fade in" : 'tab-pane fade'} id="smm">
+            <div
+              className={tab == 1 ? "tab-pane active fade in" : "tab-pane fade"}
+              id="smm"
+            >
               <div className="container top_use_content_con">
                 <div className="top_use_content_img_con col-lg-4 col-md-4 col-sm-4 col-xs-12">
                   <div></div>
@@ -167,10 +262,11 @@ export default function TopUseCases() {
                 <div className="top_use_content_text_con col-lg-8 col-md-8 col-sm-8 col-xs-12">
                   <h2>Dominate the social media landscape</h2>
                   <h4>
-                  Unlock the full potential of your social media strategy by staying on 
-top of trends and knowing what your customers and audiences want. 
-Enhance your data collection and social listening capabilities to stay 
-ahead of the competition and reach new markets.
+                    Unlock the full potential of your social media strategy by
+                    staying on top of trends and knowing what your customers and
+                    audiences want. Enhance your data collection and social
+                    listening capabilities to stay ahead of the competition and
+                    reach new markets.
                   </h4>
                   <div>
                     <li>
@@ -189,7 +285,10 @@ ahead of the competition and reach new markets.
                 </div>
               </div>
             </div>
-            <div className={tab == 2? "tab-pane active fade in" : 'tab-pane fade'} id="market_research">
+            <div
+              className={tab == 2 ? "tab-pane active fade in" : "tab-pane fade"}
+              id="market_research"
+            >
               <div className="container top_use_content_con">
                 <div className="top_use_content_img_con col-lg-4 col-md-4 col-sm-4 col-xs-12">
                   <div></div>
@@ -206,7 +305,10 @@ ahead of the competition and reach new markets.
                 </div>
               </div>
             </div>
-            <div className={tab == 3? "tab-pane active fade in" : 'tab-pane fade'} id="nft">
+            <div
+              className={tab == 3 ? "tab-pane active fade in" : "tab-pane fade"}
+              id="nft"
+            >
               <div className="container top_use_content_con">
                 <div className="top_use_content_img_con col-lg-3 col-md-4 col-sm-4 col-xs-12">
                   <div></div>
@@ -223,7 +325,10 @@ ahead of the competition and reach new markets.
                 </div>
               </div>
             </div>
-            <div className={tab == 4? "tab-pane active fade in" : 'tab-pane fade'} id="esports">
+            <div
+              className={tab == 4 ? "tab-pane active fade in" : "tab-pane fade"}
+              id="esports"
+            >
               <div className="container top_use_content_con">
                 <div className="top_use_content_img_con col-lg-4 col-md-4 col-sm-4 col-xs-12">
                   <div></div>
@@ -240,7 +345,10 @@ ahead of the competition and reach new markets.
                 </div>
               </div>
             </div>
-            <div className={tab == 5? "tab-pane active fade in" : 'tab-pane fade'} id="seoserp">
+            <div
+              className={tab == 5 ? "tab-pane active fade in" : "tab-pane fade"}
+              id="seoserp"
+            >
               <div className="container top_use_content_con">
                 <div className="top_use_content_img_con col-lg-4 col-md-4 col-sm-4 col-xs-12">
                   <div></div>
@@ -257,7 +365,10 @@ ahead of the competition and reach new markets.
                 </div>
               </div>
             </div>
-            <div className={tab == 6? "tab-pane active fade in" : 'tab-pane fade'} id="addtech">
+            <div
+              className={tab == 6 ? "tab-pane active fade in" : "tab-pane fade"}
+              id="addtech"
+            >
               <div className="container top_use_content_con">
                 <div className="top_use_content_img_con col-lg-4 col-md-4 col-sm-4 col-xs-12">
                   <div></div>
@@ -265,10 +376,10 @@ ahead of the competition and reach new markets.
                 <div className="top_use_content_text_con col-lg-8 col-md-8 col-sm-8 col-xs-12">
                   <h2>Ensure ad quality while protecting brand image</h2>
                   <h4>
-                  Verify your ads meet your expectations and are clear of 
-fraudulent or harmful activity without getting detected to 
-help protect your brand image. Maximize your ad campaigns 
-by easily testing and monitoring them with no issues.
+                    Verify your ads meet your expectations and are clear of
+                    fraudulent or harmful activity without getting detected to
+                    help protect your brand image. Maximize your ad campaigns by
+                    easily testing and monitoring them with no issues.
                   </h4>
                 </div>
               </div>

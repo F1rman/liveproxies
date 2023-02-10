@@ -5,7 +5,7 @@ export default function HomeHeader() {
     <section>
         <div className="hero_img text-center">
           <div className="hero_img_text_con">
-            <h2>OFTEN IMITATED | NEVER DUPLICATED</h2>
+            <h2>OFTEN IMITATED <span className="mobile_hide">|</span> NEVER DUPLICATED</h2>
             <h3>
               Enjoy the reassurance of entirely private, unique, and dedicated
               proxies.
