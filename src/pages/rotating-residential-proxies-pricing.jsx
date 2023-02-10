@@ -5,7 +5,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import $ from "jquery";
 import Questions from "@/components/questions";
-import PriceHeader from "@/modules/pricing/priceHeader";
+import PriceHeader from "@/components/blueHeader";
 export default function RotatingResidentialProxiesPricing() {
   const [range, setRange] = useState(0);
   useEffect(() => {

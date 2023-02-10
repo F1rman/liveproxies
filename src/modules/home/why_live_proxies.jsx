@@ -3,11 +3,11 @@ import Link from "next/link";
 export default function WhyLiveProxies() {
   return (
     <section>
-        <div class="container why_live_proxies_con text-center">
+        <div className="container why_live_proxies_con text-center">
           <h2>
             <span>Why</span> Live Proxies
           </h2>
-          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 why_live_proxies_sub_con1">
+          <div className="col-lg-4 col-md-4 col-sm-4 col-xs-12 why_live_proxies_sub_con1">
             <img src="/images/why-live-proxies-transparency.svg" />
             <h3>Transparency</h3>
             <h4>
@@ -15,7 +15,7 @@ export default function WhyLiveProxies() {
               to keep you informed.
             </h4>
           </div>
-          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 why_live_proxies_sub_con2">
+          <div className="col-lg-4 col-md-4 col-sm-4 col-xs-12 why_live_proxies_sub_con2">
             <img src="/images/why-live-proxies-private.svg" />
             <h3>Private Proxies</h3>
             <h4>
@@ -23,7 +23,7 @@ export default function WhyLiveProxies() {
               and only shared with you.
             </h4>
           </div>
-          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 why_live_proxies_sub_con3">
+          <div className="col-lg-4 col-md-4 col-sm-4 col-xs-12 why_live_proxies_sub_con3">
             <img src="/images/why-live-proxies-reliability.svg" />
             <h3>Reliability</h3>
             <h4>
@@ -31,7 +31,7 @@ export default function WhyLiveProxies() {
               concern resolution.
             </h4>
           </div>
-          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 why_live_proxies_sub_con1">
+          <div className="col-lg-4 col-md-4 col-sm-4 col-xs-12 why_live_proxies_sub_con1">
             <img src="/images/why-live-proxies-24-7-support.svg" />
             <h3>Excellent Customer Support</h3>
             <h4>
@@ -40,7 +40,7 @@ export default function WhyLiveProxies() {
               satisfaction.
             </h4>
           </div>
-          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 why_live_proxies_sub_con2">
+          <div className="col-lg-4 col-md-4 col-sm-4 col-xs-12 why_live_proxies_sub_con2">
             <img src="/images/why-live-proxies-quality-i-ps.svg" />
             <h3>Highest Quality IPs</h3>
             <h4>
@@ -48,7 +48,7 @@ export default function WhyLiveProxies() {
               unblocked on every site.
             </h4>
           </div>
-          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 why_live_proxies_sub_con3">
+          <div className="col-lg-4 col-md-4 col-sm-4 col-xs-12 why_live_proxies_sub_con3">
             <img src="/images/why-live-proxies-custom-solution.svg" />
             <h3>Custom Solutions</h3>
             <h4>

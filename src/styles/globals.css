@@ -1026,6 +1026,15 @@ padding: 0;
 
 /*===================BEGINNING OF TOP USE CASES SECTION===================*/
 
+
+.top_use_cases_main_con .slick-dots{
+  display:flex !important;
+  bottom: -15px;
+}
+.top_use_cases_main_con .slick-dots li{
+  width: auto;
+}
+
 .top_use_cases_main_con{
   padding:0;
   margin:170px auto 100px auto;
@@ -1121,13 +1130,14 @@ padding: 0;
 }
 }
 
-.top_use_cases_main_con #tile-1 .nav-tabs li a:hover{
-  background-color: transparent;
+.top_use_cases_main_con #tile-1 .nav-tabs li a:hover,
+.top_use_cases_main_con #tile-1 .nav-tabs li a:focus{
+  background-color: white;
   color:#1f6bd3;  
 } 
 
 .top_use_cases_main_con #tile-1 .nav-tabs.active {
-  background-color:transparent;
+  background-color: white;
   border:0; 
 }
  
@@ -1396,7 +1406,7 @@ padding: 0;
 }
 
 .top_use_cases_main_con .ecommerce_inner_slider .slide {
-  position: absolute;
+  /* position: absolute; */
   width:150px;
   display: inline-block; 
 }
@@ -3657,7 +3667,8 @@ padding: 0;
   background-color:#9d9b9b;
 } 
 
-.live_proxies_plan_table_main_con .live_proxies_plan_table_sub_con4 div:nth-of-type(16) ::after,.live_proxies_plan_table_main_con .live_proxies_plan_table_sub_con5 div:nth-of-type(16) ::after{
+.live_proxies_plan_table_main_con .live_proxies_plan_table_sub_con4 div:nth-of-type(16) ::after,
+.live_proxies_plan_table_main_con .live_proxies_plan_table_sub_con5 div:nth-of-type(16) ::after{
   position:absolute;
   content: '';
   width:200px;

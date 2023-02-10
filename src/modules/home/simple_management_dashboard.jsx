@@ -3,9 +3,9 @@ import Link from "next/link";
 export default function SimpleManagementDashboard() {
   return (
     <section>
-    <div class="simple_manage_dash_main_con text-center">
-      <div class="container simple_manage_dash_con">
-        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 simple_manage_dash_sub_con1">
+    <div className="simple_manage_dash_main_con text-center">
+      <div className="container simple_manage_dash_con">
+        <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 simple_manage_dash_sub_con1">
           <h2>
             Simple management <span>dashboard</span>
           </h2>
@@ -19,7 +19,7 @@ export default function SimpleManagementDashboard() {
           </Link>
         </div>
 
-        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 simple_manage_dash_sub_con2">
+        <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 simple_manage_dash_sub_con2">
           <div></div>
         </div>
       </div>

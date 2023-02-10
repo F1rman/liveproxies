@@ -6,16 +6,16 @@ import Link from "next/link";
 export default function Plans() {
   return (
     <section>
-<div class="live_proxies_plan_table_main_con">
-  <div class="live_proxies_plan_table_con_scroll container">
-    <div class="live_proxies_plan_table_con">
-      <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 live_proxies_plan_table_sub_con1">
+<div className="live_proxies_plan_table_main_con">
+  <div className="live_proxies_plan_table_con_scroll container">
+    <div className="live_proxies_plan_table_con">
+      <div className="col-lg-2 col-md-2 col-sm-2 col-xs-2 live_proxies_plan_table_sub_con1">
         <div>
           <h3>
             Region
-            <span class="tooltip-container">
+            <span className="tooltip-container">
               <img src="/images/all-plans-info-icon.svg" />
-              <span class="tooltip">
+              <span className="tooltip">
                 Region, The most flexible and cleanest proxy pools on
                 the internet.
               </span>
@@ -31,9 +31,9 @@ export default function Plans() {
         <div>
           <h3>
             City/State IPs
-            <span class="tooltip-container">
+            <span className="tooltip-container">
               <img src="/images/all-plans-info-icon.svg" />
-              <span class="tooltip">
+              <span className="tooltip">
                 City/State IPs, The most flexible and cleanest proxy
                 pools on the internet.
               </span>
@@ -49,9 +49,9 @@ export default function Plans() {
         <div>
           <h3>
             Bandwidth Rollover
-            <span class="tooltip-container">
+            <span className="tooltip-container">
               <img src="/images/all-plans-info-icon.svg" />
-              <span class="tooltip">
+              <span className="tooltip">
                 Bandwidth Rollover, The most flexible and cleanest proxy
                 pools on the internet.
               </span>
@@ -61,9 +61,9 @@ export default function Plans() {
         <div>
           <h3>
             IP Authorization
-            <span class="tooltip-container">
+            <span className="tooltip-container">
               <img src="/images/all-plans-info-icon.svg" />
-              <span class="tooltip">
+              <span className="tooltip">
                 IP Authorization, The most flexible and cleanest proxy
                 pools on the internet.
               </span>
@@ -83,36 +83,37 @@ export default function Plans() {
           <h3>Dedicated Account Manager</h3>
         </div>
       </div>
-      <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 live_proxies_plan_table_sub_con2">
-        <div class="box">
+      <div className="col-lg-2 col-md-2 col-sm-2 col-xs-2 live_proxies_plan_table_sub_con2">
+        <div className="box">
           <input
             type="radio"
-            class="tab-toggle"
+            className="tab-toggle"
             name="tab-toggle-rotating"
             id="tab1"
+            onChange={()=>{}}
             checked
           />
           <input
             type="radio"
-            class="tab-toggle"
+            className="tab-toggle"
             name="tab-toggle-rotating"
             id="tab2"
           />
-          <ul class="tab-list">
-            <li class="tab-item">
-              <label class="tab-trigger" for="tab1">
+          <ul className="tab-list">
+            <li className="tab-item">
+              <label className="tab-trigger" htmlFor="tab1">
                 <h4>Metered</h4>
               </label>
             </li>
-            <li class="tab-item">
-              <label class="tab-trigger" for="tab2">
+            <li className="tab-item">
+              <label className="tab-trigger" htmlFor="tab2">
                 <h4>Unmetered</h4>
               </label>
             </li>
           </ul>
-          <div class="tab-container">
-            <div class="tab-content">
-              <div class="live_proxies_plan_table_sub_con4 text-center">
+          <div className="tab-container">
+            <div className="tab-content">
+              <div className="live_proxies_plan_table_sub_con4 text-center">
                 <div>
                   <h1>
                     RESIDENTIAL PROXIES
@@ -182,8 +183,8 @@ export default function Plans() {
                 </div>
               </div>
             </div>
-            <div class="tab-content">
-              <div class="live_proxies_plan_table_sub_con4 text-center">
+            <div className="tab-content">
+              <div className="live_proxies_plan_table_sub_con4 text-center">
                 <div>
                   <h1>
                     RESIDENTIAL PROXIES
@@ -256,36 +257,37 @@ export default function Plans() {
           </div>
         </div>
       </div>
-      <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 live_proxies_plan_table_sub_con3">
-        <div class="box">
+      <div className="col-lg-2 col-md-2 col-sm-2 col-xs-2 live_proxies_plan_table_sub_con3">
+        <div className="box">
           <input
             type="radio"
-            class="tab-toggle"
+            className="tab-toggle"
             name="tab-toggle-static"
             id="tab3"
+            onChange={()=>{}}
             checked
           />
           <input
             type="radio"
-            class="tab-toggle"
+            className="tab-toggle"
             name="tab-toggle-static"
             id="tab4"
           />
-          <ul class="tab-list">
-            <li class="tab-item">
-              <label class="tab-trigger" for="tab3">
+          <ul className="tab-list">
+            <li className="tab-item">
+              <label className="tab-trigger" htmlFor="tab3">
                 <h4>Metered</h4>
               </label>
             </li>
-            <li class="tab-item">
-              <label class="tab-trigger" for="tab4">
+            <li className="tab-item">
+              <label className="tab-trigger" htmlFor="tab4">
                 <h4>Unmetered</h4>
               </label>
             </li>
           </ul>
-          <div class="tab-container">
-            <div class="tab-content">
-              <div class="live_proxies_plan_table_sub_con4 text-center">
+          <div className="tab-container">
+            <div className="tab-content">
+              <div className="live_proxies_plan_table_sub_con4 text-center">
                 <div>
                   <h1>
                     RESIDENTIAL PROXIES
@@ -355,8 +357,8 @@ export default function Plans() {
                 </div>
               </div>
             </div>
-            <div class="tab-content">
-              <div class="live_proxies_plan_table_sub_con4 text-center">
+            <div className="tab-content">
+              <div className="live_proxies_plan_table_sub_con4 text-center">
                 <div>
                   <h1>
                     RESIDENTIAL PROXIES
@@ -427,7 +429,7 @@ export default function Plans() {
           </div>
         </div>
       </div>
-      <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 live_proxies_plan_table_sub_con4 text-center">
+      <div className="col-lg-2 col-md-2 col-sm-2 col-xs-2 live_proxies_plan_table_sub_con4 text-center">
         <div>
           <h1>
             MOBILE PROXIES
@@ -496,7 +498,7 @@ export default function Plans() {
           </button>
         </div>
       </div>
-      <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 live_proxies_plan_table_sub_con5 text-center">
+      <div className="col-lg-2 col-md-2 col-sm-2 col-xs-2 live_proxies_plan_table_sub_con5 text-center">
         <div>
           <h1>
             ALL IN ONE
