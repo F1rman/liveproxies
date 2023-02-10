@@ -493,6 +493,9 @@ padding: 0;
   cursor: pointer;
 }
 
+.proj-menu-collapsed.proj-menu-expanded{
+
+}
 .b-a,
 .proj-bar{
   margin:-5px -10px 0 0;
@@ -502,18 +505,19 @@ padding: 0;
 .proj-menu-expanded .proj-bar,
 .proj-menu-expanded .proj-bar:before,
 .proj-menu-expanded .proj-bar:after {
-  background-color:#000000;
+  background-color:#fff;
   margin:2px -3px 0 0;
 }
 
 .proj-menu-collapsed .mobile_view_list_con{
-  position:absolute;
-  overflow: scroll; 
-  top:0;
+  background: linear-gradient(180deg,rgb(1,13,47), rgb(21,25,72), rgb(8,79,139));
+  position: absolute;
+  overflow: scroll;
+  top: 0;
   left: 0;
   right: 0;
-  bottom: 0; 
-  padding:40px 0 30px 30px;
+  bottom: 0;
+  padding: 12px 20px;
 }
 
 .proj-menu-collapsed {
@@ -659,9 +663,13 @@ padding: 0;
   -o-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
- 
-.xsnavlist img{
+.xsnavlist  .logo{
+  margin-bottom: 50px;
+  margin-left: 0;
+ }
+.xsnavlist .care_options_text img{
   width:9px;
+  filter: invert(1);
   height:6px;
 }
    
@@ -682,7 +690,7 @@ padding: 0;
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
-  color: #000000;
+  color: #fff;
   margin-bottom:0;
   margin-top:5px;
   -webkit-transition: .3s ease-in-out;
@@ -692,7 +700,7 @@ padding: 0;
   transition: .3s ease-in-out;
 } 
 .xsnavlist .care_options_text:hover{
-  color:#000000;
+  color:#fff;
 }  
 
 .xsnavlist li a{
@@ -709,9 +717,11 @@ padding: 0;
 .xsnavlist li a img{
   width:20px;
   height:20px;
-  margin:0 5px 5px 0
+  margin:0 5px 5px 0;
 }
-
+.xsnavlist li:last-child a img{
+filter: invert(1);
+}
 .mobile_view_list_with_no_dropdown_con .mobile_view_list_items a{
   font-family: GothamPro;
   font-size: 14px;
@@ -720,7 +730,7 @@ padding: 0;
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
-  color: #000000;
+  color: #fff;
   margin-bottom:13px; 
 }
 
@@ -730,6 +740,7 @@ padding: 0;
   -ms-transition: .3s ease-in-out;
   -o-transition: .3s ease-in-out;
   transition: .3s ease-in-out;
+  color: #fff;
 }
 
 /*===================END OF WEB/DESKTOP & MOBILE VIEW NAVBAR SECTION===================*/

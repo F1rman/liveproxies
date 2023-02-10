@@ -1,9 +1,12 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import $ from "jquery";
+import Image from "next/image";
 
 export default function Header() {
   const [mobileMenu,openMobileMenu] = useState(false)
+  const [tools,openTools] = useState(false)
+  const [pricing,openPricing] = useState(false)
   useEffect(()=>{
     $('ul.navbar-nav li.dropdown').hover(function() {
       $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
@@ -172,6 +175,9 @@ export default function Header() {
             </div>
             <nav className="xsnavlist">
               <div className="mobile_view_list_con">
+              <div className="logo_wrapper">
+                <div className="logo"  ></div>
+                </div>
                 <div
                   className="mobile_view_list_with_no_dropdown_con"
                   id="mobile_view_list_with_no_dropdown_get_log"
@@ -193,7 +199,9 @@ export default function Header() {
                 <div className="panel-default xs_collapse_explore">
                   <div className="care_options">
                     <a
-                      href={"#"}
+                    onClick={()=>{
+                      openTools(!tools)
+                    }}
                       data-toggle="collapse"
                       data-target="#collapseExplore1"
                     >
@@ -206,7 +214,7 @@ export default function Header() {
                       </h6>
                     </a>
                   </div>
-                  <div id="collapseExplore1" className="collapse">
+                  <div id="collapseExplore1" className={tools?"collapse in":"collapse"}>
                     <li>
                       <Link href="/proxy-tester">Proxy Tester</Link>
                     </li>
@@ -220,7 +228,9 @@ export default function Header() {
                 <div className="panel-default xs_collapse_explore">
                   <div className="care_options">
                     <a
-                      href={"#"}
+                       onClick={()=>{
+                      openPricing(!pricing)
+                    }}
                       data-toggle="collapse"
                       data-target="#collapseExplore2"
                     >
@@ -233,7 +243,7 @@ export default function Header() {
                       </h6>
                     </a>
                   </div>
-                  <div id="collapseExplore2" className="collapse">
+                  <div id="collapseExplore2" className={pricing?"collapse in":"collapse"}>
                     <li>
                       <Link href="/rotating-residential-proxies-pricing">
                         <img src="/images/navbar-pricing-house-ips.svg" />
