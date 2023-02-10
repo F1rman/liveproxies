@@ -60,10 +60,11 @@ export default function Header() {
                         href="/proxy-tester"
                         className="navbar_dropdown_menu_list_item"
                       >
+                      
+                        <div className="text_wrapper">
                         <span>Proxy Tester</span>
-                        <br />
-                        <br />
                         <p>Verify your proxy connection</p>
+                      </div>
                       </Link>
                     </li>
                     <li>
@@ -72,10 +73,10 @@ export default function Header() {
                         target="_blank"
                         className="navbar_dropdown_menu_list_item"
                       >
+                        <div className="text_wrapper">
                         <span>Live Servers</span>
-                        <br />
-                        <br />
                         <p>Unleash your bot’s full potential</p>
+                      </div>
                       </Link>
                     </li>
                   </ul>
@@ -98,10 +99,12 @@ export default function Header() {
                       <Link
                         href="/rotating-residential-proxies-pricing"
                         className="navbar_dropdown_menu_list_item"
-                      >
+                      > 
                         <img src="/images/navbar-pricing-house-ips.svg" />
+                        <div className="text_wrapper">
                         <span>Rotating Residential Proxies</span>
                         <p>Constantly refreshed residential IPs</p>
+                        </div>
                       </Link>
                     </li>
                     <li>
@@ -110,8 +113,10 @@ export default function Header() {
                         className="navbar_dropdown_menu_list_item"
                       >
                         <img src="/images/navbar-pricing-static-ips.svg" />
+                        <div className="text_wrapper">
                         <span>Static Residential Proxies</span>
                         <p>Continuous unchanging residential IPs</p>
+                        </div>
                       </Link>
                     </li>
                     <li>
@@ -120,8 +125,10 @@ export default function Header() {
                         className="navbar_dropdown_menu_list_item"
                       >
                         <img src="/images/navbar-pricing-mobile-ips.svg" />
+                        <div className="text_wrapper">
                         <span>Rotating Mobile Proxies</span>
                         <p>4G/5G mobile device IPs</p>
+                        </div>
                       </Link>
                     </li>
                     <li>
@@ -130,8 +137,10 @@ export default function Header() {
                         className="navbar_dropdown_menu_list_item"
                       >
                         <img src="/images/navbar-pricing-custom.svg" />
+                        <div className="text_wrapper">
                         <span>All in One Custom Solution</span>
                         <p>Enterprise level tailored plans</p>
+                        </div>
                       </Link>
                     </li>
                   </ul>
