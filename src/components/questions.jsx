@@ -19,7 +19,7 @@ export default function Questions() {
    <div className="live_proxies_faqs_main_con">     
      <div className="container live_proxies_faqs_con">
       <h2>Frequently asked <span>questions</span></h2>
-      <h6>Please visit our <a href="/https://helpcenter.liveproxies.io/hc/en-us" target="_blank">Help Center</a> if you have questions that are not listed below</h6>
+      <h6>Please visit our <Link href="https://helpcenter.liveproxies.io/hc/en-us" target="_blank">Help Center</Link> if you have questions that are not listed below</h6>
        <div className="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
          <div className="panel panel-default">
            <div className={open == 1 ? "panel-heading active":"panel-heading "}  role="tab" id="headingTwo">

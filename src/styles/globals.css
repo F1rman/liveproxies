@@ -795,7 +795,7 @@ padding: 0;
 }
 @media (max-width:767px){
 .hero_img h2{ 
-  font-size:35px;
+  font-size:32px;
 }
 }
 @media (max-width:360px){
@@ -1784,11 +1784,7 @@ padding: 0;
   margin:0 0 20px 0;
   padding:0
 } 
-@media (min-width:992px){ 
-.top_use_cases_main_con .top_use_content_con .top_use_content_text_con h2{
-  width: 521px; 
-}
-}
+
 
 @media (max-width:767px){ 
 .top_use_cases_main_con .top_use_content_con .top_use_content_text_con h2{
@@ -2122,16 +2118,18 @@ justify-content: center;
   letter-spacing: normal;
   color:#ffffff;
   position: relative;
+  width: max-content;
 }
 
 
 .honest_price_no_surprises_main_con .col1 a.underline::after{
-  position:absolute;
-  content:'';
-  width:163px;
-  height:1px;
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 1px;
   border: solid 1px #ffffff;
-  margin:20px 0 0 -162px;
+  bottom: -5px;
+  left: 0;
 }
 .honest_price_no_surprises_main_con .col2 .card{
   width: 100%;
@@ -2379,7 +2377,7 @@ margin-bottom: 0;
 }
 
 .honest_price_no_surprises_main_con .col2 .card .cardBody .item .state_wrapper h6{
-
+  white-space: nowrap;
   font-family: GothamPro;
   font-size: 10px;
   font-weight: normal;
@@ -2391,6 +2389,55 @@ margin-bottom: 0;
   margin: 0;
   margin-top: 6px;
 }
+@media (max-width:1024px){  
+
+  .honest_price_no_surprises_main_con .wrapper{
+    flex-flow: column;
+  }
+  .honest_price_no_surprises_main_con .wrapper .col1{
+    align-items: center;
+  }
+  .honest_price_no_surprises_main_con .col2 .card{
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+  .honest_price_no_surprises_main_con .col1 h4,
+  .honest_price_no_surprises_main_con .col1 h2{
+    text-align: center;
+    padding: 0 30px ;
+  }
+}
+@media (max-width:500px){  
+  .honest_price_no_surprises_main_con .col2 .card .cardHeader h2{
+    font-size: 21px;
+  }
+  .honest_price_no_surprises_main_con .col2 .card .cardHeader p{
+    font-size: 12px;
+
+  }
+  .honest_price_no_surprises_main_con .col1 h2{
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .honest_price_no_surprises_main_con .col1 h4{
+    font-size: 14px;
+  }
+  .honest_price_no_surprises_main_con .col1 a{
+    font-size: 14px;
+
+  }
+  .honest_price_no_surprises_main_con .col2 .card .cardHeader{
+    padding: 18px;
+    padding-top: 33px;
+  }
+  .honest_price_no_surprises_main_con .col2 .card .cardBody .buttons_wrapper{
+    margin: 30px 18px ;
+  }
+  .honest_price_no_surprises_main_con .col2 .card .cardBody .plans_wrapper{
+    padding: 25px 18px;
+  }
+}
+
 /*===================END OF HONEST PRICE, NO SURPRISES SECTION===================*/
  
 
@@ -3262,6 +3309,7 @@ margin-bottom: 0;
 /*===================BEGINNING OF WE COMBINED THE QUALITY SECTION===================*/
  
 .we_combined_the_main_con{
+  overflow: hidden;
   padding:150px 0 220px 0;	
 }
 @media (max-width:991px){
