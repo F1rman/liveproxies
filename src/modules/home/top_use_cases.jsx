@@ -5,41 +5,60 @@ import $ from "jquery";
 import Image from "next/image";
 export default function TopUseCases() {
   const navBar = [
-    { imgA: "top-use-cases-e-commerce-active-icon",
-    img: "top-use-cases-e-commerce-icon", title: "eCommerce" },
-    { img: "top-use-cases-smm-icon", 
-    imgA: "top-use-cases-smm-active-icon",title: "SMM" },
+    {
+      imgA: "top-use-cases-e-commerce-active-icon",
+      img: "top-use-cases-e-commerce-icon",
+      title: "eCommerce",
+    },
+    {
+      img: "top-use-cases-smm-icon",
+      imgA: "top-use-cases-smm-active-icon",
+      title: "SMM",
+    },
     {
       imgA: "top-use-cases-market-research-active-icon",
       img: "top-use-cases-market-research-icon",
       title: "Market Research",
     },
-    { imgA: "top-use-cases-nft-active-icon", img: "top-use-cases-nft-icon", title: "NFT" },
-    { img: "top-use-cases-esports-icon",imgA: "top-use-cases-esports-active-icon", title: "Gaming" },
-    { img: "top-use-cases-seoserp-icon",imgA: "top-use-cases-seoserp-active-icon", title: "SEO/SERP" },
-    { img: "top-use-cases-adtech-icon",imgA: "top-use-cases-adtech-active-icon", title: "AdTech" },
+    {
+      imgA: "top-use-cases-nft-active-icon",
+      img: "top-use-cases-nft-icon",
+      title: "NFT",
+    },
+    {
+      img: "top-use-cases-esports-icon",
+      imgA: "top-use-cases-esports-active-icon",
+      title: "Gaming",
+    },
+    {
+      img: "top-use-cases-seoserp-icon",
+      imgA: "top-use-cases-seoserp-active-icon",
+      title: "SEO/SERP",
+    },
+    {
+      img: "top-use-cases-adtech-icon",
+      imgA: "top-use-cases-adtech-active-icon",
+      title: "AdTech",
+    },
   ];
   useEffect(() => {
-    
-    addSlideTopNavigation()
-    $(window).resize(function(){
-      addSlideTopNavigation()
-    })
-   
-   
-    }, []);
-    function addSlideTopNavigation(){
-      $(".topNavigation li ").each((i, e) => {
-        $(e).off();
-        $(e).click(() => {
-          console.log($(e).clientWidht);
-          $(".topNavigation .line").css({
-            left: $(e).position().left ,
-            width: $(e).width(),
-          });
+    addSlideTopNavigation();
+    $(window).resize(function () {
+      addSlideTopNavigation();
+    });
+  }, []);
+  function addSlideTopNavigation() {
+    $(".topNavigation li ").each((i, e) => {
+      $(e).off();
+      $(e).click(() => {
+        console.log($(e).clientWidht);
+        $(".topNavigation .line").css({
+          left: $(e).position().left,
+          width: $(e).width(),
         });
-    })
-    }
+      });
+    });
+  }
   const [tab, setTab] = useState(0);
   var settings = {
     autoplay: true,
@@ -60,8 +79,9 @@ export default function TopUseCases() {
         <h3>Scrape data anonymously and access content in any geo-location</h3>
 
         <div className="tile" id="tile-1">
+        <div className="overflow_x">
           <ul className="topNavigation">
-          <div className="line"></div>
+            <div className="line"></div>
             {navBar.map((e, i) => {
               return (
                 <li
@@ -78,146 +98,20 @@ export default function TopUseCases() {
                     height={20}
                   />
                   <div className="hover">
-                  <Image
-                    src={"/images/" + e.imgA + ".svg"}
-                    alt={e.title}
-                    width={30}
-                    height={20}
-                  />
+                    <Image
+                      src={"/images/" + e.imgA + ".svg"}
+                      alt={e.title}
+                      width={30}
+                      height={20}
+                    />
                   </div>
                   {e.title}
                 </li>
               );
             })}
           </ul>
-          {/* <ul className="nav nav-tabs text-center nav-justified" role="tablist">
-            <li className={tab == 0 ? "nav-item active" : "nav-item"}>
-              <a
-                onClick={() => {
-                  setTab(0);
-                }}
-                className={
-                  tab == 0
-                    ? "nav-link top_use_cases_slider_selector_base case_trends_bigger_chart_stats_btn_selectors active"
-                    : "nav-link top_use_cases_slider_selector_base case_trends_bigger_chart_stats_btn_selectors "
-                }
-                id="ecommerce-tab"
-                data-toggle="tab"
-                href="javascript:void(0)"
-              >
-                eCommerce
-              </a>
-            </li>
-            <li className={tab == 1 ? "nav-item active" : "nav-item"}>
-              <a
-                onClick={() => {
-                  setTab(1);
-                }}
-                className={
-                  tab == 1
-                    ? "nav-link top_use_cases_slider_selector_base case_trends_bigger_chart_stats_btn_selectors active"
-                    : "nav-link top_use_cases_slider_selector_base case_trends_bigger_chart_stats_btn_selectors "
-                }
-                id="smm-tab"
-                data-toggle="tab"
-                href="javascript:void(0)"
-              >
-                SMM
-              </a>
-            </li>
-            <li className={tab == 2 ? "nav-item active" : "nav-item"}>
-              <a
-                onClick={() => {
-                  setTab(2);
-                }}
-                className={
-                  tab == 2
-                    ? "nav-link top_use_cases_slider_selector_base case_trends_bigger_chart_stats_btn_selectors active"
-                    : "nav-link top_use_cases_slider_selector_base case_trends_bigger_chart_stats_btn_selectors "
-                }
-                id="market_research-tab"
-                data-toggle="tab"
-                href="javascript:void(0)"
-              >
-                Market Research
-              </a>
-            </li>
-            <li
-              className={
-                tab == 3
-                  ? "nav-item top_use_cases_nft_icon active"
-                  : "nav-item top_use_cases_nft_icon"
-              }
-            >
-              <a
-                onClick={() => {
-                  setTab(3);
-                }}
-                className={
-                  tab == 3
-                    ? "nav-link top_use_cases_slider_selector_base case_trends_bigger_chart_stats_btn_selectors active"
-                    : "nav-link top_use_cases_slider_selector_base case_trends_bigger_chart_stats_btn_selectors "
-                }
-                id="esports-tab"
-                data-toggle="tab"
-                href="javascript:void(0)"
-              >
-                NFT
-              </a>
-            </li>
-            <li className={tab == 4 ? "nav-item active" : "nav-item"}>
-              <a
-                onClick={() => {
-                  setTab(4);
-                }}
-                className={
-                  tab == 4
-                    ? "nav-link top_use_cases_slider_selector_base case_trends_bigger_chart_stats_btn_selectors active"
-                    : "nav-link top_use_cases_slider_selector_base case_trends_bigger_chart_stats_btn_selectors "
-                }
-                id="esports-tab"
-                data-toggle="tab"
-                href="javascript:void(0)"
-              >
-                Gaming
-              </a>
-            </li>
-            <li className={tab == 5 ? "nav-item active" : "nav-item"}>
-              <a
-                onClick={() => {
-                  setTab(5);
-                }}
-                className={
-                  tab == 5
-                    ? "nav-link top_use_cases_slider_selector_base case_trends_bigger_chart_stats_btn_selectors active"
-                    : "nav-link top_use_cases_slider_selector_base case_trends_bigger_chart_stats_btn_selectors "
-                }
-                id="seoserp-tab"
-                data-toggle="tab"
-                href="javascript:void(0)"
-              >
-                SEO/SERP
-              </a>
-            </li>
-            <li className={tab == 6 ? "nav-item active" : "nav-item"}>
-              <a
-                onClick={() => {
-                  setTab(6);
-                }}
-                className={
-                  tab == 6
-                    ? "nav-link top_use_cases_slider_selector_base case_trends_bigger_chart_stats_btn_selectors active"
-                    : "nav-link top_use_cases_slider_selector_base case_trends_bigger_chart_stats_btn_selectors "
-                }
-                id="adtech-tab"
-                data-toggle="tab"
-                href="javascript:void(0)"
-              >
-                AdTech
-              </a>
-            </li>
-            <div className="top_use_cases_slider"></div>
-          </ul> */}
+          </div>
+
           <div className="tab-content text-center">
             <div
               className={

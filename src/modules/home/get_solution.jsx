@@ -48,26 +48,28 @@ export default function GetSolutions() {
               Get the results you need with a <span>solution</span> you can
               trust
             </h2>
-            <div className="col-lg-3 col-md-3 col-sm-3 col-xs-12 we_combined_the_sub_con1">
+            <div className="we_combined_wrapper">
+            <div className="we_combined_the_sub_con1">
               <img src="/images/we-combined-the-quality-dedicated-i-ps.svg" />
               <h4>Dedicated IPs</h4>
               <h5>100% Private</h5>
             </div>
-            <div className="col-lg-3 col-md-3 col-sm-3 col-xs-12 we_combined_the_sub_con2">
+            <div className="we_combined_the_sub_con2">
               <img src="/images/we-combined-the-quality-uptime.svg" />
               <h4>High Uptime</h4>
               <h5>Proven Experience</h5>
             </div>
-            <div className="col-lg-3 col-md-3 col-sm-3 col-xs-12 we_combined_the_sub_con3">
+            <div className="we_combined_the_sub_con3">
               <img src="/images/we-combined-the-quality-unlimited.svg" />
               <h4>No Concurrency Limit</h4>
               <h5>Unlimited Threads</h5>
             </div>
-            <div className="col-lg-3 col-md-3 col-sm-3 col-xs-12 we_combined_the_sub_con4">
+            <div className="we_combined_the_sub_con4">
               <img src="/images/we-combined-the-quality-happy.svg" />
               <h4>10,000+</h4>
               <h5>Happy Users</h5>
             </div>
+          </div>
           </div>
           <Slider className="gallery" {...settings}>
             <span>
