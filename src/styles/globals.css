@@ -12161,6 +12161,11 @@ dashboard_page_wrapper .sidebar .nav-links li .active{
   background-color: #fff;
   overflow:scroll;
   overflow-x: hidden;
+  
+}
+.dashboard_page_wrapper #CHIFFRAGE .home-content .order_hist_order_hist_detail_con .items_wrapper{
+overflow-y: scroll;
+max-height: 300px;
 }
 @media (max-width:1439px){
 .dashboard_page_wrapper #CHIFFRAGE .home-content .order_hist_order_hist_detail_con{
