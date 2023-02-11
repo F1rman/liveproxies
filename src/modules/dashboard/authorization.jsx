@@ -25,7 +25,7 @@ export default function Authorization(props) {
                 placeholder="000.000.00.000"
                 required
                 min="0"
-                maxlength="14"
+                maxength="14"
                 value={value}
                 onChange={(e) => {
                   setValue(
