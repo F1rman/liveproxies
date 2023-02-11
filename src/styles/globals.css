@@ -703,7 +703,7 @@ padding: 0;
   color:#fff;
 }  
 
-.xsnavlist li a{
+.xsnavlist .mobile_view_list_con a{
   font-family: GothamPro;
   font-size: 11px;
   font-weight: 500;
@@ -2393,9 +2393,21 @@ margin-bottom: 0;
     padding: 0 30px ;
   }
 }
+.mobile_show{
+  display: none !important;
+}
+
+
+
+
+
+
 @media (max-width:500px){  
   .mobile_hide{
-    display: none;
+    display: none  !important;
+  }
+  .mobile_show{
+    display: flex  !important;
   }
   .honest_price_no_surprises_main_con .col2 .card .cardHeader h2{
     font-size: 21px;
@@ -14473,9 +14485,268 @@ dashboard_page_wrapper .sidebar .nav-links li .active{
 
 /*===================END OF PROXY TESTER PAGE===================*/
 
+.plans_section{
+  background-color: rgb(241, 241, 245, 0.6);
+  flex-flow: column;
+  display: flex;
+  padding: 40px 13px;
+}
+.plans_section .plans_header{
+  width: 100%;
+  height: 66px;
+  margin: 0 0 12px;
+  padding: 15px 30px;
+  border-radius: 6px;
+  box-shadow: 0 4px 4px 0 rgb(0 0 0 / 5%);
+  background-color: #fff;
+  position: relative;
+}
+.plans_section .arrow {
+  background-image: url(/images/arrow-right.svg);
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -ms-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 8px;
+  height: 12px;
+  position: absolute;
+  top: 19px;
+  opacity: .4;
+}
+.plans_section .arrow.active {
+  opacity: 1;
 
+}
+.plans_section .arrow.arrow_left{
+  left: 15px;
+  transform: rotate(180deg);
+}
+.plans_section .arrow.arrow_right{
+right: 15px;
+}
+.plans_section .slides_wrapper{
+  display: flex;
+  justify-content: space-around;
+}
+.plans_section .slides_wrapper .text_wrapper{
+  text-align: center;
+  display: flex;
+  flex-flow: column;
+  font-size: 12px;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: #232020;
+}
+.plans_section .slides_wrapper .text_wrapper b{
  
- 
+white-space: nowrap;
+}
+.plans_section .plans_body{
+  display: flex;
+}
+
+
+.plans_section .card_plan{
+  border-radius: 10px;
+  box-shadow: 0 5px 10px 0 rgb(9 18 57 / 3%);
+  background-color: #fff;
+  display: flex;
+  flex-flow: column;
+  margin-right: 12px;
+  width: 100%;
+}
+.plans_section .card_plan:last-child{
+margin-right: 0;
+}
+
+.plans_section .card_plan .buttons_wrapper{
+  width: calc(100% - 16px);
+  height: 39px;
+  padding: 4px ;
+  border-radius: 6px;
+  background-color: #ececf0;
+  margin-left: 8px;
+  margin-top: 8px;
+  margin-bottom: 11px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.plans_section .card_plan .button{
+  width: 100%;
+  font-family: GothamPro;
+  font-size: 10px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #4e4a4a;
+  cursor: pointer;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.plans_section .card_plan .button.active{
+  color: #1f6bd3;
+}
+
+.plans_section .card_plan .buttons_wrapper .buttons_slide{
+  position: absolute;
+  width: calc(50% );
+  height: calc(100% - 8px);
+  left: 4px;
+  border-radius: 4px;
+  box-shadow: 0 4px 10px 0 rgb(137 137 155 / 25%);
+  background-color: #fff;
+  top: 4px;
+  z-index: 1;
+  transition: all .3s ease;
+}
+.plans_section .card_plan .buttons_wrapper .buttons_slide.active{
+  left: calc(50% - 4px);
+}
+
+.plans_section .card_plan .plan_price{
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  border-top: solid 1px #f1f1f5;
+  padding-top: 15px;
+
+}
+
+.plans_section .card_plan .plan_price .subtile{
+  font-family: GothamPro;
+  font-size: 12px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #7b7b7b;
+
+}
+.plans_section .card_plan .plan_price .price{
+  font-family: GothamPro;
+  margin-top: 7px;
+  font-size: 14px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #232020;
+  margin-bottom: 50px;
+}
+.plans_section .card_plan .plan_price .price span{
+  color: #1f6bd3;
+  
+}
+
+
+.plans_section .card_plan .nav .nav_item{
+  border-bottom: solid 1px #f1f1f5;
+}
+
+.plans_section .card_plan .nav_header{
+  font-family: GothamPro;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #232020;
+  padding: 15px;
+  position: relative;
+  padding-right: 30px;
+}
+
+.plans_section .card_plan .button_get{
+  height: 36px;
+  margin: 16.5px 13px 0;
+  border-radius: 4px;
+  background-color: #1f6bd3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 13px;
+  cursor: pointer;
+  font-family: GothamPro;
+  font-size: 14px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #fff;
+  white-space: nowrap;
+}
+
+.plans_section .card_plan .button_get.outlined{
+  border: solid 1px #1f6bd3;
+  color: #1f6bd3;
+  background-color: #ffffff;
+  -webkit-transition: .3s ease-in-out;
+  -moz-transition: .3s ease-in-out;
+  -ms-transition: .3s ease-in-out;
+  -o-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+.plans_section .card_plan .nav_arrow {
+  background-image: url(/images/arrow-down.svg);
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -ms-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 10px;
+  height: 7px;
+  position: absolute;
+  right: 15px;
+  top: 17px;
+}
+.plans_section .card_plan .nav_body{
+  font-family: GothamPro;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #232020;
+  padding: 15px;
+  display: none;
+}
+.plans_section .card_plan .nav_item.active{
+  background-color: #f9f9fa;
+}
+.plans_section .card_plan .nav_item.active .nav_header{
+color: #8a96b5;
+}
+.plans_section .card_plan .nav_item.active .nav_header .nav_arrow{
+  transform: rotate(180deg);
+}
+
+.plans_section .card_plan .nav_item.active .nav_body{
+display: block;
+}
+
  /* 500s */
 @media (max-width:500px){
   .footer_main_sub_con1{

@@ -14,6 +14,7 @@ import HomeHeader from "@/modules/home/home_header";
 import TrustPilot from "@/modules/home/trust_pilot";
 import TopUseCases from "@/modules/home/top_use_cases";
 import TrustedService from "@/modules/home/trusted_service";
+import PlansMobile from "@/modules/home/plans_mobile";
 
 export default function Home() {
   return (
@@ -31,6 +32,7 @@ export default function Home() {
       <TrustedService />
       <WhyLiveProxies />
 	  <Plans />
+	  <PlansMobile />
       <GetSolutions />
       <SimpleManagementDashboard />
       <UtilizeFavouriteApp />
