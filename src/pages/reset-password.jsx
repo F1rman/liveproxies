@@ -55,14 +55,14 @@ export default function ResetPassword() {
               </form>
             </div>
           ) : (
-              <div class="sign_in_reg_form text-center">
+              <div className="sign_in_reg_form text-center">
                 <form action="">
                   <h2>Success!</h2>
                   <h4>
                     You’ll receive an email with a reset link shortly if an
                     account exists with that email.
                   </h4>
-                  <a href="#" class="login_acct_btn">
+                  <a href="#" className="login_acct_btn">
                     <button type="button">Go to Live Proxies</button>
                   </a>
                   <br />

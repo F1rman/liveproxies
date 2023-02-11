@@ -5,7 +5,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import $ from "jquery";
 import Questions from "@/components/questions";
-import PriceHeader from "@/components/blueHeader";
+import PriceHeader from "@/modules/pricing/priceHeader";
 export default function StaticResidentialProxiesPricing() {
 
 useEffect(()=>{
