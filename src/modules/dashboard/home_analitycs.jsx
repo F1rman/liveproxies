@@ -1,15 +1,65 @@
-import Analytics from "@/modules/dashboard/analytics";
-import Authorization from "@/modules/dashboard/authorization";
-import History from "@/modules/dashboard/history";
-import Home from "@/modules/dashboard/home";
-import Notification from "@/modules/dashboard/notifications";
-import SideBar from "@/modules/dashboard/sidebar";
-import YourIpAddress from "@/modules/dashboard/you_ip_address";
-import Link from "next/link";
-import { useState } from "react";
+import $ from "jquery";
+import { useEffect } from "react";
 
 export default function HomeAnalitycs(props) {
-  const [tab, setTab] = useState(0);
+  useEffect(() => {
+    
+      gradientCircle();
+      gradientCircle2();
+
+    function gradientCircle() {
+      var count = $(".c1");
+      $({ Counter: 0 }).animate(
+        { Counter: 8.27 },
+        {
+          duration: 1000,
+          easing: "swing",
+          step: function () {
+            count.html(this.Counter.toFixed(2));
+          },
+        }
+      );
+
+      var s = Snap(".animated");
+      var progress = s.select("#progress");
+      var one100procent = "251.2";
+      progress.attr({ strokeDasharray: "0, " + one100procent });
+      Snap.animate(
+        0,
+        200.2,
+        function (value) {
+          progress.attr({ "stroke-dasharray": value + "," + one100procent });
+        },
+        1000
+      );
+    }
+    function gradientCircle2() {
+      var count = $(".c2");
+      $({ Counter: 0 }).animate(
+        { Counter: 20 },
+        {
+          duration: 1000,
+          easing: "swing",
+          step: function () {
+            count.html(this.Counter.toFixed(0));
+          },
+        }
+      );
+
+      var s = Snap(".animated2");
+      var progress = s.select("#progress2");
+      var one100procent = "251.2";
+      progress.attr({ strokeDasharray: "0, " + one100procent });
+      Snap.animate(
+        0,
+        100.2,
+        function (value) {
+          progress.attr({ "stroke-dasharray": value + "," + one100procent });
+        },
+        1000
+      );
+    }
+  }, []);
 
   return (
     <div className="card analitycs">

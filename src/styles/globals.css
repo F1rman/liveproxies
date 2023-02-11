@@ -46,6 +46,9 @@ body{
 .home_page_wrapper{
   overflow-x: hidden!important
 }
+.dashboard_page_wrapper{
+  overflow: hidden;
+}
 
 ::-webkit-selection {
   background-color:#1f6bd3;
