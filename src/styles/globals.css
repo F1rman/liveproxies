@@ -12663,6 +12663,7 @@ dashboard_page_wrapper .sidebar .nav-links li .active{
 .dashboard_page_wrapper #PLANNING .home-content main {
   position: relative;
   margin:15px 0 0 0;  
+  padding: 30px;
   -webkit-border-radius: 7px;
   -moz-border-radius: 7px;
   -ms-border-radius: 7px;
@@ -12676,9 +12677,7 @@ dashboard_page_wrapper .sidebar .nav-links li .active{
   background-color: #fff;	
 }
 
-.dashboard_page_wrapper #PLANNING .home-content main h1{
-  position:relative;
-  height:0;
+.dashboard_page_wrapper #PLANNING .home-content main .title{
   font-family: GothamPro;
   font-size: 16px;
   font-weight: 500;
@@ -12687,60 +12686,15 @@ dashboard_page_wrapper .sidebar .nav-links li .active{
   line-height: normal;
   letter-spacing: normal;
   color: #232020;
-  margin:0 0 0px 2px;
-}
-@media (max-width:991px){
-.dashboard_page_wrapper #PLANNING .home-content main h1{
-  font-size: 14px; 
-}
+  margin: 0;
+  margin-bottom: 12px;
 }
 
-.dashboard_page_wrapper #PLANNING .home-content main h1::before{
-  content:'';
-  display:inline-block;
-  margin-top:45px 
-}
 
-.dashboard_page_wrapper #PLANNING .home-content main ul #sectiontohide3{
-  padding:50px 30px 0px 30px;
-}
-
-.dashboard_page_wrapper #PLANNING .home-content main ul #sectiontohide1{
-  padding:50px 30px 0px 30px;
-}
  
-.dashboard_page_wrapper #PLANNING .home-content main ul #sectiontohide2{
-  padding:32px 30px 0px 30px;
-  margin-top:30px
-}
-
-@media (max-width:1199px){
-.dashboard_page_wrapper #PLANNING .home-content main ul #sectiontohide3,.dashboard_page_wrapper #PLANNING .home-content main ul #sectiontohide1,.dashboard_page_wrapper #PLANNING .home-content main ul #sectiontohide2{
-  margin-left:-30px;
-  padding:50px 50px 0px 30px;
-}	
-}
-@media (max-width:767px){
-.dashboard_page_wrapper #PLANNING .home-content main ul #sectiontohide3,.dashboard_page_wrapper #PLANNING .home-content main ul #sectiontohide1,.dashboard_page_wrapper #PLANNING .home-content main ul #sectiontohide2{
-  padding:50px 30px 0px 25px;
-}	
-}
-
-.dashboard_page_wrapper #PLANNING .home-content main ul{
-  overflow: hidden;
-}
-
-.dashboard_page_wrapper #PLANNING .home-content main ul li{
-  margin:10px 0 0 0;
-}
-
-.dashboard_page_wrapper #PLANNING .home-content main ul #sectiontohide1{
-}
-
-.dashboard_page_wrapper #PLANNING .home-content main ul #sectiontohide2{  
-}
- 
-.dashboard_page_wrapper #PLANNING .home-content main li h2,.dashboard_page_wrapper #PLANNING .home-content main #sectiontohide3 h2,.dashboard_page_wrapper #PLANNING .home-content main #sectiontohide3 h2 span{
+.dashboard_page_wrapper #PLANNING .home-content main  h2,
+.dashboard_page_wrapper #PLANNING .home-content main #sectiontohide3 h2,
+.dashboard_page_wrapper #PLANNING .home-content main #sectiontohide3 h2 span{
   font-family: GothamPro;
   font-size: 14px;
   font-weight: normal;
@@ -12886,8 +12840,6 @@ dashboard_page_wrapper .sidebar .nav-links li .active{
 }
 
 .dashboard_page_wrapper #PLANNING .home-content main button{
-  position:absolute;
-  display:table;
   width: 120px;
   height: 35px;
   padding:0;
@@ -12907,9 +12859,7 @@ dashboard_page_wrapper .sidebar .nav-links li .active{
   letter-spacing: normal;
   text-align: center;
   color: #1f6bd3;
-  bottom:35px;
-  right:85px;
-  overflow: hidden
+  margin-right: 40px;
 }
 @media (max-width:1199px){
 .dashboard_page_wrapper #PLANNING .home-content main button{
@@ -12940,24 +12890,12 @@ dashboard_page_wrapper .sidebar .nav-links li .active{
   line-height: normal;
   letter-spacing: normal;
   color: #232020;
-  bottom:0px;
-  right:auto;
+  margin: 0;
+  margin-bottom: 10px;
 }
 
-.dashboard_page_wrapper #PLANNING .home-content main h2 span{
-  font-family: GothamPro;
-  font-size: 14px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  color: #232020;
-  bottom:0px;
-  right:auto;
-}
 
-.dashboard_page_wrapper #PLANNING .home-content main h2 span a{
+.dashboard_page_wrapper #PLANNING .home-content main h2  .moreless-button{
   font-family: GothamPro;
   font-size: 14px;
   font-weight: normal;
@@ -12986,10 +12924,38 @@ dashboard_page_wrapper .sidebar .nav-links li .active{
   padding:1px 0 0 0;
 }
 
-.dashboard_page_wrapper #PLANNING .home-content main .moretext {
-  display: none;
-  margin:0 0 0 18px;
-  padding:0;
+#PLANNING main .items .item{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: solid 1px #dedede;
+  padding-top: 20px;
+}
+#PLANNING main .items .item:last-child{
+border-bottom: none;
+}
+#PLANNING main .items .item .content{
+width: 100%;
+margin-left: 20px;
+display: flex;
+flex-flow: column;
+}
+
+#PLANNING main .items .item .content h3{
+  font-family: GothamPro;
+  font-size: 12px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #9d9b9b;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+#PLANNING main .items .item  .close_wraper{
+margin-top: 5px;
+cursor: pointer;
 }
 
 /*===================END OF DASHBOARD NOTIFICATIONS SECTION===================*/
