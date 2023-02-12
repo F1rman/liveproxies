@@ -58,7 +58,7 @@ export default function PlansMobileCard(props) {
       <PlansMobileCardTab title={"API Access"}>{props.metered.apiAccess?<Image width={12} height={12} alt="true" src="/images/all-plans-checked-icon.svg" />:'-'}</PlansMobileCardTab>
       <PlansMobileCardTab title={"24/7 Support"}><Image width={12} height={12} alt="true" src="/images/all-plans-checked-icon.svg" /></PlansMobileCardTab>
       <PlansMobileCardTab title={"Dedicated Manager"}>{props.metered.DedicatedAccountManager?<Image width={12} height={12} alt="true" src="/images/all-plans-checked-icon.svg" />:'-'}</PlansMobileCardTab>
-     {props.outlined&& <Link href="/contact-us"><div className={"button_get outlined"}>Contact Us</div></Link>}
+     {props.outlined&& <Link href="/custom-pricing"><div className={"button_get outlined"}>Contact Us</div></Link>}
      {!props.outlined&& <Link href={props.href}><div className={"button_get"}>Get Started</div></Link>}
     </div>
   );

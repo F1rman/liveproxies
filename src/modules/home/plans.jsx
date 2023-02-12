@@ -583,7 +583,7 @@ export default function Plans() {
               </div>
               <div>
                 <button type="button">
-                  <Link href="/contact-us">Contact Us</Link>
+                  <Link href="/custom-pricing">Contact Us</Link>
                 </button>
               </div>
             </div>
