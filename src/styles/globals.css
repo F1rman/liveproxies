@@ -9346,20 +9346,6 @@ dashboard_page_wrapper .sidebar .nav-links li .active{
 
 /*=================== IGOR's DASHBOARD GRAPH AND COMPONENETS ===================*/
 
-@media (min-width:1400px){
- .dashboard_page_wrapper .dashboard .cards_graph .chart_wrapper{
-  width:100%!important;
-  height:350px!important;
-  background-color: transparent!important
-}
- 
-.dashboard_page_wrapper canvas{
-  width:100%!important;
-  height:350px!important;  
-  background-color: transparent!important
-}
-}
-
 @media (max-width:599px){
 .dashboard_page_wrapper .card{
   padding-left:5px!important;

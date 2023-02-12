@@ -4,47 +4,42 @@ import Chart1 from "chart.js/auto";
 import "chartjs-adapter-date-fns";
 
 export default function Chart(props) {
-  const customTooltip = {
-    mode: "index",
-    enabled: false,
-    custom: function (model) {
-      const tooltip = document.getElementById("tooltip");
-      $("body").mousemove((e) => {
-        if (model.opacity === 0) {
-          tooltip.style.opacity = 0;
-          return;
-        }
+  const customTooltip = (chart) => {
+    console.log(chart)
+    // mode: "index",
+    // enabled: false,
+    // custom: function (model) {
+    //   const tooltip = document.getElementById("tooltip");
+    //   $("body").mousemove((e) => {
+    //     if (model.opacity === 0) {
+    //       tooltip.style.opacity = 0;
+    //       return;
+    //     }
 
-        if (model.body) {
-          const title =
-            "<strong>" +
-            chartData[model.dataPoints[0].index].y +
-            " <span>GB</span></strong>";
+    //     if (model.body) {
+    //       const title =
+    //         "<strong>" +
+    //         chartData[model.dataPoints[0].index].y +
+    //         " <span>GB</span></strong>";
 
-          tooltip.innerHTML = title;
+    //       tooltip.innerHTML = title;
 
-          tooltip.style.left = "auto";
-          tooltip.style.right = "auto";
+    //       tooltip.style.left = "auto";
+    //       tooltip.style.right = "auto";
 
-          const pos = this._chart.canvas.getBoundingClientRect();
+    //       const pos = this._chart.canvas.getBoundingClientRect();
 
-          tooltip.style.left =
-            pos.left + model.caretX - $("#tooltip").width() + 10 + "px";
+    //       tooltip.style.left =
+    //         pos.left + model.caretX - $("#tooltip").width() + 10 + "px";
 
-          tooltip.style.top = -50 + e.pageY + "px";
-          tooltip.style.opacity = 1;
-        }
-      });
-    },
+    //       tooltip.style.top = -50 + e.pageY + "px";
+    //       tooltip.style.opacity = 1;
+    //     }
+    //   });
+    // },
   };
 
   var options = {
-    responsive: true,
-    animation: {
-      easing: "easeInOutQuad",
-      duration: 1000,
-    },
-
     hover: {
       mode: "nearest",
       intersect: false,
@@ -57,14 +52,21 @@ export default function Chart(props) {
           zeroLineWidth: 0,
           zeroLineColor: "rgba(222,222,222,0.5)",
         },
+        border: {
+          display: false
+        },
         ticks: {
           padding: 15,
-          fontFamily:'GothamPro',
+          family:'GothamPro',
           stepSize: 5,  
           callback: (e) => {
             return e + " GB";
           },
-          fontColor: "#9d9b9b",
+          font:{
+            size: 9,
+            family:'GothamPro',
+        },
+          color: "#9d9b9b",
           autoSkip: true,
           fontStyle: "",
           fontSize: 9,
@@ -73,7 +75,17 @@ export default function Chart(props) {
 
       x: {
         type: "time",
-       
+            time: {
+              parser: 'mm/dd',
+              unit: 'day',
+              unitStepSize: 1,
+              displayFormats: {
+                'day': 'MM/dd'
+              }
+            },
+        border: {
+          display: false
+        },
         grid: {
           color: "rgba(0, 0, 0, 0)",
           drawBorder: false,
@@ -82,13 +94,17 @@ export default function Chart(props) {
           zeroLineColor: "rgba(222,222,222,0.0)",
         },
         ticks: {
-        padding: 15,
-          fontColor: "#9d9b9b",
+          font:'GothamPro',
+          padding: 15,
+          color: "#9d9b9b",
           fontFamily:'GothamPro',
           align: "inner",
           autoSkip: true,
           fontStyle: "",
-          fontSize: 9,
+          font:{
+            size: 9,
+            family:'GothamPro',
+        }
         },
       },
     },
@@ -100,8 +116,12 @@ export default function Chart(props) {
 
     plugins: {
       legend: false,
-    },
-    tooltips: customTooltip,
+      tooltip: {
+        enabled: false,
+        position: 'nearest',
+        external: customTooltip
+      }
+  },
   };
   var ctx;
   var gradient;
@@ -166,11 +186,11 @@ export default function Chart(props) {
         if (chart.tooltip?._active?.length) {
           let x = chart.tooltip._active[0].element.x;
           let y = chart.tooltip._active[0].element.y;
-          var gradienTooltip = ctx.createLinearGradient(0, y + 10, 0, 275);
+          var gradienTooltip = ctx.createLinearGradient(0, y + 10, 0, 220);
           gradienTooltip.addColorStop(0, "#122d5f");
           gradienTooltip.addColorStop(0.8, "rgba(18, 45, 95, 0.1)");
           gradienTooltip.addColorStop(1, "rgba(18, 45, 95, 0)");
-          ctx.lineWidth = 1;
+          ctx.lineWidth = 1.5;
           ctx.strokeStyle = gradienTooltip;
           ctx.save();
           ctx.beginPath();
