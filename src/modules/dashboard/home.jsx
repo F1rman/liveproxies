@@ -22,7 +22,8 @@ export default function Home(props) {
                 <div className="content">
                   <div className="center_content">
                     <HomeAnalitycs />
-                    <Chart />
+
+                    <Chart setTab={props.setTab} />
                   </div>
                 </div>
               </div>

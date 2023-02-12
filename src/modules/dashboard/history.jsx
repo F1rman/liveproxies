@@ -6,120 +6,243 @@ import DashboardQuestions from "./dashboard_questions";
 export default function History(props) {
   const items = [
     {
-      PlanName: "CA | Rotating Residential",
-      Bandwidth: "8GB",
-      RolloverGB: "3.55 GB",
-      IPQuantity: "500 IPs",
+      PlanName: "UK | Static Residential",
+      Bandwidth: "Unmetered",
+      RolloverGB: "—",
+      IPQuantity: "200 IPs",
       Status: 0,
       Length: "30 Days",
       RolloverGB: "",
       StartDate: "Dec 01, 2022",
       PurchaseDate: "Dec 01, 2022",
-      ExpiryDate: "Dec 31, 2022",
       ExpiryDate: "Dec 31, 2022",
     },
     {
-      PlanName: "CA | Rotating Residential",
-      Bandwidth: "8GB",
-      RolloverGB: "3.55 GB",
-      IPQuantity: "500 IPs",
-      Status: 0,
+      PlanName: "US | Rotating Residential",
+      Bandwidth: "Unmetered",
+      RolloverGB: "—",
+      IPQuantity: "200 IPs",
+      Status: 1,
       Length: "30 Days",
       RolloverGB: "",
       StartDate: "Dec 01, 2022",
       PurchaseDate: "Dec 01, 2022",
-      ExpiryDate: "Dec 31, 2022",
       ExpiryDate: "Dec 31, 2022",
     },
     {
-      PlanName: "CA | Rotating Residential",
+      PlanName: "US | Rotating Mobile",
       Bandwidth: "8GB",
-      RolloverGB: "3.55 GB",
-      IPQuantity: "500 IPs",
-      Status: 0,
+      RolloverGB: "—",
+      IPQuantity: "200 IPs",
+      Status: 1,
       Length: "30 Days",
       RolloverGB: "",
       StartDate: "Dec 01, 2022",
       PurchaseDate: "Dec 01, 2022",
-      ExpiryDate: "Dec 31, 2022",
       ExpiryDate: "Dec 31, 2022",
     },
     {
-      PlanName: "CA | Rotating Residential",
+      PlanName: "US | Rotating Mobile",
       Bandwidth: "8GB",
-      RolloverGB: "3.55 GB",
-      IPQuantity: "500 IPs",
-      Status: 0,
+      RolloverGB: "2.0 GB",
+      IPQuantity: "200 IPs",
+      Status: 2,
       Length: "30 Days",
       RolloverGB: "",
       StartDate: "Dec 01, 2022",
       PurchaseDate: "Dec 01, 2022",
-      ExpiryDate: "Dec 31, 2022",
       ExpiryDate: "Dec 31, 2022",
     },
     {
-      PlanName: "CA | Rotating Residential",
+      PlanName: "US | Rotating Mobile",
       Bandwidth: "8GB",
-      RolloverGB: "3.55 GB",
-      IPQuantity: "500 IPs",
-      Status: 0,
+      RolloverGB: "1.5 GB",
+      IPQuantity: "200 IPs",
+      Status: 2,
       Length: "30 Days",
       RolloverGB: "",
       StartDate: "Dec 01, 2022",
       PurchaseDate: "Dec 01, 2022",
-      ExpiryDate: "Dec 31, 2022",
       ExpiryDate: "Dec 31, 2022",
     },
     {
-      PlanName: "CA | Rotating Residential",
+      PlanName: "US | Rotating Mobile",
       Bandwidth: "8GB",
-      RolloverGB: "3.55 GB",
-      IPQuantity: "500 IPs",
-      Status: 0,
+      RolloverGB: "6.5 GB",
+      IPQuantity: "200 IPs",
+      Status: 2,
       Length: "30 Days",
       RolloverGB: "",
       StartDate: "Dec 01, 2022",
       PurchaseDate: "Dec 01, 2022",
-      ExpiryDate: "Dec 31, 2022",
       ExpiryDate: "Dec 31, 2022",
     },
     {
-      PlanName: "CA | Rotating Residential",
+      PlanName: "US | Rotating Mobile",
       Bandwidth: "8GB",
       RolloverGB: "3.55 GB",
       IPQuantity: "500 IPs",
-      Status: 0,
+      Status: 2,
       Length: "30 Days",
       RolloverGB: "",
       StartDate: "Dec 01, 2022",
       PurchaseDate: "Dec 01, 2022",
-      ExpiryDate: "Dec 31, 2022",
       ExpiryDate: "Dec 31, 2022",
     },
     {
-      PlanName: "CA | Rotating Residential",
+      PlanName: "US | Rotating Mobile",
       Bandwidth: "8GB",
-      RolloverGB: "3.55 GB",
+      RolloverGB: "—",
       IPQuantity: "500 IPs",
-      Status: 0,
+      Status: 2,
       Length: "30 Days",
       RolloverGB: "",
       StartDate: "Dec 01, 2022",
       PurchaseDate: "Dec 01, 2022",
-      ExpiryDate: "Dec 31, 2022",
+      ExpiryDate: "—",
+    },
+    {
+      PlanName: "US | Rotating Mobile",
+      Bandwidth: "8GB",
+      RolloverGB: "5.2 GB",
+      IPQuantity: "500 IPs",
+      Status: 2,
+      Length: "30 Days",
+      RolloverGB: "",
+      StartDate: "Dec 01, 2022",
+      PurchaseDate: "Dec 01, 2022",
+      ExpiryDate: "—",
+    },
+    {
+      PlanName: "US | Rotating Mobile",
+      Bandwidth: "8GB",
+      RolloverGB: "1.0 GB",
+      IPQuantity: "500 IPs",
+      Status: 2,
+      Length: "30 Days",
+      RolloverGB: "",
+      StartDate: "Dec 01, 2022",
+      PurchaseDate: "Dec 01, 2022",
       ExpiryDate: "Dec 31, 2022",
     },
     {
-      PlanName: "CA | Rotating Residential",
-      Bandwidth: "8GB",
-      RolloverGB: "3.55 GB",
-      IPQuantity: "500 IPs",
+      PlanName: "UK | Static Residential",
+      Bandwidth: "Unmetered",
+      RolloverGB: "—",
+      IPQuantity: "200 IPs",
       Status: 0,
       Length: "30 Days",
       RolloverGB: "",
       StartDate: "Dec 01, 2022",
       PurchaseDate: "Dec 01, 2022",
       ExpiryDate: "Dec 31, 2022",
+    },
+    {
+      PlanName: "US | Rotating Residential",
+      Bandwidth: "Unmetered",
+      RolloverGB: "—",
+      IPQuantity: "200 IPs",
+      Status: 1,
+      Length: "30 Days",
+      RolloverGB: "",
+      StartDate: "Dec 01, 2022",
+      PurchaseDate: "Dec 01, 2022",
+      ExpiryDate: "Dec 31, 2022",
+    },
+    {
+      PlanName: "US | Rotating Mobile",
+      Bandwidth: "8GB",
+      RolloverGB: "—",
+      IPQuantity: "200 IPs",
+      Status: 1,
+      Length: "30 Days",
+      RolloverGB: "",
+      StartDate: "Dec 01, 2022",
+      PurchaseDate: "Dec 01, 2022",
+      ExpiryDate: "Dec 31, 2022",
+    },
+    {
+      PlanName: "US | Rotating Mobile",
+      Bandwidth: "8GB",
+      RolloverGB: "2.0 GB",
+      IPQuantity: "200 IPs",
+      Status: 2,
+      Length: "30 Days",
+      RolloverGB: "",
+      StartDate: "Dec 01, 2022",
+      PurchaseDate: "Dec 01, 2022",
+      ExpiryDate: "Dec 31, 2022",
+    },
+    {
+      PlanName: "US | Rotating Mobile",
+      Bandwidth: "8GB",
+      RolloverGB: "1.5 GB",
+      IPQuantity: "200 IPs",
+      Status: 2,
+      Length: "30 Days",
+      RolloverGB: "",
+      StartDate: "Dec 01, 2022",
+      PurchaseDate: "Dec 01, 2022",
+      ExpiryDate: "Dec 31, 2022",
+    },
+    {
+      PlanName: "US | Rotating Mobile",
+      Bandwidth: "8GB",
+      RolloverGB: "6.5 GB",
+      IPQuantity: "200 IPs",
+      Status: 2,
+      Length: "30 Days",
+      RolloverGB: "",
+      StartDate: "Dec 01, 2022",
+      PurchaseDate: "Dec 01, 2022",
+      ExpiryDate: "Dec 31, 2022",
+    },
+    {
+      PlanName: "US | Rotating Mobile",
+      Bandwidth: "8GB",
+      RolloverGB: "3.55 GB",
+      IPQuantity: "500 IPs",
+      Status: 2,
+      Length: "30 Days",
+      RolloverGB: "",
+      StartDate: "Dec 01, 2022",
+      PurchaseDate: "Dec 01, 2022",
+      ExpiryDate: "Dec 31, 2022",
+    },
+    {
+      PlanName: "US | Rotating Mobile",
+      Bandwidth: "8GB",
+      RolloverGB: "—",
+      IPQuantity: "500 IPs",
+      Status: 2,
+      Length: "30 Days",
+      RolloverGB: "",
+      StartDate: "Dec 01, 2022",
+      PurchaseDate: "Dec 01, 2022",
+      ExpiryDate: "—",
+    },
+    {
+      PlanName: "US | Rotating Mobile",
+      Bandwidth: "8GB",
+      RolloverGB: "5.2 GB",
+      IPQuantity: "500 IPs",
+      Status: 2,
+      Length: "30 Days",
+      RolloverGB: "",
+      StartDate: "Dec 01, 2022",
+      PurchaseDate: "Dec 01, 2022",
+      ExpiryDate: "—",
+    },
+    {
+      PlanName: "US | Rotating Mobile",
+      Bandwidth: "8GB",
+      RolloverGB: "1.0 GB",
+      IPQuantity: "500 IPs",
+      Status: 2,
+      Length: "30 Days",
+      RolloverGB: "",
+      StartDate: "Dec 01, 2022",
+      PurchaseDate: "Dec 01, 2022",
       ExpiryDate: "Dec 31, 2022",
     },
   ];
@@ -221,7 +344,10 @@ export default function History(props) {
                       <h4>{e.IPQuantity}</h4>
                     </div>
                     <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                      <span>{e.Status}</span>
+                    {e.Status==2&&<span className="Expired">Expired</span>}
+                    {e.Status==1&&<span className="Standby">Standby</span>}
+                    {e.Status==0&&<span className="active">Active</span>}
+                      
                     </div>
                     <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1">
                       <h4>{e.Length}</h4>
@@ -250,366 +376,8 @@ export default function History(props) {
                 );
               })}
 
-              <div className="order_hist_order_hist_inner_detail_con order_hist_order_hist_inner_detail_con3">
-                <div className="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-                  <h4>UK | Static Residential</h4>
-                </div>
-                <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                  <h4>Unmetered</h4>
-                </div>
-                <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                  <h4>—</h4>
-                </div>
-                <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                  <h4>200 IPs</h4>
-                </div>
-                <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                  <span>Standby</span>
-                </div>
-                <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                  <h4>30 Days</h4>
-                </div>
-                <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                  <h4>Dec 05, 2022</h4>
-                </div>
-                <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                  <h4>Dec 05, 2022</h4>
-                </div>
-                <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                  <h4>—</h4>
-                </div>
-                <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                  <a href="#!">
-                    <Image
-                      width={10}
-                      height={13}
-                      alt="invoice"
-                      src="/images/dashboard-order-history-pdf-invoice-icon.svg"
-                    />
-                    <span>View</span>
-                  </a>
-                </div>
-              </div>
-              <div className="order_hist_order_hist_inner_detail_con order_hist_order_hist_inner_detail_con2 order_hist_order_hist_inner_detail_con3">
-                <div className="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-                  <h4>US | Rotating Residential</h4>
-                </div>
-                <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                  <h4>Unmetered</h4>
-                </div>
-                <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                  <h4>—</h4>
-                </div>
-                <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                  <h4>200 IPs</h4>
-                </div>
-                <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                  <span>Standby</span>
-                </div>
-                <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                  <h4>30 Days</h4>
-                </div>
-                <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                  <h4>Dec 12, 2022</h4>
-                </div>
-                <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                  <h4>Dec 12, 2022</h4>
-                </div>
-                <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                  <h4>—</h4>
-                </div>
-                <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                  <a href="#!">
-                    <Image
-                      width={10}
-                      height={13}
-                      alt="invoice"
-                      src="/images/dashboard-order-history-pdf-invoice-icon.svg"
-                    />
-                    <span>View</span>
-                  </a>
-                </div>
-              </div>
-              <div className="order_hist_order_hist_inner_detail_con order_hist_order_hist_inner_detail_con3 order_hist_order_hist_inner_detail_con4">
-                <div className="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-                  <h4>US | Rotating Mobile</h4>
-                </div>
-                <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                  <h4>8GB</h4>
-                </div>
-                <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                  <h4>—</h4>
-                </div>
-                <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                  <h4>200 IPs</h4>
-                </div>
-                <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                  <span>Expired</span>
-                </div>
-                <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                  <h4>30 Days</h4>
-                </div>
-                <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                  <h4>Nov 04, 2022</h4>
-                </div>
-                <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                  <h4>Nov 04, 2022</h4>
-                </div>
-                <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                  <h4>Dec 05, 2022</h4>
-                </div>
-                <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                  <a href="#!">
-                    <Image
-                      width={10}
-                      height={13}
-                      alt="invoice"
-                      src="/images/dashboard-order-history-pdf-invoice-icon.svg"
-                    />
-                    <span>View</span>
-                  </a>
-                </div>
-              </div>
-              <div className="order_hist_order_hist_inner_detail_con order_hist_order_hist_inner_detail_con2 order_hist_order_hist_inner_detail_con4">
-                <div className="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-                  <h4>US | Rotating Mobile</h4>
-                </div>
-                <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                  <h4>8GB</h4>
-                </div>
-                <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                  <h4>2.0 GB</h4>
-                </div>
-                <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                  <h4>200 IPs</h4>
-                </div>
-                <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                  <span>Expired</span>
-                </div>
-                <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                  <h4>30 Days</h4>
-                </div>
-                <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                  <h4>Nov 04, 2022</h4>
-                </div>
-                <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                  <h4>Nov 04, 2022</h4>
-                </div>
-                <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                  <h4>Dec 05, 2022</h4>
-                </div>
-                <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                  <a href="#!">
-                    <Image
-                      width={10}
-                      height={13}
-                      alt="invoice"
-                      src="/images/dashboard-order-history-pdf-invoice-icon.svg"
-                    />
-                    <span>View</span>
-                  </a>
-                </div>
-              </div>
-              <div className="order_hist_order_hist_inner_detail_con order_hist_order_hist_inner_detail_con3 order_hist_order_hist_inner_detail_con4">
-                <div className="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-                  <h4>US | Rotating Mobile</h4>
-                </div>
-                <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                  <h4>8GB</h4>
-                </div>
-                <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                  <h4>1.5 GB</h4>
-                </div>
-                <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                  <h4>200 IPs</h4>
-                </div>
-                <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                  <span>Expired</span>
-                </div>
-                <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                  <h4>30 Days</h4>
-                </div>
-                <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                  <h4>Nov 04, 2022</h4>
-                </div>
-                <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                  <h4>Nov 04, 2022</h4>
-                </div>
-                <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                  <h4>Dec 05, 2022</h4>
-                </div>
-                <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                  <a href="#!">
-                    <Image
-                      width={10}
-                      height={13}
-                      alt="invoice"
-                      src="/images/dashboard-order-history-pdf-invoice-icon.svg"
-                    />
-                    <span>View</span>
-                  </a>
-                </div>
-              </div>
-              <div className="order_hist_order_hist_inner_detail_con order_hist_order_hist_inner_detail_con2 order_hist_order_hist_inner_detail_con4">
-                <div className="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-                  <h4>US | Rotating Mobile</h4>
-                </div>
-                <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                  <h4>8GB</h4>
-                </div>
-                <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                  <h4>6.5 GB</h4>
-                </div>
-                <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                  <h4>200 IPs</h4>
-                </div>
-                <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                  <span>Expired</span>
-                </div>
-                <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                  <h4>30 Days</h4>
-                </div>
-                <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                  <h4>Nov 04, 2022</h4>
-                </div>
-                <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                  <h4>Nov 04, 2022</h4>
-                </div>
-                <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                  <h4>Dec 05, 2022</h4>
-                </div>
-                <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                  <a href="#!">
-                    <Image
-                      width={10}
-                      height={13}
-                      alt="invoice"
-                      src="/images/dashboard-order-history-pdf-invoice-icon.svg"
-                    />
-                    <span>View</span>
-                  </a>
-                </div>
-              </div>
-              <div className="order_hist_order_hist_inner_detail_con order_hist_order_hist_inner_detail_con3 order_hist_order_hist_inner_detail_con4">
-                <div className="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-                  <h4>US | Rotating Mobile</h4>
-                </div>
-                <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                  <h4>8GB</h4>
-                </div>
-                <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                  <h4>—</h4>
-                </div>
-                <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                  <h4>200 IPs</h4>
-                </div>
-                <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                  <span>Expired</span>
-                </div>
-                <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                  <h4>30 Days</h4>
-                </div>
-                <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                  <h4>Nov 04, 2022</h4>
-                </div>
-                <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                  <h4>Nov 04, 2022</h4>
-                </div>
-                <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                  <h4>Dec 05, 2022</h4>
-                </div>
-                <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                  <a href="#!">
-                    <Image
-                      width={10}
-                      height={13}
-                      alt="invoice"
-                      src="/images/dashboard-order-history-pdf-invoice-icon.svg"
-                    />
-                    <span>View</span>
-                  </a>
-                </div>
-              </div>
-              <div className="order_hist_order_hist_inner_detail_con order_hist_order_hist_inner_detail_con2 order_hist_order_hist_inner_detail_con4">
-                <div className="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-                  <h4>US | Rotating Mobile</h4>
-                </div>
-                <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                  <h4>8GB</h4>
-                </div>
-                <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                  <h4>5.2 GB</h4>
-                </div>
-                <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                  <h4>200 IPs</h4>
-                </div>
-                <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                  <span>Expired</span>
-                </div>
-                <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                  <h4>30 Days</h4>
-                </div>
-                <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                  <h4>Nov 07, 2022</h4>
-                </div>
-                <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                  <h4>Nov 04, 2022</h4>
-                </div>
-                <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                  <h4>Dec 05, 2022</h4>
-                </div>
-                <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                  <a href="#!">
-                    <Image
-                      width={10}
-                      height={13}
-                      alt="invoice"
-                      src="/images/dashboard-order-history-pdf-invoice-icon.svg"
-                    />
-                    <span>View</span>
-                  </a>
-                </div>
-              </div>
-              <div className="order_hist_order_hist_inner_detail_con order_hist_order_hist_inner_detail_con3 order_hist_order_hist_inner_detail_con4">
-                <div className="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-                  <h4>US | Rotating Mobile</h4>
-                </div>
-                <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                  <h4>8GB</h4>
-                </div>
-                <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                  <h4>1.0 GB</h4>
-                </div>
-                <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                  <h4>200 IPs</h4>
-                </div>
-                <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                  <span>Expired</span>
-                </div>
-                <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                  <h4>30 Days</h4>
-                </div>
-                <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                  <h4>Nov 12, 2022</h4>
-                </div>
-                <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                  <h4>Nov 04, 2022</h4>
-                </div>
-                <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                  <h4>Dec 05, 2022</h4>
-                </div>
-                <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                  <a href="#!">
-                    <Image
-                      width={10}
-                      height={13}
-                      alt="invoice"
-                      src="/images/dashboard-order-history-pdf-invoice-icon.svg"
-                    />
-                    <span>View</span>
-                  </a>
-                </div>
-              </div>
+              
+              
             </div>
         </div>
           </div>

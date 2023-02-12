@@ -4,6 +4,7 @@ import Head from "next/head";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import $ from "jquery";
+import Image from "next/image";
 export default function ContactUs() {
 
   const [open,setOpen] =  useState(false)
@@ -77,7 +78,7 @@ export default function ContactUs() {
                         <div className="faqs_languages_caption" onClick={()=>{setOpen(!open)}}>
                           Choose an issue or case*
                         </div>
-                        <img src="/images/contact-us-arrow-down-icon.svg" />
+                        <Image width={14} height={9} alt="arrow" src="/images/contact-us-arrow-down-icon.svg" />
                         <div className={"faqs_languages_list"}>
                           <div className="faqs_languages_item">
                             Case/Issue 1
@@ -134,6 +135,7 @@ export default function ContactUs() {
                 announcements, chat with the other users, participate in
                 giveaways and enjoy the privileged discount codes.
               </h5>
+              <Image width={327} height={192} alt="arrow" src="/images/hello.svg" />
             </div>
           </div>
         </section>

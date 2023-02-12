@@ -7,6 +7,7 @@ import $ from "jquery";
 import Questions from "@/components/questions";
 import PriceHeader from "@/modules/pricing/priceHeader";
 export default function StaticResidentialProxiesPricing() {
+  const [metered, setToggle] = useState(true);
 
 useEffect(()=>{
     $(".tab-item").click(function(){
@@ -295,7 +296,7 @@ useEffect(()=>{
       </Head>
       <div className="rotat_resid_prox_pric_page_wrapper home_page_wrapper custom-pricing_page_wrapper">
         <Header />
-        <PriceHeader  title={'Static Residential'}/>
+        <PriceHeader setToggle={setToggle} metered={metered} title={'Static Residential'}/>
 
         
         <section className="rotating_section">

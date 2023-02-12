@@ -63,7 +63,7 @@ export default function Header() {
                         href="/proxy-tester"
                         className="navbar_dropdown_menu_list_item"
                       >
-                      
+                        <Image src={'/images/tester.svg'} width={23} height={34} alt="tester" />
                         <div className="text_wrapper">
                         <span>Proxy Tester</span>
                         <p>Verify your proxy connection</p>
@@ -76,6 +76,7 @@ export default function Header() {
                         target="_blank"
                         className="navbar_dropdown_menu_list_item"
                       >
+                        <Image src={'/images/liver-servers.svg'} width={23} height={34} alt="tester" />
                         <div className="text_wrapper">
                         <span>Live Servers</span>
                         <p>Unleash your bot’s full potential</p>

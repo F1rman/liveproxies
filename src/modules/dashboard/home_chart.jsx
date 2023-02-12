@@ -188,7 +188,9 @@ export default function Chart(props) {
       <div className="header_chart">
         <div className="title_wrapper">
           <div className="title">Bandwidth Usage</div>
-          <a className="link" href="#!" id="aINDICATEURSV">
+          <a  className="link" href="#!" onClick={()=>{
+            props.setTab(3)
+          }}>
             View Usage Analytics
           </a>
         </div>

@@ -105,7 +105,7 @@ export default function Analytics(props) {
                 <h5>Date</h5>
               </div>
               <div className="usage_analytics_toggle_con1 usage_analytics_toggle_con2">
-                <input type="checkbox" onChange={() => {}} checked />
+                <input type="checkbox" onChange={() => {}} defaultChecked />
                 <Image
                   width={12}
                   height={12}

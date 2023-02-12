@@ -289,7 +289,7 @@ useEffect(()=>{
       </Head>
       <div className="rotat_mobile_prox_pric_page_wrapper rotat_resid_prox_pric_page_wrapper home_page_wrapper custom-pricing_page_wrapper">
         <Header />
-        <PriceHeader title={'Rotating Mobile'} onlyMetered/>
+        <PriceHeader  title={'Rotating Mobile'} onlyMetered/>
 
         
         <section className="rotating_section">
