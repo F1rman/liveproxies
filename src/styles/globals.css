@@ -317,6 +317,7 @@ select, option, input, textarea, input::placeholder, input:focus{
   display: flex;
   width: 100%;
   font-family: GothamPro;
+  align-items: center;
   font-size: 14px;
   font-weight: 500;
   font-stretch: normal;
@@ -357,6 +358,7 @@ select, option, input, textarea, input::placeholder, input:focus{
   transition: .3s ease-in-out;
   display: flex;
   margin-bottom: 7px;
+  margin-top: 3px;
   
 }
 
@@ -3313,6 +3315,12 @@ margin-bottom: 0;
  .we_combined_wrapper{
   display: flex;
   justify-content: space-between;
+ }
+ .we_combined_wrapper .we_combined_the_sub_con1,
+ .we_combined_wrapper .we_combined_the_sub_con2,
+ .we_combined_wrapper .we_combined_the_sub_con3,
+ .we_combined_wrapper .we_combined_the_sub_con4{
+  width: 25%;
  }
 .we_combined_the_main_con{
   overflow: hidden;

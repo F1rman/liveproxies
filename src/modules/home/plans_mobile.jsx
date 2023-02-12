@@ -130,9 +130,9 @@ export default function PlansMobile() {
         </div>
       </div>
       <div className="plans_body">
-        {slide == 0 && <PlansMobileCard {...plans.residential_rotaing}  />}
-        {slide == 0 && <PlansMobileCard {...plans.residential_static} />}
-        {slide == 1 && <PlansMobileCard onlyMetered {...plans.mobile_proxies}/>}
+        {slide == 0 && <PlansMobileCard href={'rotating-residential-proxies-pricing'} {...plans.residential_rotaing}  />}
+        {slide == 0 && <PlansMobileCard href={'static-residential-proxies-pricing'} {...plans.residential_static} />}
+        {slide == 1 && <PlansMobileCard href={'rotating-mobile-proxies-pricing'} onlyMetered {...plans.mobile_proxies}/>}
         {slide == 1 && <PlansMobileCard outlined onlyMetered custom {...plans.all_in_one}/>}
       </div>
     </section>

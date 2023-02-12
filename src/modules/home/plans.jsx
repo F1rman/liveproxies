@@ -188,7 +188,7 @@ export default function Plans() {
                       </div>
                       <div>
                         <button type="button">
-                          <Link href="/sign-up.html">Get Started</Link>
+                          <Link href="/rotating-residential-proxies-pricing">Get Started</Link>
                         </button>
                       </div>
                     </div>
@@ -259,7 +259,7 @@ export default function Plans() {
                       </div>
                       <div>
                         <button type="button">
-                          <Link href="/sign-up.html">Get Started</Link>
+                          <Link href="/static-residential-proxies-pricing">Get Started</Link>
                         </button>
                       </div>
                     </div>
@@ -437,7 +437,7 @@ export default function Plans() {
                       </div>
                       <div>
                         <button type="button">
-                          <Link href="/#!">Get Started</Link>
+                          <Link href="/static-residential-proxies-pricing">Get Started</Link>
                         </button>
                       </div>
                     </div>
@@ -510,7 +510,7 @@ export default function Plans() {
               </div>
               <div>
                 <button type="button">
-                  <Link href="/#!">Get Started</Link>
+                  <Link href="/rotating-mobile-proxies-pricing">Get Started</Link>
                 </button>
               </div>
             </div>
