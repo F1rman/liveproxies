@@ -4,40 +4,66 @@ import Chart1 from "chart.js/auto";
 import "chartjs-adapter-date-fns";
 
 export default function Chart(props) {
-  const customTooltip = (chart) => {
-    console.log(chart)
-    // mode: "index",
-    // enabled: false,
-    // custom: function (model) {
-    //   const tooltip = document.getElementById("tooltip");
-    //   $("body").mousemove((e) => {
-    //     if (model.opacity === 0) {
-    //       tooltip.style.opacity = 0;
-    //       return;
-    //     }
+  const customTooltip = (context) => {
+    // Tooltip Element
+    let tooltipEl = document.getElementById('chartjs-tooltip');
 
-    //     if (model.body) {
-    //       const title =
-    //         "<strong>" +
-    //         chartData[model.dataPoints[0].index].y +
-    //         " <span>GB</span></strong>";
+    // Create element on first render
+    if (!tooltipEl) {
+        tooltipEl = document.createElement('div');
+        tooltipEl.id = 'chartjs-tooltip';
+        tooltipEl.innerHTML = '<table></table>';
+        document.body.appendChild(tooltipEl);
+    }
 
-    //       tooltip.innerHTML = title;
+    // Hide if no tooltip
+    const tooltipModel = context.tooltip;
+    if (tooltipModel.opacity === 0) {
+        tooltipEl.style.opacity = 0;
+        return;
+    }
 
-    //       tooltip.style.left = "auto";
-    //       tooltip.style.right = "auto";
+    tooltipEl.classList.remove('above', 'below', 'no-transform');
+    if (tooltipModel.yAlign) {
+        tooltipEl.classList.add(tooltipModel.yAlign);
+    } else {
+        tooltipEl.classList.add('no-transform');
+    }
 
-    //       const pos = this._chart.canvas.getBoundingClientRect();
+    function getBody(bodyItem) {
+        return bodyItem.lines;
+    }
 
-    //       tooltip.style.left =
-    //         pos.left + model.caretX - $("#tooltip").width() + 10 + "px";
+    if (tooltipModel.body) {
+        const bodyLines = tooltipModel.body.map(getBody);
 
-    //       tooltip.style.top = -50 + e.pageY + "px";
-    //       tooltip.style.opacity = 1;
-    //     }
-    //   });
-    // },
-  };
+        let innerHtml = '<thead>';
+
+       
+        innerHtml += '</thead><tbody>';
+
+        bodyLines.forEach(function(body, i) {
+            const span =
+            "<strong>" +
+            body +
+            " <span>GB</span></strong>";
+            innerHtml += '<tr><td>' + span + '</td></tr>';
+        });
+        innerHtml += '</tbody>';
+
+        let tableRoot = tooltipEl.querySelector('table');
+        tableRoot.innerHTML = innerHtml;
+    }
+
+    const position = context.chart.canvas.getBoundingClientRect();
+
+    tooltipEl.style.opacity = 1;
+    tooltipEl.style.position = 'absolute';
+    tooltipEl.style.left = position.left + window.pageXOffset + tooltipModel.caretX -22 + 'px';
+    tooltipEl.style.top = position.top + window.pageYOffset + tooltipModel.caretY - 44 + 'px';
+    tooltipEl.style.padding = tooltipModel.padding + 'px ' + tooltipModel.padding + 'px';
+    tooltipEl.style.pointerEvents = 'none';
+}
 
   var options = {
     hover: {
@@ -46,45 +72,44 @@ export default function Chart(props) {
     },
     scales: {
       y: {
-        grid: {
+      grid: {
           color: "rgba(222,222,222,0.5)",
           drawBorder: false,
           zeroLineWidth: 0,
           zeroLineColor: "rgba(222,222,222,0.5)",
         },
         border: {
-          display: false
+          display: false,
         },
         ticks: {
           padding: 15,
-          family:'GothamPro',
-          stepSize: 5,  
+          stepSize: 5,
           callback: (e) => {
             return e + " GB";
           },
-          font:{
+          font: {
             size: 9,
-            family:'GothamPro',
-        },
+            family: "GothamPro",
+          },
           color: "#9d9b9b",
           autoSkip: true,
-          fontStyle: "",
+          fontStyle: "",  
           fontSize: 9,
         },
       },
 
       x: {
-        type: "time",
-            time: {
-              parser: 'mm/dd',
-              unit: 'day',
-              unitStepSize: 1,
-              displayFormats: {
-                'day': 'MM/dd'
-              }
-            },
+      type: "time",
+          time: {
+          parser: "mm/dd",
+          unit: "day",
+          unitStepSize: 1,
+          displayFormats: {
+            day: "MM/dd",
+          },
+        },
         border: {
-          display: false
+          display: false,
         },
         grid: {
           color: "rgba(0, 0, 0, 0)",
@@ -93,18 +118,13 @@ export default function Chart(props) {
           lineWidth: 1,
           zeroLineColor: "rgba(222,222,222,0.0)",
         },
-        ticks: {
-          font:'GothamPro',
+          ticks: {
           padding: 15,
           color: "#9d9b9b",
-          fontFamily:'GothamPro',
-          align: "inner",
-          autoSkip: true,
-          fontStyle: "",
-          font:{
+          font: {
             size: 9,
-            family:'GothamPro',
-        }
+            family: "GothamPro",
+          },
         },
       },
     },
@@ -118,10 +138,9 @@ export default function Chart(props) {
       legend: false,
       tooltip: {
         enabled: false,
-        position: 'nearest',
-        external: customTooltip
-      }
-  },
+        external: customTooltip,
+      },
+    },
   };
   var ctx;
   var gradient;
@@ -147,16 +166,23 @@ export default function Chart(props) {
     return {
       labels: [
         dayEarlier(7),
+        dayEarlier(6.5),
         dayEarlier(6),
+        dayEarlier(5.5),
         dayEarlier(5),
+        dayEarlier(4.5),
         dayEarlier(4),
+        dayEarlier(3.5),
         dayEarlier(3),
+        dayEarlier(2.5),
         dayEarlier(2),
+        dayEarlier(1.5),
         dayEarlier(1),
+        dayEarlier(0),
       ],
       datasets: [
         {
-          data: [10, 12, 8, 4, 7, 14, 19],
+          data: [0, 5, 4, 4, 7, 14, 16, 14, 10, 12, 8, 9  , 7,6],
           fill: "start",
           backgroundColor: (context) => {
             const ctx = context.chart.ctx;
@@ -186,7 +212,7 @@ export default function Chart(props) {
         if (chart.tooltip?._active?.length) {
           let x = chart.tooltip._active[0].element.x;
           let y = chart.tooltip._active[0].element.y;
-          var gradienTooltip = ctx.createLinearGradient(0, y + 10, 0, 220);
+          var gradienTooltip = ctx.createLinearGradient(0, y + 10, 0, chart.height-45);
           gradienTooltip.addColorStop(0, "#122d5f");
           gradienTooltip.addColorStop(0.8, "rgba(18, 45, 95, 0.1)");
           gradienTooltip.addColorStop(1, "rgba(18, 45, 95, 0)");
@@ -195,7 +221,7 @@ export default function Chart(props) {
           ctx.save();
           ctx.beginPath();
           ctx.moveTo(x, y + 10);
-          ctx.lineTo(x, 275);
+          ctx.lineTo(x, chart.height-45);
           ctx.stroke();
           ctx.restore();
         }
@@ -208,9 +234,13 @@ export default function Chart(props) {
       <div className="header_chart">
         <div className="title_wrapper">
           <div className="title">Bandwidth Usage</div>
-          <a  className="link" href="#!" onClick={()=>{
-            props.setTab(3)
-          }}>
+          <a
+            className="link"
+            href="#!"
+            onClick={() => {
+              props.setTab(3);
+            }}
+          >
             View Usage Analytics
           </a>
         </div>
@@ -231,7 +261,6 @@ export default function Chart(props) {
             options={options}
             plugins={plugins}
           />
-          <div id="tooltip"></div>
         </div>
       </div>
     </div>
