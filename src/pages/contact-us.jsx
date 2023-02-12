@@ -125,7 +125,7 @@ export default function ContactUs() {
               <h2>Support</h2>
               <h3>
                 Check our comprehensive{" "}
-                <Link href="/custom-pricing.html">Help Center & FAQ</Link> to
+                <Link href="/custom-pricing">Help Center & FAQ</Link> to
                 find the answers of your questions or create a ticket.
               </h3>
               <h5>
