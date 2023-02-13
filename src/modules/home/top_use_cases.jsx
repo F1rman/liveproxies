@@ -79,7 +79,7 @@ export default function TopUseCases() {
         <h3>Scrape data anonymously and access content in any geo-location</h3>
 
         <div className="tile" id="tile-1">
-        <div className="overflow_x">
+        <div className="overflow_x hide_scroll">
           <ul className="topNavigation">
             <div className="line"></div>
             {navBar.map((e, i) => {

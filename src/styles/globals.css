@@ -85,6 +85,10 @@ button:focus, a:focus, .btn-primary:focus, .btn:active, .btn:active:focus {
   outline: none;
 }
 
+.hide_scroll::-webkit-scrollbar {
+  display: none;
+}
+
 a.btn {
   display: inline-block;
   vertical-align: top;
@@ -837,6 +841,12 @@ filter: invert(1);
 .hero_img h3{
   font-size: 16px;
   line-height: 20px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 360px;
+  margin-right: auto;
+  margin-left: auto;
 
 }
 }
@@ -14217,11 +14227,6 @@ cursor: pointer;
 }
 .plans_section .arrow {
   background-image: url(/images/arrow-right.svg);
-  -webkit-background-size: contain;
-  -moz-background-size: contain;
-  -ms-background-size: contain;
-  -o-background-size: contain;
-  background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   width: 8px;
@@ -14229,17 +14234,21 @@ cursor: pointer;
   position: absolute;
   top: 19px;
   opacity: .4;
+  padding: 20px;
 }
 .plans_section .arrow.active {
   opacity: 1;
 
 }
+
 .plans_section .arrow.arrow_left{
-  left: 15px;
+  left: -5px;
   transform: rotate(180deg);
+  top: 5px;
 }
 .plans_section .arrow.arrow_right{
-right: 15px;
+  right: -5px;
+  top: 5px;
 }
 .plans_section .slides_wrapper{
   display: flex;
@@ -14463,6 +14472,61 @@ display: block;
 
  /* 500s */
 @media (max-width:500px){
+  .use_with_your_fav_apps_rotmenucontainer .use_with_your_fav_apps_rotmenucontainer_sub_con2 h3{
+    width: 368px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+  .live_proxies_faqs_main_con .panel-title>a, .live_proxies_faqs_main_con .panel-title>a:active{
+    padding: 20px;
+  }
+  .live_proxies_faqs_main_con .panel-body{
+    padding-bottom: 20px;
+  }
+  .live_proxies_faqs_main_con .live_proxies_faqs_con h6{
+    width: 348px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+  .live_proxies_faqs_main_con{
+    padding: 50px 0 50px 0;
+  }
+  .simple_manage_dash_main_con .simple_manage_dash_sub_con1 h2{
+    width: 254px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+  }
+  .simple_manage_dash_main_con .simple_manage_dash_sub_con2 div{
+    height: 273px;
+  }
+  .simple_manage_dash_main_con .simple_manage_dash_sub_con1 h3{
+    width: 272px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+  .we_combined_the_main_con{
+    padding-bottom: 70px;
+  }
+  .we_combined_the_main_con .we_combined_the_con{
+    padding-bottom: 30px;
+  }
+  .we_combined_the_main_con{
+    padding-top: 70px;
+  }
+  .we_combined_the_main_con h2{
+    width: 358px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+  .honest_price_no_surprises_main_con .col2 .card .cardBody .buttons_wrapper{
+    margin: 15px 18px;
+  }
+  .hero_img{
+    margin-bottom: 40px;
+  }
+  .the_most_realiable_main_con h2{
+    margin-bottom: 9px;
+  }
   #PLANNING main .items .item .close_wraper{
     position: absolute;
     right: -5px;
@@ -14548,9 +14612,16 @@ display: block;
     
   }
   .topNavigation {
-    margin-bottom: 30px;
+    margin-bottom: 15px;
+    padding: 17px;
     border-radius: 0;
     width: 630px;
+    height: 66px;
+    padding-top: 6px;
+  }
+
+  .topNavigation li img{
+    margin-bottom: 10px;
   }
   .the_most_realiable_main_con .the_most_realiable_trust_pilot_icon {
     width: 120px;
@@ -14584,7 +14655,29 @@ display: block;
 .the_most_realiable_main_con h5{
   font-size:12px ;
   line-height: 16px;
-  max-width: 220px;
+  max-width: 226px;
+}
+.the_most_realiable_main_con div:nth-of-type(2){
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.top_use_cases_main_con{
+  margin: 70px auto 20px auto;
+}
+.the_most_realiable_main_con img{
+  width: 60px;
+  height: 60px;
+}
+.the_most_realiable_main_con  h5.f1{
+  max-width: 206px;
+}
+.top_use_cases_main_con h3{
+  max-width: 340px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+.the_most_realiable_main_con  h5.f3{
+width: 188px;
 }
 
 .live_proxies_faqs_main_con .panel-body{
@@ -14592,6 +14685,18 @@ display: block;
   line-height: 16px;
 }
 
+.honest_price_no_surprises_main_con{
+  padding: 40px 0 40px 0;
+}
+.honest_price_no_surprises_main_con .col1 h2{
+  margin-bottom: 15px;
+}
+.honest_price_no_surprises_main_con .col1 h4{
+  width: 408px;
+}
+.honest_price_no_surprises_main_con .col2 .card .cardHeader p{
+  width: 245px;
+}
   }
 
 
