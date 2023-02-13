@@ -113,9 +113,9 @@ export default function Footer() {
         <div className="footer_sub_con5 col">
           <h4>Company</h4>
           <ul>
-            {/* <li>
+            <li>
               <Link href="/#!">About</Link>
-            </li> */}
+            </li>
             <li>
               <Link href="/contact-us">Contact</Link>
             </li>
