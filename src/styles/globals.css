@@ -2187,9 +2187,9 @@ justify-content: center;
 }
 .honest_price_no_surprises_main_con .col2 .card .cardHeader .button:hover,
   .honest_price_no_surprises_main_con .col2 .card .cardHeader .button.active{
-  background-color: #ffffff15;
-  border-radius: 6px;
-  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 10%);
+    background-color: #ffffff35;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px 1px rgb(0 0 0 / 10%);
 }
 
 .honest_price_no_surprises_main_con .col2 .card .cardHeader .button h3{
