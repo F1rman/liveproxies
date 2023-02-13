@@ -12038,7 +12038,7 @@ max-height: 300px;
 }
 .dashboard_page_wrapper #CHIFFRAGE .home-content .order_hist_order_hist_inner_detail_con div:nth-of-type(10) span{
   font-family: GothamPro;
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 500;
   font-stretch: normal;
   font-style: normal;
@@ -12071,7 +12071,7 @@ max-height: 300px;
 .dashboard_page_wrapper #CHIFFRAGE .home-content .order_hist_order_hist_inner_detail_con h4{
   display:inline-block;
   font-family: GothamPro;
-  font-size: 10px;
+  font-size: 12px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
@@ -12122,14 +12122,14 @@ max-height: 300px;
 @media (min-width:1400px){	
 .dashboard_page_wrapper #CHIFFRAGE .home-content .order_hist_order_hist_inner_detail_con div:nth-of-type(8){
   margin:0 13px 0 0;
-  padding:0 0 0 10px;
+  padding:0 0 0 5px;
 }
 .dashboard_page_wrapper #CHIFFRAGE .home-content .order_hist_order_hist_inner_detail_con div:nth-of-type(9){
   margin:0 13px 0 0;
-  padding:0 0 0 20px;
+  padding:0 0 0 4px;
 }
 .dashboard_page_wrapper #CHIFFRAGE .home-content .order_hist_order_hist_inner_detail_con div:nth-of-type(10){
-  padding:0 0 0 40px;	
+  padding:0 0 0 30px;	
 }
 }
 
@@ -12154,7 +12154,7 @@ max-height: 300px;
 }
 .dashboard_page_wrapper #CHIFFRAGE .home-content .order_hist_order_hist_inner_detail_con div:nth-of-type(8){
   margin:0 12px 0 0;
-   padding:0 0 0 10px;
+   padding:0 0 0 5px;
 }
 .dashboard_page_wrapper #CHIFFRAGE .home-content .order_hist_order_hist_inner_detail_con div:nth-of-type(9){
   margin:0 12px 0 0;
