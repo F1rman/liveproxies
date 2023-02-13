@@ -248,25 +248,25 @@ export default function Header() {
                   <div id="collapseExplore2" className={pricing?"collapse in":"collapse"}>
                     <li>
                       <Link href="/rotating-residential-proxies-pricing">
-                        <img src="/images/navbar-pricing-house-ips.svg" />
+                        {/* <img src="/images/navbar-pricing-house-ips.svg" /> */}
                         Rotating Residential Proxies
                       </Link>
                     </li>
                     <li>
                       <Link href="/static-residential-proxies-pricing">
-                        <img src="/images/navbar-pricing-static-ips.svg" />
+                        {/* <img src="/images/navbar-pricing-static-ips.svg" /> */}
                         Static Residential Proxies
                       </Link>
                     </li>
                     <li>
                       <Link href="/rotating-mobile-proxies-pricing">
-                        <img src="/images/navbar-pricing-mobile-ips.svg" />
+                        {/* <img src="/images/navbar-pricing-mobile-ips.svg" /> */}
                         Rotating Mobile Proxies
                       </Link>
                     </li>
                     <li>
                       <Link href="/custom-pricing">
-                        <img src="/images/navbar-pricing-custom.svg" />
+                        {/* <img src="/images/navbar-pricing-custom.svg" /> */}
                         All in One Custom Solution
                       </Link>
                     </li>
