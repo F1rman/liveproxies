@@ -12,7 +12,7 @@ export default function History(props) {
       IPQuantity: "200 IPs",
       Status: 0,
       Length: "30 Days",
-      RolloverGB: "",
+      
       StartDate: "Dec 01, 2022",
       PurchaseDate: "Dec 01, 2022",
       ExpiryDate: "Dec 31, 2022",
@@ -24,7 +24,7 @@ export default function History(props) {
       IPQuantity: "200 IPs",
       Status: 1,
       Length: "30 Days",
-      RolloverGB: "",
+      
       StartDate: "Dec 01, 2022",
       PurchaseDate: "Dec 01, 2022",
       ExpiryDate: "Dec 31, 2022",
@@ -36,7 +36,7 @@ export default function History(props) {
       IPQuantity: "200 IPs",
       Status: 1,
       Length: "30 Days",
-      RolloverGB: "",
+      
       StartDate: "Dec 01, 2022",
       PurchaseDate: "Dec 01, 2022",
       ExpiryDate: "Dec 31, 2022",
@@ -48,7 +48,7 @@ export default function History(props) {
       IPQuantity: "200 IPs",
       Status: 2,
       Length: "30 Days",
-      RolloverGB: "",
+      
       StartDate: "Dec 01, 2022",
       PurchaseDate: "Dec 01, 2022",
       ExpiryDate: "Dec 31, 2022",
@@ -60,7 +60,7 @@ export default function History(props) {
       IPQuantity: "200 IPs",
       Status: 2,
       Length: "30 Days",
-      RolloverGB: "",
+      
       StartDate: "Dec 01, 2022",
       PurchaseDate: "Dec 01, 2022",
       ExpiryDate: "Dec 31, 2022",
@@ -72,7 +72,7 @@ export default function History(props) {
       IPQuantity: "200 IPs",
       Status: 2,
       Length: "30 Days",
-      RolloverGB: "",
+      
       StartDate: "Dec 01, 2022",
       PurchaseDate: "Dec 01, 2022",
       ExpiryDate: "Dec 31, 2022",
@@ -84,7 +84,7 @@ export default function History(props) {
       IPQuantity: "500 IPs",
       Status: 2,
       Length: "30 Days",
-      RolloverGB: "",
+      
       StartDate: "Dec 01, 2022",
       PurchaseDate: "Dec 01, 2022",
       ExpiryDate: "Dec 31, 2022",
@@ -96,7 +96,7 @@ export default function History(props) {
       IPQuantity: "500 IPs",
       Status: 2,
       Length: "30 Days",
-      RolloverGB: "",
+      
       StartDate: "Dec 01, 2022",
       PurchaseDate: "Dec 01, 2022",
       ExpiryDate: "—",
@@ -108,7 +108,7 @@ export default function History(props) {
       IPQuantity: "500 IPs",
       Status: 2,
       Length: "30 Days",
-      RolloverGB: "",
+      
       StartDate: "Dec 01, 2022",
       PurchaseDate: "Dec 01, 2022",
       ExpiryDate: "—",
@@ -120,7 +120,7 @@ export default function History(props) {
       IPQuantity: "500 IPs",
       Status: 2,
       Length: "30 Days",
-      RolloverGB: "",
+      
       StartDate: "Dec 01, 2022",
       PurchaseDate: "Dec 01, 2022",
       ExpiryDate: "Dec 31, 2022",
@@ -132,7 +132,7 @@ export default function History(props) {
       IPQuantity: "200 IPs",
       Status: 0,
       Length: "30 Days",
-      RolloverGB: "",
+      
       StartDate: "Dec 01, 2022",
       PurchaseDate: "Dec 01, 2022",
       ExpiryDate: "Dec 31, 2022",
@@ -144,7 +144,7 @@ export default function History(props) {
       IPQuantity: "200 IPs",
       Status: 1,
       Length: "30 Days",
-      RolloverGB: "",
+      
       StartDate: "Dec 01, 2022",
       PurchaseDate: "Dec 01, 2022",
       ExpiryDate: "Dec 31, 2022",
@@ -156,7 +156,7 @@ export default function History(props) {
       IPQuantity: "200 IPs",
       Status: 1,
       Length: "30 Days",
-      RolloverGB: "",
+      
       StartDate: "Dec 01, 2022",
       PurchaseDate: "Dec 01, 2022",
       ExpiryDate: "Dec 31, 2022",
@@ -168,7 +168,7 @@ export default function History(props) {
       IPQuantity: "200 IPs",
       Status: 2,
       Length: "30 Days",
-      RolloverGB: "",
+      
       StartDate: "Dec 01, 2022",
       PurchaseDate: "Dec 01, 2022",
       ExpiryDate: "Dec 31, 2022",
@@ -180,7 +180,7 @@ export default function History(props) {
       IPQuantity: "200 IPs",
       Status: 2,
       Length: "30 Days",
-      RolloverGB: "",
+      
       StartDate: "Dec 01, 2022",
       PurchaseDate: "Dec 01, 2022",
       ExpiryDate: "Dec 31, 2022",
@@ -192,7 +192,7 @@ export default function History(props) {
       IPQuantity: "200 IPs",
       Status: 2,
       Length: "30 Days",
-      RolloverGB: "",
+      
       StartDate: "Dec 01, 2022",
       PurchaseDate: "Dec 01, 2022",
       ExpiryDate: "Dec 31, 2022",
@@ -204,7 +204,7 @@ export default function History(props) {
       IPQuantity: "500 IPs",
       Status: 2,
       Length: "30 Days",
-      RolloverGB: "",
+      
       StartDate: "Dec 01, 2022",
       PurchaseDate: "Dec 01, 2022",
       ExpiryDate: "Dec 31, 2022",
@@ -216,7 +216,7 @@ export default function History(props) {
       IPQuantity: "500 IPs",
       Status: 2,
       Length: "30 Days",
-      RolloverGB: "",
+      
       StartDate: "Dec 01, 2022",
       PurchaseDate: "Dec 01, 2022",
       ExpiryDate: "—",
@@ -228,7 +228,7 @@ export default function History(props) {
       IPQuantity: "500 IPs",
       Status: 2,
       Length: "30 Days",
-      RolloverGB: "",
+      
       StartDate: "Dec 01, 2022",
       PurchaseDate: "Dec 01, 2022",
       ExpiryDate: "—",
@@ -240,7 +240,7 @@ export default function History(props) {
       IPQuantity: "500 IPs",
       Status: 2,
       Length: "30 Days",
-      RolloverGB: "",
+      
       StartDate: "Dec 01, 2022",
       PurchaseDate: "Dec 01, 2022",
       ExpiryDate: "Dec 31, 2022",
