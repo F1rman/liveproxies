@@ -2295,13 +2295,13 @@ margin-bottom: 0;
 .honest_price_no_surprises_main_con .col2 .card .cardBody .item 
   .image_wrapper{
   display: flex;
-  height: 20px;
+  /* height: 20px; */
   
 }
 .honest_price_no_surprises_main_con .col2 .card .cardBody .item 
   .state_wrapper{
     margin-left: 15px;
-    justify-content: center;
+    /* justify-content: center; */
 }
 .honest_price_no_surprises_main_con .col2 .card .cardBody .item 
   .item_inside{
