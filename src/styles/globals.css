@@ -2362,6 +2362,7 @@ margin-bottom: 0;
   font-size: 12px;
   font-weight: normal;
   font-stretch: normal;
+  white-space: nowrap;
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
@@ -2375,10 +2376,11 @@ margin-bottom: 0;
 .honest_price_no_surprises_main_con .col2 .card .cardBody .item .state_wrapper{
   display: flex;
   flex-flow: column;
+  margin-right: 6px;
 }
 
 .honest_price_no_surprises_main_con .col2 .card .cardBody .item .state_wrapper h6{
-  white-space: nowrap;
+  /* white-space: nowrap; */
   font-family: GothamPro;
   font-size: 10px;
   font-weight: normal;
