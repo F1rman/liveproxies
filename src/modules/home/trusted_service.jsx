@@ -153,7 +153,7 @@ export default function TrustedService() {
                       />
                       <div className="state_wrapper">
                       <h2>Random Location</h2>
-                      <h6>Arbitrary countries mixed excluding US, UK, CA</h6>
+                      <h6 className="mob">Arbitrary countries mixed excluding US, UK, CA</h6>
                     </div>
                     </div>
                     <div className="item_inside">

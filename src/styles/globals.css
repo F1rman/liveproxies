@@ -14474,6 +14474,9 @@ display: block;
 
  /* 500s */
 @media (max-width:500px){
+  .honest_price_no_surprises_main_con .col2 .card .cardBody .item .state_wrapper h6.mob{
+    width: 170px;
+  }
   .use_with_your_fav_apps_rotmenucontainer .use_with_your_fav_apps_rotmenucontainer_sub_con2 h3{
     width: 368px;
     margin: 0 auto;
