@@ -2411,7 +2411,23 @@ margin-bottom: 0;
   margin-top: 6px;
 }
 @media (max-width:1024px){  
-
+  .dashboard_page_wrapper #INDICATEURS .home-content{
+    padding-right: 20px;
+  }
+  .dashboard_page_wrapper #INDICATEURS .usage_wrapper .usage_analytics_toggle_con1{
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+    margin-bottom: 10px;
+  }
+  .dashboard_page_wrapper #INDICATEURS .usage_wrapper{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: column;
+  }
+  .dashboard_page_wrapper #INDICATEURS .usage_wrapper .creatfaqs_languages{
+    margin-bottom: 30px;
+  }
   .honest_price_no_surprises_main_con .wrapper{
     flex-flow: column;
   }
@@ -13158,7 +13174,7 @@ margin-right: 0;
 .dashboard_page_wrapper #INDICATEURS .home-content .usage_analytics_figure_stats_main_con2 h5{
   width:130px;
   font-family: GothamPro;
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 500;
   font-stretch: normal;
   font-style: normal;
@@ -14228,6 +14244,30 @@ color: #8a96b5;
 
 .plans_section .card_plan .nav_item.active .nav_body{
 display: block;
+}
+@media (max-width:1024px){  
+  .dashboard_page_wrapper #INDICATEURS .home-content{
+    padding-right: 20px;
+  }
+  .dashboard_page_wrapper #INDICATEURS .usage_wrapper .usage_analytics_toggle_con1{
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+    margin-bottom: 10px;
+  }
+  .dashboard_page_wrapper #INDICATEURS .usage_wrapper{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: column;
+  }
+  .dashboard_page_wrapper #INDICATEURS .usage_wrapper .creatfaqs_languages{
+    margin-bottom: 30px;
+  }
+  .dashboard_page_wrapper #INDICATEURS .usage_wrapper .usage_analytics_toggle_main_con{
+    justify-content: flex-start;
+    margin-top: 20px;
+    max-width: 100%;
+  }
 }
 @media (max-width:768px){
   .dashboard_page_wrapper #INDICATEURS .usage_wrapper{
