@@ -37,6 +37,7 @@ export default function Analytics(props) {
                 </select>
               </a>
             </div>
+            <div className="usage_wrapper">
             <div className="creatfaqs_languages dropdown">
               <div className="faqs_languages container">
                 <div
@@ -162,6 +163,7 @@ export default function Analytics(props) {
                   <span className="tooltip">Errors</span>
                 </span>
               </div>
+            </div>
             </div>
           </div>
           <div className="usage_analytics_figure_stats_main_con">
