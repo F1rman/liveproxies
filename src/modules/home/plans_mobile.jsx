@@ -47,7 +47,7 @@ export default function PlansMobile() {
       unmetered: {
         per: "Plan",
         price: "$55",
-        region: "US",
+        region: "US, CA, UK, RL",
         bandwidthMeter: "Unmetered",
         IPauthorization: "Required",
         bandwidthRollover: false,
