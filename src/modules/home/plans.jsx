@@ -212,7 +212,7 @@ export default function Plans() {
                         </h5>
                       </div>
                       <div>
-                        <h3>US, RL</h3>
+                        <h3>US, CA, UK, RL</h3>
                       </div>
                       <div>
                         <h3>Unmetered</h3>
@@ -392,7 +392,7 @@ export default function Plans() {
                         </h5>
                       </div>
                       <div>
-                        <h3>US</h3>
+                        <h3>US, CA, UK, RL</h3>
                       </div>
                       <div>
                         <h3>Unmetered</h3>
