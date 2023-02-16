@@ -9,16 +9,20 @@ import PriceHeader from "@/modules/pricing/priceHeader";
 export default function StaticResidentialProxiesPricing() {
   const [metered, setToggle] = useState(true);
 
-useEffect(()=>{
-    $(".tab-item").click(function(){
-        var filterValue = $(this).attr('data-filter');
+  useEffect(() => {
+    $(".tab-item").click(function () {
+      var filterValue = $(this).attr("data-filter");
 
-        $('.filter-item').not('.'+filterValue).hide();
+      $(".filter-item")
+        .not("." + filterValue)
+        .hide();
 
-        $('.filter-item').filter('.'+filterValue).show();
+      $(".filter-item")
+        .filter("." + filterValue)
+        .show();
 
-        $(this).parent().find('.active').removeClass('active')
-        $(this).addClass('active');
+      $(this).parent().find(".active").removeClass("active");
+      $(this).addClass("active");
     });
     var data = [
       { bandwidth: "8", days: 30, price: 100, ips: 200 },
@@ -35,22 +39,22 @@ useEffect(()=>{
       { bandwidth: "16", days: 45, price: 150, ips: 350 },
       { bandwidth: "32", days: 60, price: 200, ips: 500 },
     ];
-  
+
     var ips = ["US", "CA", "UK", "RL", "States"];
-  
+
     function init() {
       changeCountry();
       addLinks();
       rangeSliderChange();
-  
+
       createCustomSelect();
     }
     init();
-  
+
     function createCustomSelect() {
       applyDataToSelect();
       closeCustomSelect();
-  
+
       $(".rotating_card").each((i, e) => {
         $(e)
           .find(".select")
@@ -58,25 +62,24 @@ useEffect(()=>{
             $(".select_items").removeClass("active");
             $(e).find(".select_items").addClass("active");
           });
-  
+
         $(this).find(".select_items").addClass("active");
         $(e)
           .find(".select_wrapper .select_items > div")
           .click(function () {
             clearSlider();
             if ($(this).attr("data-value") == "-1") {
-              $(this).parent().parent().find(".select").text('Not selected');
-  
+              $(this).parent().parent().find(".select").text("Not selected");
+
               removeCardActive();
             } else {
-            var index = $(this).attr("data-value");
-            var text = `<div>${data[index].ips} IPs | <span>$${data[index].price}</span>   </div><div>  ${data[index].bandwidth} GB / ${data[index].days} Days</div>`;
-            $(this).parent().parent().find(".select").html(text);
-            setCardActive(e);
-            setPlanDetailsList(e, $(this).attr("data-value"));
-          }
-          $(".select_items").removeClass("active");
-  
+              var index = $(this).attr("data-value");
+              var text = `<div>${data[index].ips} IPs | <span>$${data[index].price}</span>   </div><div>  ${data[index].bandwidth} GB / ${data[index].days} Days</div>`;
+              $(this).parent().parent().find(".select").html(text);
+              setCardActive(e);
+              setPlanDetailsList(e, $(this).attr("data-value"));
+            }
+            $(".select_items").removeClass("active");
           });
       });
     }
@@ -90,34 +93,29 @@ useEffect(()=>{
           clearPlanDetailsList();
           clearSlider();
           setCardActive(e);
-            var text = `<div>${data[0].ips} IPs | <span>$${data[0].price}</span>   </div><div>  ${data[0].bandwidth} GB / ${data[0].days} Days</div>`;
-            $(e)
-            .find(".select")
-            .eq(0)
-            .html(
-              text
-            );
+          var text = `<div>${data[0].ips} IPs | <span>$${data[0].price}</span>   </div><div>  ${data[0].bandwidth} GB / ${data[0].days} Days</div>`;
+          $(e).find(".select").eq(0).html(text);
         });
     });
-  
+
     function setCardActive(e) {
       removeCardActive();
       $(e).addClass("active");
       setPlanDetailsList(e, 0);
-  
+
       $(".buy_now").each((i2, e2) => {
         $(e2).text(`Choose ${ips[i2]} IPs`);
       });
       $(".buy_now").removeClass("active");
       $(e).find(".buy_now").text("Buy Now").addClass("active");
-      $(".rotating_card:not(.active) .select").text(`Not selected`)
+      $(".rotating_card:not(.active) .select").text(`Not selected`);
     }
-  
+
     function setPlanDetailsList(e, index) {
       $(e).find(".hard_drive").css("display", "block");
       $(e).find(".calendar").css("display", "block");
       $(e).find(".i-ps").css("display", "block");
-    
+
       $(e)
         .find(".gig")
         .text(data[index].bandwidth + " GB");
@@ -133,7 +131,7 @@ useEffect(()=>{
       $(e).find(".hard_drive").css("display", "block");
       $(e).find(".calendar").css("display", "block");
       $(e).find(".i-ps").css("display", "block");
-    
+
       $(e)
         .find(".gig")
         .text(data_slider[index].bandwidth + " GB");
@@ -171,7 +169,7 @@ useEffect(()=>{
       $(".rotating_card").removeClass("active");
       clearPlanDetailsList();
     }
-  
+
     function rangeSliderChange() {
       $("#range").on("input change", (e) => {
         removeCardActive();
@@ -212,9 +210,12 @@ useEffect(()=>{
         if ($("#range").val() - 1 == 0) {
           clearPlanDetailsList();
         } else {
-          setPlanDetailsListSlider($(".rotating_slider"), $("#range").val() - 2);
+          setPlanDetailsListSlider(
+            $(".rotating_slider"),
+            $("#range").val() - 2
+          );
         }
-        $(".rotating_card:not(.active) .select").text('Not selected');
+        $(".rotating_card:not(.active) .select").text("Not selected");
       });
     }
     $("#states_ip").click(() => {
@@ -224,28 +225,30 @@ useEffect(()=>{
       $("#range").val(2);
       $("#range").change();
     });
-  
+
     $(".range-labels li").on("click", function () {
       var index = $(this).index();
-  
+
       $("#range")
         .val(index + 1)
         .trigger("input");
     });
-  
+
     function applyDataToSelect() {
-      var html = '';
-      
-  
+      var html = "";
+
       data.map((item, i) => {
         html += `<div  data-value="${i}" class="item"><div>${item.ips} IPs | <span>$${item.price}</span>   </div><div>  ${item.bandwidth} GB / ${item.days} Days</div></div>`;
       });
-  
+
       $(".rotating_card .select_wrapper .select_items").html(html);
       $(".rotating_card .select_wrapper .select").text("Not selected");
-     
-      $('.select_wrapper .select').eq(0).html(`<div>${data[0].ips} IPs | <span>$${data[0].price}</span>   </div><div>  ${data[0].bandwidth} GB / ${data[0].days} Days</div>`)
-  
+
+      $(".select_wrapper .select")
+        .eq(0)
+        .html(
+          `<div>${data[0].ips} IPs | <span>$${data[0].price}</span>   </div><div>  ${data[0].bandwidth} GB / ${data[0].days} Days</div>`
+        );
     }
     function changeCountry() {
       $("#changeCountry")
@@ -256,12 +259,12 @@ useEffect(()=>{
           $(this).after($aux);
           $(this).width($aux.width());
           $(".rotating_slider .select_wrapper").width($aux.width() + 60);
-  
+
           $aux.remove();
         })
         .change();
     }
-  
+
     function addLinks() {
       $("*[data-href]").each((i, e) => {
         $(e).click(() => {
@@ -285,7 +288,7 @@ useEffect(()=>{
         }
       });
     }
-},[])
+  }, []);
   return (
     <>
       <Head>
@@ -296,345 +299,413 @@ useEffect(()=>{
       </Head>
       <div className="rotat_resid_prox_pric_page_wrapper home_page_wrapper custom-pricing_page_wrapper">
         <Header />
-        <PriceHeader setToggle={setToggle} metered={metered} title={'Static Residential'}/>
+        <PriceHeader
+          setToggle={setToggle}
+          metered={metered}
+          title={"Static Residential"}
+        >
+          <h3>
+            Maintain optimal performance by switching to fresh IPs after a
+            certain time period without changing your set of proxies.
+          </h3>
+        </PriceHeader>
 
-        
         <section className="rotating_section">
-        <div className="info">
-          <div className="bg_icon "></div> <span> Weigh the options of a metered plan with longer durations and traffic limits or unmetered plan with unlimited traffic but less IPs to optimize your proxy usage.</span>
-        </div>
-        <div className="container">
+          <div className="info">
+            <div className="bg_icon "></div>{" "}
+            <span>
+              {" "}
+              Weigh the options of a metered plan with longer durations and
+              traffic limits or unmetered plan with unlimited traffic but less
+              IPs to optimize your proxy usage.
+            </span>
+          </div>
+          <div className="container">
             <div className="rotatings_wrapper">
-                <div className="rotating_card rotating_card_shadow active" id="card1">
-				 <div className="rotating_card_inner_con">
-                    <div className="title blue">US | Static Residential</div>
-	                <div className="subtitle filter-item rotat_resid_meter_unmeter_one">Metered</div>
-                    <div className="subtitle filter-item rotat_resid_meter_unmeter_two">Unmetered</div>
-                    <div className="caption"><span className="bold">Starts from</span>
-                        {/* <!-- <div className="bg_icon icon_info tooltip">
+              <div
+                className="rotating_card rotating_card_shadow active"
+                id="card1"
+              >
+                <div className="rotating_card_inner_con">
+                  <div className="title blue">US | Static Residential</div>
+                  <div className="subtitle filter-item rotat_resid_meter_unmeter_one">
+                    Metered
+                  </div>
+                  <div className="subtitle filter-item rotat_resid_meter_unmeter_two">
+                    Unmetered
+                  </div>
+                  <div className="caption">
+                    <span className="bold">Starts from</span>
+                    {/* <!-- <div className="bg_icon icon_info tooltip">
                             <div className="tooltiptext">Lorem ipsum dolor sit amet consectetur </div>
                         </div> --> */}
-                    </div>                     
-                    <div className="price_info">
-                        <div className="price_plan">
-                            <div className="dollar">$</div>
-                            <div className="price">100</div>
-                            <div className="plan">/Plan</div>
-                        </div>
+                  </div>
+                  <div className="price_info">
+                    <div className="price_plan">
+                      <div className="dollar">$</div>
+                      <div className="price">100</div>
+                      <div className="plan">/Plan</div>
                     </div>
-                    <div className="divider"></div>					
- 					<div className="list_info first">
-                        <div className="caption"><span>Origin of IPs</span>
-                            {/* <!-- <div className="bg_icon icon_info tooltip">
+                  </div>
+                  <div className="divider"></div>
+                  <div className="list_info first">
+                    <div className="caption">
+                      <span>Origin of IPs</span>
+                      {/* <!-- <div className="bg_icon icon_info tooltip">
                                 <div className="tooltiptext">Lorem ipsum dolor sit amet consectetur </div>
                             </div> --> */}
-                        </div>
-                        <div className="details_right_icon">
-                            <span>United States</span>
-                            <div className="bg_icon us"></div>
-                        </div>
                     </div>
-                    <div className="list_info ">
-                        <div className="caption"><span>IP Quantity</span>
-                            {/* <!-- <div className="bg_icon icon_info tooltip">
+                    <div className="details_right_icon">
+                      <span>United States</span>
+                      <div className="bg_icon us"></div>
+                    </div>
+                  </div>
+                  <div className="list_info ">
+                    <div className="caption">
+                      <span>IP Quantity</span>
+                      {/* <!-- <div className="bg_icon icon_info tooltip">
                                 <div className="tooltiptext">Lorem ipsum dolor sit amet consectetur </div>
                             </div> --> */}
-                        </div>
-                        <div className="details_right_icon">
-                            <span className="ips">200IPs</span>
-                            <div className="bg_icon i-ps"></div>
-                        </div>
                     </div>
-                    <div className="list_info">
-                        <div className="caption"><span>Bandwidth</span>
-                            {/* <!-- <div className="icon_info tooltip bg_icon">
+                    <div className="details_right_icon">
+                      <span className="ips">200 IPs</span>
+                      <div className="bg_icon i-ps"></div>
+                    </div>
+                  </div>
+                  <div className="list_info">
+                    <div className="caption">
+                      <span>Bandwidth</span>
+                      {/* <!-- <div className="icon_info tooltip bg_icon">
                                 <div className="tooltiptext">Lorem ipsum dolor sit amet consectetur </div>
                             </div> --> */}
-                        </div>
-                        <div className="details_right_icon">
-                            <span className="gig">5 GB</span>
-                            <div className="bg_icon hard_drive"></div>
-                        </div>
                     </div>
-                    <div className="list_info">
-                        <div className="caption"><span>Plan Length</span>
-                            {/* <!-- <div className="icon_info tooltip bg_icon">
+                    <div className="details_right_icon">
+                      <span className="gig">5 GB</span>
+                      <div className="bg_icon hard_drive"></div>
+                    </div>
+                  </div>
+                  <div className="list_info">
+                    <div className="caption">
+                      <span>Plan Length</span>
+                      {/* <!-- <div className="icon_info tooltip bg_icon">
                                 <div className="tooltiptext">Lorem ipsum dolor sit amet consectetur </div>
                             </div> --> */}
-                        </div>
-                        <div className="details_right_icon">
-                            <span className="length_days">15 Days</span>
-                            <div className="bg_icon calendar"></div>
-                        </div>
-                     </div>
-					</div>	
-                    <div className="select_wrapper">
-                        <div className="select" tabIndex="1"></div>
-                         <div className="select_items" ></div>
-                    </div>										
-                    <div className="promo">
-                        <div className="input_with_label">
-                            <label htmlFor="promo" className="">Have a promo code?</label>
-                            <div className="input_wrapper">
-                                <input type="text" placeholder="Enter code" id="promo"/>
-                                <div className="input_button " data-href="#!">Apply</div>
-                            </div>
-                        </div>
                     </div>
-                    <div className="btn buy_now buy_now1 active" data-href="#!">
-                        Buy Now
+                    <div className="details_right_icon">
+                      <span className="length_days">15 Days</span>
+                      <div className="bg_icon calendar"></div>
                     </div>
-                    <div className="bg_icon stripe_right">
-                    </div>
+                  </div>
                 </div>
-                <div className="rotating_card rotating_card_shadow">
-				  <div className="rotating_card_inner_con">
-                    <div className="title red">CA | Static Residential</div>
-	                <div className="subtitle filter-item rotat_resid_meter_unmeter_one">Metered</div>
-                    <div className="subtitle filter-item rotat_resid_meter_unmeter_two">Unmetered</div>
-                    <div className="caption"><span className="bold">Starts from</span>
-                        {/* <!-- <div className="bg_icon icon_info tooltip">
+                <div className="select_wrapper">
+                  <div className="select" tabIndex="1"></div>
+                  <div className="select_items"></div>
+                </div>
+                <div className="promo">
+                  <div className="input_with_label">
+                    <label htmlFor="promo" className="">
+                      Have a promo code?
+                    </label>
+                    <div className="input_wrapper">
+                      <input type="text" placeholder="Enter code" id="promo" />
+                      <div className="input_button " data-href="#!">
+                        Apply
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="btn buy_now buy_now1 active" data-href="#!">
+                  Buy Now
+                </div>
+                <div className="bg_icon stripe_right"></div>
+              </div>
+              <div className="rotating_card rotating_card_shadow">
+                <div className="rotating_card_inner_con">
+                  <div className="title red">CA | Static Residential</div>
+                  <div className="subtitle filter-item rotat_resid_meter_unmeter_one">
+                    Metered
+                  </div>
+                  <div className="subtitle filter-item rotat_resid_meter_unmeter_two">
+                    Unmetered
+                  </div>
+                  <div className="caption">
+                    <span className="bold">Starts from</span>
+                    {/* <!-- <div className="bg_icon icon_info tooltip">
                             <div className="tooltiptext">Lorem ipsum dolor sit amet consectetur </div>
                         </div> --> */}
-                    </div>					
-                    <div className="price_info">
-                        <div className="price_plan">
-                            <div className="dollar">$</div>
-                            <div className="price">0</div>
-                            <div className="plan">/Plan</div>
-                        </div>
+                  </div>
+                  <div className="price_info">
+                    <div className="price_plan">
+                      <div className="dollar">$</div>
+                      <div className="price">0</div>
+                      <div className="plan">/Plan</div>
                     </div>
-                    <div className="divider"></div>
-					<div className="list_info first">
-                        <div className="caption"><span>Origin of IPs</span>
-                            {/* <!-- <div className="bg_icon icon_info tooltip">
+                  </div>
+                  <div className="divider"></div>
+                  <div className="list_info first">
+                    <div className="caption">
+                      <span>Origin of IPs</span>
+                      {/* <!-- <div className="bg_icon icon_info tooltip">
                                 <div className="tooltiptext">Lorem ipsum dolor sit amet consectetur </div>
                             </div> --> */}
-                        </div>
-                        <div className="details_right_icon">
-                            <span>Canada</span>
-                            <div className="bg_icon ca"></div>
-                        </div>
                     </div>
-                    <div className="list_info ">
-                        <div className="caption"><span>IP Quantity</span>
-                            {/* <!-- <div className="bg_icon icon_info tooltip">
+                    <div className="details_right_icon">
+                      <span>Canada</span>
+                      <div className="bg_icon ca"></div>
+                    </div>
+                  </div>
+                  <div className="list_info ">
+                    <div className="caption">
+                      <span>IP Quantity</span>
+                      {/* <!-- <div className="bg_icon icon_info tooltip">
                                 <div className="tooltiptext">Lorem ipsum dolor sit amet consectetur </div>
                             </div> --> */}
-                        </div>
-                        <div className="details_right_icon">
-                            <span className="ips">—</span>
-                            <div className="bg_icon i-ps"></div>
-                        </div>
                     </div>
-                    <div className="list_info">
-                        <div className="caption"><span>Bandwidth</span>
-                            {/* <!-- <div className="icon_info tooltip bg_icon">
+                    <div className="details_right_icon">
+                      <span className="ips">—</span>
+                      <div className="bg_icon i-ps"></div>
+                    </div>
+                  </div>
+                  <div className="list_info">
+                    <div className="caption">
+                      <span>Bandwidth</span>
+                      {/* <!-- <div className="icon_info tooltip bg_icon">
                                 <div className="tooltiptext">Lorem ipsum dolor sit amet consectetur </div>
                             </div> --> */}
-                        </div>
-                        <div className="details_right_icon">
-                            <span className="gig">—</span>
-                            <div className="bg_icon hard_drive"></div>
-                        </div>
                     </div>
-                    <div className="list_info">
-                        <div className="caption"><span>Plan Length</span>
-                            {/* <!-- <div className="icon_info tooltip bg_icon">
+                    <div className="details_right_icon">
+                      <span className="gig">—</span>
+                      <div className="bg_icon hard_drive"></div>
+                    </div>
+                  </div>
+                  <div className="list_info">
+                    <div className="caption">
+                      <span>Plan Length</span>
+                      {/* <!-- <div className="icon_info tooltip bg_icon">
                                 <div className="tooltiptext">Lorem ipsum dolor sit amet consectetur </div>
                             </div> --> */}
-                        </div>
-                        <div className="details_right_icon">
-                            <span className="length_days">—</span>
-                            <div className="bg_icon calendar"></div>
-                        </div>
-					  </div>								
-					 </div>			
-                    <div className="select_wrapper">
-                        <div className="select" tabIndex="1"></div>
-                        <div className="select_items" ></div>
-                    </div>											   <div className="promo">
-                        <div className="input_with_label">
-                            <label htmlFor="promo" className="">Have a promo code?</label>
-                            <div className="input_wrapper">
-                                <input type="text" placeholder="Enter code" id="promo"/>
-                                <div className="input_button " data-href="#!">Apply</div>
-                            </div>
-                        </div>
                     </div>
-                    <div className="btn buy_now buy_now2" data-href="#!">
-                        Choose CA IPs
+                    <div className="details_right_icon">
+                      <span className="length_days">—</span>
+                      <div className="bg_icon calendar"></div>
                     </div>
-                    {/* <!-- <div className="bg_icon stripe_right">
+                  </div>
+                </div>
+                <div className="select_wrapper">
+                  <div className="select" tabIndex="1"></div>
+                  <div className="select_items"></div>
+                </div>{" "}
+                <div className="promo">
+                  <div className="input_with_label">
+                    <label htmlFor="promo" className="">
+                      Have a promo code?
+                    </label>
+                    <div className="input_wrapper">
+                      <input type="text" placeholder="Enter code" id="promo" />
+                      <div className="input_button " data-href="#!">
+                        Apply
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="btn buy_now buy_now2" data-href="#!">
+                  Choose CA IPs
+                </div>
+                {/* <!-- <div className="bg_icon stripe_right">
                     </div> --> */}
-                </div>
-                <div className="rotating_card rotating_card_shadow">
-				  <div className="rotating_card_inner_con">
-                    <div className="title purple">UK | Static Residential</div>
-	                <div className="subtitle filter-item rotat_resid_meter_unmeter_one">Metered</div>
-                    <div className="subtitle filter-item rotat_resid_meter_unmeter_two">Unmetered</div>
-                    <div className="caption"><span className="bold">Starts from</span>
-                        {/* <!-- <div className="bg_icon icon_info tooltip">
+              </div>
+              <div className="rotating_card rotating_card_shadow">
+                <div className="rotating_card_inner_con">
+                  <div className="title purple">UK | Static Residential</div>
+                  <div className="subtitle filter-item rotat_resid_meter_unmeter_one">
+                    Metered
+                  </div>
+                  <div className="subtitle filter-item rotat_resid_meter_unmeter_two">
+                    Unmetered
+                  </div>
+                  <div className="caption">
+                    <span className="bold">Starts from</span>
+                    {/* <!-- <div className="bg_icon icon_info tooltip">
                             <div className="tooltiptext">Lorem ipsum dolor sit amet consectetur </div>
                         </div> --> */}
-                    </div>										
-                    <div className="price_info">
-                        <div className="price_plan">
-                            <div className="dollar">$</div>
-                            <div className="price">0</div>
-                            <div className="plan">/Plan</div>
-                        </div>
+                  </div>
+                  <div className="price_info">
+                    <div className="price_plan">
+                      <div className="dollar">$</div>
+                      <div className="price">0</div>
+                      <div className="plan">/Plan</div>
                     </div>
-                    <div className="divider"></div>										
-                    <div className="list_info first">
-                        <div className="caption"><span>Origin of IPs</span>
-                            {/* <!-- <div className="bg_icon icon_info tooltip">
+                  </div>
+                  <div className="divider"></div>
+                  <div className="list_info first">
+                    <div className="caption">
+                      <span>Origin of IPs</span>
+                      {/* <!-- <div className="bg_icon icon_info tooltip">
                                 <div className="tooltiptext">Lorem ipsum dolor sit amet consectetur </div>
                             </div> --> */}
-                        </div>
-                        <div className="details_right_icon">
-                            <span>United Kingdom</span>
-                            <div className="bg_icon uk"></div>
-                        </div>
                     </div>
-                    <div className="list_info ">
-                        <div className="caption"><span>IP Quantity</span>
-                            {/* <!-- <div className="bg_icon icon_info tooltip">
+                    <div className="details_right_icon">
+                      <span>United Kingdom</span>
+                      <div className="bg_icon uk"></div>
+                    </div>
+                  </div>
+                  <div className="list_info ">
+                    <div className="caption">
+                      <span>IP Quantity</span>
+                      {/* <!-- <div className="bg_icon icon_info tooltip">
                                 <div className="tooltiptext">Lorem ipsum dolor sit amet consectetur </div>
                             </div> --> */}
-                        </div>
-                        <div className="details_right_icon">
-                            <span className="ips">—</span>
-                            <div className="bg_icon i-ps"></div>
-                        </div>
                     </div>
-                    <div className="list_info">
-                        <div className="caption"><span>Bandwidth</span>
-                            {/* <!-- <div className="icon_info tooltip bg_icon">
+                    <div className="details_right_icon">
+                      <span className="ips">—</span>
+                      <div className="bg_icon i-ps"></div>
+                    </div>
+                  </div>
+                  <div className="list_info">
+                    <div className="caption">
+                      <span>Bandwidth</span>
+                      {/* <!-- <div className="icon_info tooltip bg_icon">
                                 <div className="tooltiptext">Lorem ipsum dolor sit amet consectetur </div>
                             </div> --> */}
-                        </div>
-                        <div className="details_right_icon">
-                            <span className="gig">—</span>
-                            <div className="bg_icon hard_drive"></div>
-                        </div>
                     </div>
-                    <div className="list_info">
-                        <div className="caption"><span>Plan Length</span>
-                            {/* <!-- <div className="icon_info tooltip bg_icon">
+                    <div className="details_right_icon">
+                      <span className="gig">—</span>
+                      <div className="bg_icon hard_drive"></div>
+                    </div>
+                  </div>
+                  <div className="list_info">
+                    <div className="caption">
+                      <span>Plan Length</span>
+                      {/* <!-- <div className="icon_info tooltip bg_icon">
                                 <div className="tooltiptext">Lorem ipsum dolor sit amet consectetur </div>
                             </div> --> */}
-                        </div>
-                        <div className="details_right_icon">
-                            <span className="length_days">—</span>
-                            <div className="bg_icon calendar"></div>
-                        </div>
-                     </div>	
-					</div>
-                    <div className="select_wrapper">
-                        <div className="select" tabIndex="1"></div>
-                        <div className="select_items" ></div>
-                    </div>										
-                    <div className="promo">
-                        <div className="input_with_label">
-                            <label htmlFor="promo" className="">Have a promo code?</label>
-                            <div className="input_wrapper">
-                                <input type="text" placeholder="Enter code" id="promo"/>
-                                <div className="input_button " data-href="#!">Apply</div>
-                            </div>
-                        </div>
                     </div>
-                    <div className="btn buy_now buy_now3" data-href="#!">
-                        Choose UK IPs
+                    <div className="details_right_icon">
+                      <span className="length_days">—</span>
+                      <div className="bg_icon calendar"></div>
                     </div>
-                    <div className="bg_icon stripe_right popular">
-                    </div>
+                  </div>
                 </div>
-                <div className="rotating_card rotating_card_shadow">	
-				  <div className="rotating_card_inner_con">			
-                    <div className="title green">RL | Static Residential</div>
-	                <div className="subtitle filter-item rotat_resid_meter_unmeter_one">Metered</div>
-                    <div className="subtitle filter-item rotat_resid_meter_unmeter_two">Unmetered</div>
-                    <div className="caption"><span className="bold">Starts from</span>
-                        {/* <!-- <div className="bg_icon icon_info tooltip">
+                <div className="select_wrapper">
+                  <div className="select" tabIndex="1"></div>
+                  <div className="select_items"></div>
+                </div>
+                <div className="promo">
+                  <div className="input_with_label">
+                    <label htmlFor="promo" className="">
+                      Have a promo code?
+                    </label>
+                    <div className="input_wrapper">
+                      <input type="text" placeholder="Enter code" id="promo" />
+                      <div className="input_button " data-href="#!">
+                        Apply
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="btn buy_now buy_now3" data-href="#!">
+                  Choose UK IPs
+                </div>
+                <div className="bg_icon stripe_right popular"></div>
+              </div>
+              <div className="rotating_card rotating_card_shadow">
+                <div className="rotating_card_inner_con">
+                  <div className="title green">RL | Static Residential</div>
+                  <div className="subtitle filter-item rotat_resid_meter_unmeter_one">
+                    Metered
+                  </div>
+                  <div className="subtitle filter-item rotat_resid_meter_unmeter_two">
+                    Unmetered
+                  </div>
+                  <div className="caption">
+                    <span className="bold">Starts from</span>
+                    {/* <!-- <div className="bg_icon icon_info tooltip">
                             <div className="tooltiptext">Lorem ipsum dolor sit amet consectetur </div>
                         </div> --> */}
+                  </div>
+                  <div className="price_info">
+                    <div className="price_plan">
+                      <div className="dollar">$</div>
+                      <div className="price">0</div>
+                      <div className="plan">/Plan</div>
                     </div>
-                    <div className="price_info">
-                        <div className="price_plan">
-                            <div className="dollar">$</div>
-                            <div className="price">0</div>
-                            <div className="plan">/Plan</div>
-                        </div>
-                    </div>
-                    <div className="divider"></div>
-                    <div className="list_info first">
-                        <div className="caption"><span>Origin of IPs</span>
-                            {/* <!-- <div className="bg_icon icon_info tooltip">
+                  </div>
+                  <div className="divider"></div>
+                  <div className="list_info first">
+                    <div className="caption">
+                      <span>Origin of IPs</span>
+                      {/* <!-- <div className="bg_icon icon_info tooltip">
                             <div className="tooltiptext">Lorem ipsum dolor sit amet consectetur </div>
                             </div> --> */}
-                        </div>
-                        <div className="details_right_icon">
-                            <span>Random Location</span>
-                            <div className="bg_icon ww"></div>
-                        </div>
                     </div>
-                    <div className="list_info ">
-                        <div className="caption"><span>IP Quantity</span>
-                            {/* <!-- <div className="bg_icon icon_info tooltip">
+                    <div className="details_right_icon">
+                      <span>Random Location</span>
+                      <div className="bg_icon ww"></div>
+                    </div>
+                  </div>
+                  <div className="list_info ">
+                    <div className="caption">
+                      <span>IP Quantity</span>
+                      {/* <!-- <div className="bg_icon icon_info tooltip">
                                 <div className="tooltiptext">Lorem ipsum dolor sit amet consectetur </div>
                             </div> --> */}
-                        </div>
-                        <div className="details_right_icon">
-                            <span className="ips">—</span>
-                            <div className="bg_icon i-ps"></div>
-                        </div>
                     </div>
-                    <div className="list_info">
-                        <div className="caption"><span>Bandwidth</span>
-                            {/* <!-- <div className="icon_info tooltip bg_icon">
+                    <div className="details_right_icon">
+                      <span className="ips">—</span>
+                      <div className="bg_icon i-ps"></div>
+                    </div>
+                  </div>
+                  <div className="list_info">
+                    <div className="caption">
+                      <span>Bandwidth</span>
+                      {/* <!-- <div className="icon_info tooltip bg_icon">
                                 <div className="tooltiptext">Lorem ipsum dolor sit amet consectetur </div>
                             </div> --> */}
-                        </div>
-                        <div className="details_right_icon">
-                            <span className="gig">—</span>
-                            <div className="bg_icon hard_drive"></div>
-                        </div>
                     </div>
-                    <div className="list_info">
-                        <div className="caption"><span>Plan Length</span>
-                            {/* <!-- <div className="icon_info tooltip bg_icon">
+                    <div className="details_right_icon">
+                      <span className="gig">—</span>
+                      <div className="bg_icon hard_drive"></div>
+                    </div>
+                  </div>
+                  <div className="list_info">
+                    <div className="caption">
+                      <span>Plan Length</span>
+                      {/* <!-- <div className="icon_info tooltip bg_icon">
                                 <div className="tooltiptext">Lorem ipsum dolor sit amet consectetur </div>
                             </div> --> */}
-                        </div>
-                        <div className="details_right_icon">
-                            <span className="length_days">—</span>
-                            <div className="bg_icon calendar"></div>
-                        </div>
-                     </div>					
-					</div>					
-                    <div className="select_wrapper">
-                        <div className="select" tabIndex="1"></div>
-                        <div className="select_items" ></div>
-                    </div>															
-                    <div className="promo">
-                        <div className="input_with_label">
-                            <label htmlFor="promo" className="">Have a promo code?</label>
-                            <div className="input_wrapper">
-                                <input type="text" placeholder="Enter code" id="promo"/>
-                                <div className="input_button " data-href="#!">Apply</div>
-                            </div>
-                        </div>
                     </div>
-                    <div className="btn buy_now buy_now4" data-href="#!">
-                        Choose RL IPs
+                    <div className="details_right_icon">
+                      <span className="length_days">—</span>
+                      <div className="bg_icon calendar"></div>
                     </div>
-                    {/* <!-- <div className="bg_icon stripe_right">
+                  </div>
+                </div>
+                <div className="select_wrapper">
+                  <div className="select" tabIndex="1"></div>
+                  <div className="select_items"></div>
+                </div>
+                <div className="promo">
+                  <div className="input_with_label">
+                    <label htmlFor="promo" className="">
+                      Have a promo code?
+                    </label>
+                    <div className="input_wrapper">
+                      <input type="text" placeholder="Enter code" id="promo" />
+                      <div className="input_button " data-href="#!">
+                        Apply
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="btn buy_now buy_now4" data-href="#!">
+                  Choose RL IPs
+                </div>
+                {/* <!-- <div className="bg_icon stripe_right">
                     </div> --> */}
-                </div>
+              </div>
             </div>
-     </div>
-  </section>
+          </div>
+        </section>
         <Questions />
       </div>
       <Footer />

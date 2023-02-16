@@ -4,6 +4,18 @@ import { useState } from "react";
 import DashboardQuestions from "./dashboard_questions";
 
 export default function History(props) {
+  const header_titles = [
+    "Plan Name",
+    "Bandwidth",
+    "Rollover GB",
+    "IP Quantity",
+    "Status",
+    "Length",
+    "Start Date",
+    "Purchase Date",
+    "Expiry Date",
+    "Reciept",
+  ];
   const items = [
     {
       PlanName: "UK | Static Residential",
@@ -12,7 +24,7 @@ export default function History(props) {
       IPQuantity: "200 IPs",
       Status: 0,
       Length: "30 Days",
-      
+
       StartDate: "Dec 01, 2022",
       PurchaseDate: "Dec 01, 2022",
       ExpiryDate: "Dec 31, 2022",
@@ -24,7 +36,7 @@ export default function History(props) {
       IPQuantity: "200 IPs",
       Status: 1,
       Length: "30 Days",
-      
+
       StartDate: "Dec 01, 2022",
       PurchaseDate: "Dec 01, 2022",
       ExpiryDate: "Dec 31, 2022",
@@ -36,7 +48,7 @@ export default function History(props) {
       IPQuantity: "200 IPs",
       Status: 1,
       Length: "30 Days",
-      
+
       StartDate: "Dec 01, 2022",
       PurchaseDate: "Dec 01, 2022",
       ExpiryDate: "Dec 31, 2022",
@@ -48,7 +60,7 @@ export default function History(props) {
       IPQuantity: "200 IPs",
       Status: 2,
       Length: "30 Days",
-      
+
       StartDate: "Dec 01, 2022",
       PurchaseDate: "Dec 01, 2022",
       ExpiryDate: "Dec 31, 2022",
@@ -60,7 +72,7 @@ export default function History(props) {
       IPQuantity: "200 IPs",
       Status: 2,
       Length: "30 Days",
-      
+
       StartDate: "Dec 01, 2022",
       PurchaseDate: "Dec 01, 2022",
       ExpiryDate: "Dec 31, 2022",
@@ -72,7 +84,7 @@ export default function History(props) {
       IPQuantity: "200 IPs",
       Status: 2,
       Length: "30 Days",
-      
+
       StartDate: "Dec 01, 2022",
       PurchaseDate: "Dec 01, 2022",
       ExpiryDate: "Dec 31, 2022",
@@ -84,7 +96,7 @@ export default function History(props) {
       IPQuantity: "500 IPs",
       Status: 2,
       Length: "30 Days",
-      
+
       StartDate: "Dec 01, 2022",
       PurchaseDate: "Dec 01, 2022",
       ExpiryDate: "Dec 31, 2022",
@@ -96,7 +108,7 @@ export default function History(props) {
       IPQuantity: "500 IPs",
       Status: 2,
       Length: "30 Days",
-      
+
       StartDate: "Dec 01, 2022",
       PurchaseDate: "Dec 01, 2022",
       ExpiryDate: "—",
@@ -108,7 +120,7 @@ export default function History(props) {
       IPQuantity: "500 IPs",
       Status: 2,
       Length: "30 Days",
-      
+
       StartDate: "Dec 01, 2022",
       PurchaseDate: "Dec 01, 2022",
       ExpiryDate: "—",
@@ -120,7 +132,7 @@ export default function History(props) {
       IPQuantity: "500 IPs",
       Status: 2,
       Length: "30 Days",
-      
+
       StartDate: "Dec 01, 2022",
       PurchaseDate: "Dec 01, 2022",
       ExpiryDate: "Dec 31, 2022",
@@ -132,7 +144,7 @@ export default function History(props) {
       IPQuantity: "200 IPs",
       Status: 0,
       Length: "30 Days",
-      
+
       StartDate: "Dec 01, 2022",
       PurchaseDate: "Dec 01, 2022",
       ExpiryDate: "Dec 31, 2022",
@@ -144,7 +156,7 @@ export default function History(props) {
       IPQuantity: "200 IPs",
       Status: 1,
       Length: "30 Days",
-      
+
       StartDate: "Dec 01, 2022",
       PurchaseDate: "Dec 01, 2022",
       ExpiryDate: "Dec 31, 2022",
@@ -156,7 +168,7 @@ export default function History(props) {
       IPQuantity: "200 IPs",
       Status: 1,
       Length: "30 Days",
-      
+
       StartDate: "Dec 01, 2022",
       PurchaseDate: "Dec 01, 2022",
       ExpiryDate: "Dec 31, 2022",
@@ -168,7 +180,7 @@ export default function History(props) {
       IPQuantity: "200 IPs",
       Status: 2,
       Length: "30 Days",
-      
+
       StartDate: "Dec 01, 2022",
       PurchaseDate: "Dec 01, 2022",
       ExpiryDate: "Dec 31, 2022",
@@ -180,7 +192,7 @@ export default function History(props) {
       IPQuantity: "200 IPs",
       Status: 2,
       Length: "30 Days",
-      
+
       StartDate: "Dec 01, 2022",
       PurchaseDate: "Dec 01, 2022",
       ExpiryDate: "Dec 31, 2022",
@@ -192,7 +204,7 @@ export default function History(props) {
       IPQuantity: "200 IPs",
       Status: 2,
       Length: "30 Days",
-      
+
       StartDate: "Dec 01, 2022",
       PurchaseDate: "Dec 01, 2022",
       ExpiryDate: "Dec 31, 2022",
@@ -204,7 +216,7 @@ export default function History(props) {
       IPQuantity: "500 IPs",
       Status: 2,
       Length: "30 Days",
-      
+
       StartDate: "Dec 01, 2022",
       PurchaseDate: "Dec 01, 2022",
       ExpiryDate: "Dec 31, 2022",
@@ -216,7 +228,7 @@ export default function History(props) {
       IPQuantity: "500 IPs",
       Status: 2,
       Length: "30 Days",
-      
+
       StartDate: "Dec 01, 2022",
       PurchaseDate: "Dec 01, 2022",
       ExpiryDate: "—",
@@ -228,7 +240,7 @@ export default function History(props) {
       IPQuantity: "500 IPs",
       Status: 2,
       Length: "30 Days",
-      
+
       StartDate: "Dec 01, 2022",
       PurchaseDate: "Dec 01, 2022",
       ExpiryDate: "—",
@@ -240,7 +252,7 @@ export default function History(props) {
       IPQuantity: "500 IPs",
       Status: 2,
       Length: "30 Days",
-      
+
       StartDate: "Dec 01, 2022",
       PurchaseDate: "Dec 01, 2022",
       ExpiryDate: "Dec 31, 2022",
@@ -289,97 +301,77 @@ export default function History(props) {
               </Link>
             </span>
           </div>
+
           <div className="order_hist_order_hist_detail_main_con">
-            <div className="order_hist_order_hist_detail_con">
               <h2>Order history</h2>
-              <div className="order_hist_order_hist_inner_detail_con">
-                <div className="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-                  <h3>Plan Name</h3>
-                </div>
-                <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                  <h3>Bandwidth</h3>
-                </div>
-                <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                  <h3>Rollover GB</h3>
-                </div>
-                <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                  <h3>IP Quantity</h3>
-                </div>
-                <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                  <h3>Status</h3>
-                </div>
-                <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                  <h3>Length</h3>
-                </div>
-                <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                  <h3>Start Date</h3>
-                </div>
-                <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                  <h3>Purchase Date</h3>
-                </div>
-                <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                  <h3>Expiry Date</h3>
-                </div>
-                <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                  <h3>Reciept</h3>
-                </div>
+              <div className="table_history_scroll">
+            <div className="table_history">
+              <div className="table_header">
+                {header_titles.map((item, i) => (
+                  <div key={item + i} className="item">
+                   {item}
+                  </div>
+                ))}
               </div>
               <div className="items_wrapper">
-              {items.map((e) => {
-                return (
-                  <div
-                    key={e}
-                    className="order_hist_order_hist_inner_detail_con order_hist_order_hist_inner_detail_con2"
-                  >
-                    <div className="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-                      <h4>{e.PlanName}</h4>
+                {items.map((e,i) => {
+                  return (
+                    <div
+                      key={e+i}
+                      className="table_row"
+                    >
+                      <div className="item">
+                        {e.PlanName}
+                      </div>
+                      <div className="item">
+                        {e.Bandwidth}
+                      </div>
+                      <div className="item">
+                        {e.RolloverGB}
+                      </div>
+                      <div className="item">
+                        {e.IPQuantity}
+                      </div>
+                      <div className="item">
+                        {e.Status == 2 && (
+                          <span className="status Expired">Expired</span>
+                        )}
+                        {e.Status == 1 && (
+                          <span className="status Standby">Standby</span>
+                        )}
+                        {e.Status == 0 && (
+                          <span className="status active">Active</span>
+                        )}
+                      </div>
+                      <div className="item">
+                        {e.Length}
+                      </div>
+                      <div className="item">
+                        {e.StartDate}
+                      </div>
+                      <div className="item">
+                        {e.PurchaseDate}
+                      </div>
+                      <div className="item">
+                        {e.ExpiryDate}
+                      </div>
+                      <div className="item">
+                          <Image
+                            width={10}
+                            height={13}
+                            alt="invoice"
+                            src="/images/dashboard-order-history-pdf-invoice-icon.svg"
+                          />
+                          <span onClick={()=>{
+                            console.log('download')
+                          }}>View</span>
+                      </div>
                     </div>
-                    <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                      <h4>{e.Bandwidth}</h4>
-                    </div>
-                    <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                      <h4>{e.RolloverGB}</h4>
-                    </div>
-                    <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                      <h4>{e.IPQuantity}</h4>
-                    </div>
-                    <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                    {e.Status==2&&<span className="Expired">Expired</span>}
-                    {e.Status==1&&<span className="Standby">Standby</span>}
-                    {e.Status==0&&<span className="active">Active</span>}
-                      
-                    </div>
-                    <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                      <h4>{e.Length}</h4>
-                    </div>
-                    <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                      <h4>{e.StartDate}</h4>
-                    </div>
-                    <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                      <h4>{e.PurchaseDate}</h4>
-                    </div>
-                    <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                      <h4>{e.ExpiryDate}</h4>
-                    </div>
-                    <div className="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                      <a href="#!">
-                        <Image
-                          width={10}
-                          height={13}
-                          alt="invoice"
-                          src="/images/dashboard-order-history-pdf-invoice-icon.svg"
-                        />
-                        <span>View</span>
-                      </a>
-                    </div>
-                  </div>
-                );
-              })}
-
-              
-              
+                  );
+                })}
+              </div>
             </div>
-        </div>
+            </div>
           </div>
           <div className="recent-sales box">
             <DashboardQuestions />

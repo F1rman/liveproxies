@@ -9,10 +9,7 @@ export default function PriceHeader(props) {
           <h2>
             <span>{props.title}</span> Proxies Pricing{" "}
           </h2>
-          <h3>
-            Maintain optimal performance by switching to fresh IPs after a
-            certain time period without changing your set of proxies.
-          </h3>
+          {props.children}
         </div>
         <div className="live_proxies_plan_table_main_con">
           <div className="live_proxies_plan_table_sub_con2">

@@ -289,7 +289,12 @@ useEffect(()=>{
       </Head>
       <div className="rotat_mobile_prox_pric_page_wrapper rotat_resid_prox_pric_page_wrapper home_page_wrapper custom-pricing_page_wrapper">
         <Header />
-        <PriceHeader  title={'Rotating Mobile'} onlyMetered/>
+        <PriceHeader  title={'Rotating Mobile'} onlyMetered>
+        <h3>
+            Maintain optimal performance by switching to fresh IPs after a
+            certain time period without changing your set of proxies.
+          </h3>
+        </PriceHeader>
 
         
         <section className="rotating_section">
@@ -347,7 +352,7 @@ useEffect(()=>{
                       {/* </div> } */}
                     </div>
                     <div className="details_right_icon">
-                      <span className="ips">200IPs</span>
+                      <span className="ips">200 IPs</span>
                       <div className="bg_icon i-ps"></div>
                     </div>
                   </div>

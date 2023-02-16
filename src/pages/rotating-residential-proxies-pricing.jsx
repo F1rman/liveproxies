@@ -299,7 +299,12 @@ export default function RotatingResidentialProxiesPricing() {
       </Head>
       <div className="rotat_resid_prox_pric_page_wrapper home_page_wrapper custom-pricing_page_wrapper">
         <Header />
-        <PriceHeader setToggle={setToggle} metered={metered} title={'Rotating Residential'}/>
+        <PriceHeader setToggle={setToggle} metered={metered} title={'Rotating Residential'}>
+        <h3>
+        The end-IPs are keep shuffling behind the scenes. Sometimes it 
+take days, sometimes a week but eventually the IPs changes.
+        </h3>
+        </PriceHeader>
         <section className="rotating_section">
           <div className="info">
             <div className="bg_icon "></div>{" "}
@@ -358,7 +363,7 @@ export default function RotatingResidentialProxiesPricing() {
                             </div> --> */}
                     </div>
                     <div className="details_right_icon">
-                      <span className="ips">200IPs</span>
+                      <span className="ips">200 IPs</span>
                       <div className="bg_icon i-ps"></div>
                     </div>
                   </div>
