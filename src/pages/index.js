@@ -31,8 +31,7 @@ export default function Home() {
       <TopUseCases />
       <TrustedService />
       <WhyLiveProxies />
-	  <Plans />
-	  <PlansMobile />
+      <Plans />
       <GetSolutions />
       <SimpleManagementDashboard />
       <UtilizeFavouriteApp />
