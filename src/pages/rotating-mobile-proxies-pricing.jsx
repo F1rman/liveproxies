@@ -291,8 +291,7 @@ useEffect(()=>{
         <Header />
         <PriceHeader  title={'Rotating Mobile'} onlyMetered>
         <h3>
-            Maintain optimal performance by switching to fresh IPs after a
-            certain time period without changing your set of proxies.
+        Experience efficient web browsing with authentic mobile IPs and stay at peak performance by having your IPs rotated to fresh IPs while keeping your proxies unchanged.
           </h3>
         </PriceHeader>
 

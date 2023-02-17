@@ -305,8 +305,7 @@ export default function StaticResidentialProxiesPricing() {
           title={"Static Residential"}
         >
           <h3>
-            Maintain optimal performance by switching to fresh IPs after a
-            certain time period without changing your set of proxies.
+          Continue to hold the same reliable IPs to prevent websites from flagging your accounts or other uses.
           </h3>
         </PriceHeader>
 
