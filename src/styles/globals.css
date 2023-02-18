@@ -14559,6 +14559,45 @@ display: block;
   background-color: #ffffff;
   transition: .3s ease-in-out;
 }
+.jss14 {
+  text-align: center;
+  padding-top: 150px;
+  margin-bottom: 24px;
+}
+.jss7 {
+  color: #60698a;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 5px;
+  line-height: 24px;
+  margin-bottom: 12px;
+  letter-spacing: 0.6px;
+}
+.MuiTypography-h3 {
+  color: #dbdce2;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 50px;
+  margin-bottom: 3px;
+  letter-spacing: 1.7px;
+}
+.jss13 {
+  font-size: 32px !important;
+  line-height: 30px !important;
+}
+.jss1 {
+  font-family: GothamPro;
+  background-color: #01092d;
+}
+.jss1 a{
+  color: #337ab7;
+}
+.jss1 a:hover{
+text-decoration: underline;
+}
+.jss11 {
+  padding: 50px 0;
+}
 @media (min-width:1200px){  
   .plans_wrapper .plans_right_body .card_plan{
 display: flex !important;

@@ -90,13 +90,13 @@ export default function Footer() {
           <h4>Legal</h4>
           <ul>
             <li>
-              <Link href="/#!">Refund Policy</Link>
+              <Link href="refund-policy">Refund Policy</Link>
             </li>
             <li>
-              <Link href="/#!">Privacy Policy</Link>
+              <Link href="privacy-policy">Privacy Policy</Link>
             </li>
             <li>
-              <Link href="/#!">Terms of Use</Link>
+              <Link href="terms-of-use">Terms of Use</Link>
             </li>
           </ul>
         </div>
