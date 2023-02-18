@@ -6140,7 +6140,11 @@ margin-right: 7px;
 }
 }
 
-
+.contact_us_page_wrapper .contact_us_con .contact_us_sub_con2 img{
+  color: transparent;
+  width: 241px;
+  margin-top: 20px;
+}
  
 .contact_us_page_wrapper .contact_us_con .contact_us_sub_con2{
   padding-top:46px;
