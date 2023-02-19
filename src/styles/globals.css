@@ -6141,8 +6141,6 @@ margin-right: 7px;
 }
 
 .contact_us_page_wrapper .contact_us_con .contact_us_sub_con2 img{
-  color: transparent;
-  margin-top: 10px;
 }
  
 .contact_us_page_wrapper .contact_us_con .contact_us_sub_con2{
@@ -6213,7 +6211,7 @@ margin-right: 7px;
   line-height: 1.43;
   letter-spacing: normal;
   color: #232020;
-  margin:0 0 20px 0; 
+  margin:0 0 0 0; 
 }
 @media (max-width:1199px){
 .contact_us_page_wrapper .contact_us_con .contact_us_sub_con2 h5{

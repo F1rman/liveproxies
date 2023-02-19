@@ -135,7 +135,7 @@ export default function ContactUs() {
                 announcements, chat with the other users, participate in
                 giveaways and enjoy the privileged discount codes.
               </h5>
-              <Image width={160} height={113} alt="arrow" src="/images/hello@3x.png" />
+              <Image width={266} height={157} alt="arrow" src="/images/hello@3x.png" />
             </div>
           </div>
         </section>

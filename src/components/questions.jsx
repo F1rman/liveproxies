@@ -2,6 +2,12 @@ import Link from "next/link";
 import { useState } from "react";
 
 export default function Questions() {
+    const faq =  [
+      {
+        title:'',
+        name:'',
+      }
+    ];
     const [open,setOpen] = useState(0);
     function collapse(e,i){
         console.log(e,i)
