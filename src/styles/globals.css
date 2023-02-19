@@ -14609,13 +14609,14 @@ display: block;
     align-items: flex-start;
 }
 .privasy .jss1 ul li::after{
-  content: '';
-position: absolute;
-left: 0;
-width: 7px;
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 7px;
   height: 7px;
   background-color: #1f6bd3;
   border-radius: 100%;
+  top: 6px;
 
 }
 .jss14 {
