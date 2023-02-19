@@ -14562,10 +14562,67 @@ display: block;
   background-color: #ffffff;
   transition: .3s ease-in-out;
 }
+.privasy .main_menubar{
+  background-image: linear-gradient(to bottom, #010d2f, #103b6f);
+  padding-bottom: 12px;
+}
+.privasy h1,
+.privasy h2{
+  font-family: GothamPro;
+  font-size: 20px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  color: #232020;
+  margin-top: 40px;
+  margin-bottom: 15px;
+}
+.privasy p{
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.38;
+  letter-spacing: normal;
+  color: #232020;
+}
+.privasy .jss1 ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 35px;
+  margin-top: 20px;
+}
+.privasy .jss1 ul li{
+  font-family: GothamPro;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.4;
+  letter-spacing: normal;
+  color: #232020;
+  position: relative;
+  padding-left: 22px;
+  display: flex;
+  margin-bottom: 15px;
+  align-items: center;
+}
+.privasy .jss1 ul li::after{
+  content: '';
+position: absolute;
+left: 0;
+width: 7px;
+  height: 7px;
+  background-color: #1f6bd3;
+  border-radius: 100%;
+
+}
 .jss14 {
   text-align: center;
-  padding-top: 150px;
-  margin-bottom: 24px;
+  padding-top: 60px;
 }
 .jss7 {
   color: #60698a;
@@ -14577,12 +14634,16 @@ display: block;
   letter-spacing: 0.6px;
 }
 .MuiTypography-h3 {
-  color: #dbdce2;
-  font-size: 36px;
-  font-weight: 600;
-  line-height: 50px;
-  margin-bottom: 3px;
-  letter-spacing: 1.7px;
+  font-weight: 400;
+  font-size: 28px;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #232020;
+  margin-top: 60px;
+  margin-bottom: 0;
 }
 .jss13 {
   font-size: 32px !important;
@@ -14590,10 +14651,10 @@ display: block;
 }
 .jss1 {
   font-family: GothamPro;
-  background-color: #01092d;
+  background-color: #fff;
 }
 .jss1 a{
-  color: #337ab7;
+  color: #1f6bd3;
 }
 .jss1 a:hover{
 text-decoration: underline;

@@ -90,7 +90,7 @@ export default function Notification(props) {
                 <div className="content">
                     <h2 
                      > Hello, we truly appreciate the patient and some feedbacks.
-                    We all at LiveProxies wish you a wonderful holiday and {more && (
+                    We all at Live Proxies wish you a wonderful holiday and {more && (
                       <span>
                         {" "}
                         thank you for trusting us!.

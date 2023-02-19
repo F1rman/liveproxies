@@ -108,7 +108,7 @@ export default function UtilizeFavouriteApp() {
           Utilize your <span>favorite apps, bots</span> with Live
         </h2>
         <h3>
-          LiveProxies makes it easier to integrate your favorite
+          Live Proxies makes it easier to integrate your favorite
           applications seamless without a hassle. You can now enjoy apps
           with the best networking proxy.
         </h3>

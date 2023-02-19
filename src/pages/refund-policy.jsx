@@ -1,3 +1,5 @@
+
+
 import Footer from "@/components/footer";
 import Header from "@/components/header";
 import Image from "next/image";
@@ -5,21 +7,20 @@ import Link from "next/link";
 
 export default function RefundPolicy() {
   return (
-    <>
+    <div className="privasy">
     <Header />
     <main className="jss1 ">
-    <div className="jss10" style={{backgroundImage: "url(&quot;/static/media/innerbanner.5e5d4f28.jpg&quot;);"}}>
+    <div className="jss10" >
     <div className="MuiBox-root jss38 jss14">
-    <h3 className="MuiTypography-root jss13 MuiTypography-h3">Refund Policy</h3>
-    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALAAAAATCAYAAAAwP4ceAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyBpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBXaW5kb3dzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjkwMzA3RUUxMTc2MDExRUJCMkU2RUE5OTczNTVENEQ0IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjkwMzA3RUUyMTc2MDExRUJCMkU2RUE5OTczNTVENEQ0Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6OTAzMDdFREYxNzYwMTFFQkIyRTZFQTk5NzM1NUQ0RDQiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6OTAzMDdFRTAxNzYwMTFFQkIyRTZFQTk5NzM1NUQ0RDQiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz5ynuraAAABzUlEQVR42mL8//8/w2AFzDzGYPrvl7MMo2A03LEBptHoGgVDGYwm4FEwmoBHwSgYTcCjYBSQAViGQ6eCVdxTi8eiYDabjIUmIzsfGwMjVIIRinGxsfEJiZOAGRn+U2wG0e4j5F8g+H338tOvG2Z3fz8+ZQ6+cB5KgHEojELAALYEzC4X7izgO2cNIxuPAHqEjSZgLOHBwPD1y+qpKz6vyE0hFOajoxB0ALz2TXPAiXcUEAu4eUIyI9g1w51H28B0BNhKAzbpIAsWYTXR0TRJaqwzcbObOicMizZwdFLzzMHquIiwABhzjrVT2qej+2bdRIkHbjFVUIkymiLJSMP8wuLoYjIqXiLAMFcEMsHNC2DaGPwJeOm82vSh0AbGVgL/+/rqNqhNN5qISQf/3r54gi725M62N8AwfwNknh5tA9O4QwcCv56uO/H71aWno8mR1NT77+uPk7unj7aBBwH4cqQt6//PT+9HUyXR4OuXVVMW/7q74fSwaAMPdQ/8fLRyL6uIiyGPZfESVllzLSYOQfbRNIq11GX4fffSk68b53R+PzFtPrG13GAHjKOr0UbBUA730ankUTDaBh4Fo2A0AY+CUTCagEfBSAMAAQYA8++LnNh5VR8AAAAASUVORK5CYII=" alt="no img" className="jss12" />
+    <h3 className="MuiTypography-root jss13 MuiTypography-h3"><b>Refund</b> Policy</h3>
     </div>
     </div>
     <div className="jss11 container">
     <div className="MuiContainer-root jss3 MuiContainer-maxWidthLg" width="1200px">
     <div className="MuiPaper-root jss8 MuiPaper-elevation1 MuiPaper-rounded">
     <div className="jss7">
-    <h1>Refund policy</h1>
-<p>This privacy policy (&quot;Policy&quot;) describes how the personally identifiable information (&quot;Personal Information&quot;) you may provide on the&nbsp;<Link href="https://www.liveproxies.io/" target="_blank" rel="nofollow noopener">liveproxies.io</Link>&nbsp;website (&quot;Website&quot; or &quot;Service&quot;) and any of its related products and services (collectively, &quot;Services&quot;) is collected, protected and used. It also describes the choices available to you regarding our use of your Personal Information and how you can access and update this information. This Policy is a legally binding agreement between you (&quot;User&quot;, &quot;you&quot; or &quot;your&quot;) and Live Proxies Inc. (&quot;Live Proxies Inc.&quot;, &quot;we&quot;, &quot;us&quot; or &quot;our&quot;). By accessing and using the Website and Services, you acknowledge that you have read, understood, and agree to be bound by the terms of this Agreement. This Policy does not apply to the practices of companies that we do not own or control, or to individuals that we do not employ or manage.</p>
+    <h1>Refund Policy</h1>
+<p>This refund policy (&quot;Policy&quot;) describes how the personally identifiable information (&quot;Personal Information&quot;) you may provide on the&nbsp;<Link href="https://www.liveproxies.io/" target="_blank" rel="nofollow noopener">liveproxies.io</Link>&nbsp;website (&quot;Website&quot; or &quot;Service&quot;) and any of its related products and services (collectively, &quot;Services&quot;) is collected, protected and used. It also describes the choices available to you regarding our use of your Personal Information and how you can access and update this information. This Policy is a legally binding agreement between you (&quot;User&quot;, &quot;you&quot; or &quot;your&quot;) and Live Proxies Inc. (&quot;Live Proxies Inc.&quot;, &quot;we&quot;, &quot;us&quot; or &quot;our&quot;). By accessing and using the Website and Services, you acknowledge that you have read, understood, and agree to be bound by the terms of this Agreement. This Policy does not apply to the practices of companies that we do not own or control, or to individuals that we do not employ or manage.</p>
 <h2>Automatic collection of information</h2>
 <p>Our top priority is customer data security and, as such, we exercise the no logs policy. We may process only minimal user data, only as much as it is absolutely necessary to maintain the Website and Services. Information collected automatically is used only to identify potential cases of abuse and establish statistical information regarding the usage and traffic of the Website and Services. This statistical information is not otherwise aggregated in such a way that would identify any particular user of the system.</p>
 <h2>Collection of personal information</h2>
@@ -113,6 +114,6 @@ export default function RefundPolicy() {
 </div>
 </main>
   <Footer /> 
-    </>
+    </div>
   );
 }
