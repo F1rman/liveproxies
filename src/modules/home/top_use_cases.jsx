@@ -76,7 +76,7 @@ export default function TopUseCases() {
         <h2>
           Top use <span>cases</span>
         </h2>
-        <h3>Scrape data anonymously and access content in any geo-location</h3>
+        <h3>Get unrestricted access to the web data; no limits, no boundaries</h3>
 
         <div className="tile" id="tile-1">
         <div className="overflow_x hide_scroll">
