@@ -2113,7 +2113,6 @@ justify-content: center;
 } 
 
 .honest_price_no_surprises_main_con .col1 h4{
-  width:373px;
   font-family: GothamPro;
   font-size: 16px;
   font-weight: normal;
@@ -14945,9 +14944,7 @@ width: 188px;
 .honest_price_no_surprises_main_con .col1 h2{
   margin-bottom: 15px;
 }
-.honest_price_no_surprises_main_con .col1 h4{
-  width: 408px;
-}
+
 .honest_price_no_surprises_main_con .col2 .card .cardHeader p{
   width: 245px;
 }

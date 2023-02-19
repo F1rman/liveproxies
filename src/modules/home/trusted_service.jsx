@@ -22,9 +22,7 @@ export default function TrustedService() {
                 <span>Trusted Service</span> with full transparency
               </h2>
               <h4>
-                Our provision has proven itself to thousands of satisfied users,
-                and your account will inform you with all necessary details
-                about your proxies at no additional cost.
+               Join the ranks of thousands of satisfied users who trust Live Proxies to provide reliable, secure, and transparent proxy solutions.
               </h4>
 
               <Link className="underline" href="/sign-up">
